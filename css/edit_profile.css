@@ -125,6 +125,13 @@ body {
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.input-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block; /* Asegura que el texto esté arriba del input */
+}
 .input-field {
     font-size: 16px;
     padding: 0 40px 0 20px;

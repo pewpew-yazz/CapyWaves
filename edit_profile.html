@@ -13,14 +13,11 @@
     <script src="js/menu_desplegable.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/scroll.js"></script>
-     <!-- <script src="js/pag_invitado.js"></script> -->
     
     <!-- Stylesheets -->
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
-    
     <link href="css/header.css" rel="stylesheet" />
- 
     <link href="css/edit_profile.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
@@ -59,9 +56,6 @@
                         </ul>
                     </li>
                     <li><a  href="#" class=""> Nosotros</a></li>
-                       
-                           
-                    
                 </ul>
             </nav>
         </div>
@@ -71,7 +65,6 @@
                 <i class="fas fa-chevron-down profile-arrow"></i>
             </div>
         </div>
-       
 </header>
 
 <div class="edit-container">
@@ -80,21 +73,22 @@
         
         <form class="edit-form">
             <div class="input-box">
-                <input type="text" class="inputs input-field" placeholder="Change Username">
+                <label for="username" class="input-label">Username:</label>
+                <input type="text" id="username" class="inputs input-field" placeholder="Change Username">
             </div>
             <div class="input-box">
-                <input type="email" class="inputs input-field" placeholder="Change Email">
+                <label for="email" class="input-label">Email:</label>
+                <input type="email" id="email" class="inputs input-field" placeholder="Change Email">
             </div>
             <div class="input-box">
-                <input type="password" class="inputs input-field" placeholder="Change Password">
+                <label for="password" class="input-label">Password:</label>
+                <input type="password" id="password" class="inputs input-field" placeholder="Change Password">
             </div>
             <div class="form-actions">
                 <button type="submit" class="btn">Save Changes</button>
                 <button type="reset" class="btn">Clear</button>
             </div>
         </form>
-        
-
     </div>
     <div class="edit-photo">
         <div class="photo-container">
