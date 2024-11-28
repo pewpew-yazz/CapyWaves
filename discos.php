@@ -93,55 +93,49 @@
             </div>
         </div>
         <div class="content">
-            <div class="item active">
-                <h1 class="ti">Costa de susurros</h1>
-                <div class="des">
-                    Camina por la orilla de un océano sereno, donde las olas susurran secretos antiguos y la brisa salada acaricia tu piel. Las notas relajantes de este disco te sumergen en un mar de paz y suaves olas que abrazan tus sentidos.
-                </div>
-                <button class="r">Reproducir</button>
-            </div>
-            <div class="item">
-                <h1 class="ti">Noche entre Edificios</h1>
-                <div class="des">
-                    Explora el pulso tranquilo de la ciudad por la noche, cuando las luces de los edificios parpadean como estrellas urbanas. Este disco combina el murmullo lejano de la ciudad con un ritmo relajante que te invita a disfrutar de la calma urbana.
-                </div>
-                <button class="r">Reproducir</button>
-            </div>
-            <div class="item">
-                <h1 class="ti">Noche de Luna Llena</h1>
-                <div class="des">
-                    Bajo la luz plateada de una luna llena, el mundo se baña en un resplandor mágico. Este disco evoca la majestuosa serenidad de una noche iluminada por la luna, llena de misterio y belleza nocturna que invita a la reflexión.
-                </div>
-                <button class="r">Reproducir</button>
-            </div>
-            <div class="item">
-                <h1 class="ti">Prado de Calma</h1>
-                <div class="des">
-                    Descansa en un amplio prado donde el viento acaricia la hierba y los colores del atardecer pintan el cielo. Las melodías suaves y las brisas armoniosas de este disco te ayudarán a encontrar un momento de pura serenidad.
-                </div>
-                <button class="r">Reproducir</button>
-            </div>
-            <div class="item">
-                <h1 class="ti">Fogata Bajo Estrellas</h1>
-                <div class="des">
-                    Reúnete alrededor de una fogata chisporroteante bajo un cielo estrellado infinito. Este disco recrea la calidez y la conexión de una noche al aire libre, con crujidos de madera y estrellas que susurran historias de antaño.
-                </div>
-                <button class="r">Reproducir</button>
-            </div>
-            <div class="item">
-                <h1 class="ti">Bosque de Luciérnagas</h1>
-                <div class="des">
-                    Adéntrate en un bosque mágico donde las luciérnagas iluminan la noche con su danza luminosa. Este disco captura la tranquilidad y el asombro de caminar entre luces titilantes, envolviéndote en un susurro de naturaleza y misticismo.
-                </div>
-                <button class="r">Reproducir</button>
-            </div>
+    <div class="item active">
+        <h1 class="ti">Costa de susurros</h1>
+        <div class="des">
+            Camina por la orilla de un océano sereno, donde las olas susurran secretos antiguos y la brisa salada acaricia tu piel.
         </div>
-        <button id="prev"><i class="fas fa-chevron-left"></i></button>
-        <button id="next"><i class="fas fa-chevron-right"></i></button>
-
+        <button class="r" onclick="location.href='reproductor.html?song=0'">Reproducir</button>
+    </div>
+    <div class="item">
+        <h1 class="ti">Noche entre Edificios</h1>
+        <div class="des">
+            Explora el pulso tranquilo de la ciudad por la noche, cuando las luces de los edificios parpadean como estrellas urbanas.
+        </div>
+        <button class="r" onclick="location.href='reproductor.html?song=1'">Reproducir</button>
+    </div>
+    <div class="item">
+        <h1 class="ti">Noche de Luna Llena</h1>
+        <div class="des">
+            Bajo la luz plateada de una luna llena, el mundo se baña en un resplandor mágico.
+        </div>
+        <button class="r" onclick="location.href='reproductor.html?song=2'">Reproducir</button>
+    </div>
+    <div class="item">
+        <h1 class="ti">Prado de Calma</h1>
+        <div class="des">
+            Descansa en un amplio prado donde el viento acaricia la hierba y los colores del atardecer pintan el cielo.
+        </div>
+        <button class="r" onclick="location.href='reproductor.html?song=3'">Reproducir</button>
+    </div>
+    <div class="item">
+        <h1 class="ti">Fogata Bajo Estrellas</h1>
+        <div class="des">
+            Reúnete alrededor de una fogata chisporroteante bajo un cielo estrellado infinito.
+        </div>
+        <button class="r" onclick="location.href='reproductor.html?song=4'">Reproducir</button>
+    </div>
+    <div class="item">
+        <h1 class="ti">Bosque de Luciérnagas</h1>
+        <div class="des">
+            Adéntrate en un bosque mágico donde las luciérnagas iluminan la noche con su danza luminosa.
+        </div>
+        <button class="r" onclick="location.href='reproductor.html?song=5'">Reproducir</button>
     </div>
 </div>
-
     <script src="js/carrousel.js"></script>
 </body>
 

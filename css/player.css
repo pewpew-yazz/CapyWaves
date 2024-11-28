@@ -175,3 +175,18 @@ body {
     .fa-solid:hover {
         color: #1d8db9;
     }
+    .favorite-button {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+    
+    .favorite-button:hover {
+        transform: scale(1.2);
+    }
+    
+    .favorite-button.favorited {
+        color: red;
+    }
+    

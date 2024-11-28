@@ -1,41 +1,27 @@
 // Lista de canciones
 const songs = [
-    {
-        title: "Miau Miau",
-        artist: "alexbtw",
-        src: "music/wa wa.mp3",
-        cover: "covers/capy.png",
-        background: "covers/fogata.gif",
-    },
-    {
-        title: "Liminal",
-        artist: "alexbtw",
-        src: "music/rain music.mp3",
-        cover: "covers/capy.png",
-        background: "covers/rain.jpg",
-    },
-    {
-        title: "City",
-        artist: "alexbtw",
-        src: "music/city audio.mp3",
-        cover: "covers/capy.png",
-        background: "covers/city.jpg",
-    },
-    {
-        title: "Crepúsculo en la Playa",
-        artist: "Artista 4",
-        src: "music/animacion.mp3",
-        cover: "covers/capy.png",
-        background: "covers/atardecer.gif",
-    },
+    { title: "Costa de susurros", artist: "Artista 1", src: "music/costa.mp3", cover: "covers/disco1.png", background: "covers/costa.jpg" },
+    { title: "Noche entre Edificios", artist: "Artista 2", src: "music/edificios.mp3", cover: "covers/disco2.png", background: "covers/edificios.jpg" },
+    { title: "Noche de Luna Llena", artist: "Artista 3", src: "music/luna.mp3", cover: "covers/disco3.png", background: "covers/luna.jpg" },
+    { title: "Prado de Calma", artist: "Artista 4", src: "music/prado.mp3", cover: "covers/disco4.png", background: "covers/prado.jpg" },
+    { title: "Fogata Bajo Estrellas", artist: "Artista 5", src: "music/fogata.mp3", cover: "covers/disco5.png", background: "covers/fogata.jpg" },
+    { title: "Bosque de Luciérnagas", artist: "Artista 6", src: "music/luciernagas.mp3", cover: "covers/disco6.png", background: "covers/luciernagas.jpg" },
 ];
 
 let currentSongIndex = 0;
+
+// Leer el índice de la canción desde la URL
+const urlParams = new URLSearchParams(window.location.search);
+const songIndex = urlParams.get("song");
+if (songIndex !== null && songIndex >= 0 && songIndex < songs.length) {
+    currentSongIndex = parseInt(songIndex);
+}
 
 // Elementos DOM
 const playButton = document.getElementById("play");
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
+const favoriteButton = document.getElementById("favorite");
 const audio = new Audio();
 const title = document.getElementById("music-title");
 const artist = document.getElementById("music-artist");
@@ -46,6 +32,34 @@ const playerProgress = document.getElementById("player-progress");
 const currentTimeEl = document.getElementById("current-time");
 const durationEl = document.getElementById("duration");
 
+// Favoritos
+let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+// Función para alternar favorito
+function toggleFavorite() {
+    const currentSong = songs[currentSongIndex].title;
+
+    if (favorites.includes(currentSong)) {
+        favorites = favorites.filter(song => song !== currentSong);
+        favoriteButton.classList.remove("favorited");
+    } else {
+        favorites.push(currentSong);
+        favoriteButton.classList.add("favorited");
+    }
+
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+}
+
+// Actualizar ícono de favorito al cambiar canción
+function updateFavoriteIcon() {
+    const currentSong = songs[currentSongIndex].title;
+    if (favorites.includes(currentSong)) {
+        favoriteButton.classList.add("favorited");
+    } else {
+        favoriteButton.classList.remove("favorited");
+    }
+}
+
 // Cargar canción
 function loadSong(song) {
     title.textContent = song.title;
@@ -53,9 +67,10 @@ function loadSong(song) {
     cover.src = song.cover;
     audio.src = song.src;
     background.style.backgroundImage = `url('${song.background}')`;
+    updateFavoriteIcon();
 }
 
-// Cargar canción inicial
+// Inicializar canción
 loadSong(songs[currentSongIndex]);
 
 // Play & Pause
@@ -90,7 +105,6 @@ function updateProgress() {
     const progressPercent = (currentTime / duration) * 100;
     progress.style.width = `${progressPercent}%`;
 
-    // Actualizar tiempos
     currentTimeEl.textContent = formatTime(currentTime);
     durationEl.textContent = duration ? formatTime(duration) : "0:00";
 }
@@ -111,21 +125,11 @@ function setProgress(e) {
     audio.currentTime = (clickX / width) * duration;
 }
 
-// Eventos de botones
+// Eventos
 playButton.addEventListener("click", playPause);
 prevButton.addEventListener("click", prevSong);
 nextButton.addEventListener("click", nextSong);
+favoriteButton.addEventListener("click", toggleFavorite);
 audio.addEventListener("timeupdate", updateProgress);
 playerProgress.addEventListener("click", setProgress);
 audio.addEventListener("ended", nextSong);
-
-// Eventos de teclado
-document.addEventListener("keydown", function (e) {
-    if (e.code === "Space") {
-        playPause();
-    } else if (e.code === "ArrowLeft") {
-        prevSong();
-    } else if (e.code === "ArrowRight") {
-        nextSong();
-    }
-});
