@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Incluir la conexión
+// Incluir la conexión holaaa
 include_once 'conexion.php';
 function login($username, $password)
 {
