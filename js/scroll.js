@@ -6,7 +6,7 @@ window.addEventListener("scroll", function() {
 
     // Cambia el color de fondo cuando el usuario se desplaza 50 píxeles hacia abajo
     if (window.scrollY > 50) {
-        header.style.backgroundColor = "#12addb"; // Cambia a azul
+        header.style.backgroundColor = "#FFFFFF03"; // Cambia a azul //// cambiados a transparentes
 
         // Cambia los colores de los botones
         btnLogin.style.backgroundColor = "#12addb"; // Azul
@@ -17,7 +17,7 @@ window.addEventListener("scroll", function() {
         btnRegister.style.color = "#12addb"; // Texto azul
         btnRegister.style.outlineColor = "#12addb"; // Cambia el color del outline
     } else {
-        header.style.backgroundColor = "#f29d43"; // Color original (naranja)
+        header.style.backgroundColor = "#FFFFFF03"; // Color original (naranja)//// cambiados a transparentes
 
         // Restaura los colores originales de los botones
         btnLogin.style.backgroundColor = "#f29d43"; // Naranja

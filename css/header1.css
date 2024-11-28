@@ -1,14 +1,14 @@
-/* HEADER PAGINA PRINCIPAL */
+/* HEADER PÁGINA PRINCIPAL */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background: #FFF;
+    background: #FFF; /* Fondo blanco */
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -18,44 +18,66 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 10px;
-    padding: 28px 20px;
+    height: 70px; /* Altura ajustada */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f29d43;
-    transition: background-color 0.3s ease;
+    
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
     z-index: 100;
+    padding: 0 20px; /* Espaciado horizontal */
     
 }
 
-.header-center{
-    padding-left: 70px;
-}
-
+/* Logo */
 .header-left img {
-    height: 24px;
+    height: 40px; /* Tamaño del logo */
 }
 
+/* Central Menu */
+.header-center {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 30px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+}
+
+/* Menu List */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 20px; /* Espaciado entre los elementos */
 }
 
 nav ul li {
     position: relative;
+    padding: 8px 15px; /* Espaciado interno */
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
+
+
 
 nav ul li a {
-    font-size: 15px;
+    font-size: 16px; /* Tamaño de texto */
     text-decoration: none;
     font-weight: bold;
-    color: #ffffff;
+    color: #21264D; /* Color del texto */
     display: flex;
     align-items: center;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #12addb; /* Color de texto al hacer hover */
+}
+
+/* Dropdown Arrow */
 .dropdown-arrow {
     margin-left: 5px;
     display: inline-block;
@@ -63,101 +85,95 @@ nav ul li a {
 }
 
 .dropdown-arrow i {
-    font-size: 12px; /*tamaño de flechas*/
-    color: #ffffff;
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
-    
-}
-
-nav ul li:hover .dropdown-menu {
-    display: block;
-}
-
-nav ul li .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-}
-
-nav ul li .dropdown-menu li a {
-    padding: 10px;
-    color: #333;
+    font-size: 12px;
+    color: #21264D;
 }
 
 nav ul li:hover .dropdown-arrow {
-    transform: rotate(180deg);
-    /* Rota la flecha hacia arriba */
+    transform: rotate(180deg); /* Rotación de la flecha */
+}
+
+/* Dropdown Menu */
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px); /* Espaciado ajustado debajo del botón */
+    left: 0;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 10px 15px; /* Espaciado interno */
+    z-index: 100;
+    min-width: 230px; /* Ancho mínimo */
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block; /* Mostrar el menú al hacer hover */
+}
+
+nav ul li .dropdown-menu li {
+    list-style: none; /* Eliminar viñetas */
+    margin: 5px 0; /* Espaciado entre opciones */
+    border-radius: 45px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px; /* Espaciado interno */
+    color: #21264D; /* Color del texto */
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease;
 }
 
 nav ul li .dropdown-menu li a:hover {
-    background-color: #f2f2f2;
+    background-color: rgba(18, 173, 219, 0.1); /* Fondo azul claro al hacer hover */
+    color: #12addb;
 }
 
-.header-right button {
-    font-style: bold;
-    padding: 10px 20px;
-    margin-left: 10px;
-    font-size: 13px;
-    cursor: pointer;
-    border: none;
-    border-radius: 25px;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.header-right button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+/* Botones de Registro e Inicio de Sesión */
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 20px;
 }
 
 .btn-register, .btn-login {
-    display: inline-block; /* Permite aplicar dimensiones similares a los botones */
-    text-decoration: none; /* Elimina subrayado típico de los enlaces */
-    text-align: center; /* Centra el texto */
-    padding: 10px 20px; /* Asegura el mismo espaciado que tenían los botones */
-    font-size: 16px;
+    display: inline-block;
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de texto */
     cursor: pointer;
-    border-radius: 25px;
-    transition: background-color 1s, color 1s, outline-color 1s;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-register {
-    text-decoration: none;
-    background-color: #ffffff;
-    color: #f29d43;
-    border: 4px solid #FFF;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: .2s;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #f29d43; /* Texto naranja */
+    border: 2px solid #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 .btn-login {
-    background-color: #f29d43;
-    color: white;
-    border: 2px solid white;
-    outline: 2px solid rgb(255, 255, 255); /* Aplica el contorno */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: .2s;
+    background-color: #f29d43; /* Fondo naranja */
+    color: #FFF; /* Texto blanco */
+    border: 2px solid #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-/* Opcional: Efecto de hover para enlaces */
 .btn-register:hover {
     background-color: #f29d43;
-    color: #ffffff;
-    transform: scale(0.9);
-    opacity:0.85;
+    color: #FFF;
+    transform: scale(0.95);
 }
 
 .btn-login:hover {
-    background-color: white;
+    background-color: #FFF;
     color: #f29d43;
-    transform: scale(0.9);
-    opacity:0.85;
+    transform: scale(0.95);
 }
-
-

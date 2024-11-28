@@ -6,8 +6,7 @@
    <title>CapyWaves - Log In</title>
 
     <!-- JavaScript -->
-    <script src="js/fontawesome1/solid.js"></script>
-    <script src="js/main1.js"></script>
+    <script src="js/fontawesome/solid.js"></script>
     <script src="js/scroll.js"></script>
 
     <!-- Stylesheets -->       <!-- No agregar login.css -->
@@ -35,8 +34,8 @@
 <body>
     <header class="header">
         <div class="header-left">
-            <a href="https://link-a-tu-logo.com">
-                <img src="fotos/logo1.gif" id="logo">
+            <a href="#">
+                <img src="fotos/logo2.png" id="logo">
             </a>
         </div>
         <div class="header-center">
@@ -69,6 +68,10 @@
 
         </div>
     </header>
+
+
+
+
 
     <section class="parallax">
         <img src="fotos/cieloR.png" id="cielo">
