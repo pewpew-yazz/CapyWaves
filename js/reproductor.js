@@ -133,3 +133,15 @@ favoriteButton.addEventListener("click", toggleFavorite);
 audio.addEventListener("timeupdate", updateProgress);
 playerProgress.addEventListener("click", setProgress);
 audio.addEventListener("ended", nextSong);
+
+// Control de canciones con las flechas del teclado
+document.addEventListener("keydown", function (e) {
+    if (e.code === "Space") {
+        e.preventDefault(); // Evita el scroll por defecto de la tecla espacio
+        playPause(); // Llama a la función para reproducir o pausar
+    } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        nextSong(); // Cambiar a la siguiente canción
+    } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        prevSong(); // Cambiar a la canción anterior
+    }
+});
