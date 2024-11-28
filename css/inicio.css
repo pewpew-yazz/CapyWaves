@@ -1,0 +1,124 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 80px; /* Espacio para evitar que el header tape contenido */
+  }
+
+  .left-section, .right-section {
+    width: 48%;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-left img {
+    width: 100px;
+  }
+
+  .header-center ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-center ul li {
+    margin: 0 15px;
+  }
+
+  .header-center ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .btn-login, .btn-register {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #007BFF;
+  }
+
+  /* Caja de Bienvenida */
+  .welcome-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .welcome-content {
+    flex: 1;
+  }
+
+  .welcome-image {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+  }
+
+  .welcome-image img {
+    width: 80px;
+    height: auto;
+  }
+
+  /* Sección Popular */
+  .popular-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Botones de Favoritos */
+  .favorites-box {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .favorites-box:hover {
+    transform: scale(1.05);
+  }
+
+  /* Sección Derecha (Gráficas) */
+  .mood-chart {
+    margin: 20px 0;
+  }
+
+  .mood-icons button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .mood-icons button:hover {
+    transform: scale(1.2);
+  }
