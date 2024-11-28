@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 $servidor = "localhost";
 $usuario = "root";
 $clave = "";
-$basededatos = "login";
+$basededatos = "capywaves"; // Asegúrate de que coincide con tu base de datos
 
 // Crear conexión
 $enlace = mysqli_connect($servidor, $usuario, $clave, $basededatos);

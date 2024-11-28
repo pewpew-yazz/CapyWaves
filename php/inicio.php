@@ -1,58 +1,47 @@
 <?php
-
-// Mostrar errores para depuración
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Incluir la conexión
 include 'conexion.php';
 
-echo "Conexión incluida correctamente.<br>";
-
 if (isset($_POST["login"])) {
-    echo "Datos del formulario recibidos.<br>";
-
     // Obtener datos del formulario
-    $correo = mysqli_real_escape_string($enlace, $_POST["correo"]);
+    $usuario = mysqli_real_escape_string($enlace, $_POST["usuario"]);
     $contraseña = $_POST["contraseña"];
 
-    // Consulta SQL para buscar el usuario
-    $consulta = $enlace->prepare("SELECT id, nombre, contraseña FROM usuarios WHERE correo = ?");
-    if ($consulta === false) {
-        die("Error en la preparación de la consulta: " . $enlace->error);
-    }
-
-    $consulta->bind_param("s", $correo);
+    // Consulta para verificar si el usuario o correo existe
+    $sql = "SELECT * FROM usuarios WHERE email = ? OR username = ?";
+    $consulta = $enlace->prepare($sql);
+    $consulta->bind_param("ss", $usuario, $usuario);
     $consulta->execute();
     $resultado = $consulta->get_result();
 
-    echo "Consulta ejecutada.<br>";
-
     if ($resultado->num_rows > 0) {
-        // Usuario encontrado, verificar contraseña
-        echo "Usuario encontrado.<br>";
-        $usuario = $resultado->fetch_assoc();
+        // Obtener datos del usuario
+        $usuarioDB = $resultado->fetch_assoc();
 
-        if (password_verify($contraseña, $usuario["contraseña"])) {
-            // Inicio de sesión exitoso
-            echo "Contraseña verificada.<br>";
+        // Verificar contraseña
+        if (password_verify($contraseña, $usuarioDB['password'])) {
+            // Iniciar sesión
             session_start();
-            $_SESSION["usuario_id"] = $usuario["id"];
-            $_SESSION["usuario_nombre"] = $usuario["nombre"];
+            $_SESSION['user_id'] = $usuarioDB['id'];
+            $_SESSION['username'] = $usuarioDB['username'];
+            $_SESSION['nombre'] = $usuarioDB['nombre'];
+
+            // Redirigir al menú o página principal
             header("Location: ../menu.php");
             exit();
         } else {
-            // Contraseña incorrecta
-            die("Contraseña incorrecta.");
+            echo "Contraseña incorrecta.";
         }
     } else {
-        // Usuario no encontrado
-        die("Usuario no encontrado.");
+        echo "Usuario o correo no encontrado.";
     }
 
     $consulta->close();
+    mysqli_close($enlace);
 } else {
-    die("Acceso no permitido.");
+    echo "No se recibieron datos del formulario.";
 }
-
 ?>

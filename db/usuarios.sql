@@ -22,6 +22,23 @@ CREATE TABLE usuarios (
   CONSTRAINT fk_user_type FOREIGN KEY (user_type) REFERENCES user_types(code)
 );
 
+DROP TABLE IF EXISTS emociones;
+CREATE TABLE emociones (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  emocion VARCHAR(20) NOT NULL,
+  fecha DATE NOT NULL DEFAULT CURRENT_DATE,
+  FOREIGN KEY (user_id) REFERENCES usuarios(id)
+);
+
+DROP TABLE IF EXISTS favoritos;
+CREATE TABLE favoritos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  nombre_favorito VARCHAR(100) NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES usuarios(id)
+);
+
 /*
   1->ADMIN, 2-> NORMAL USER
 

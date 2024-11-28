@@ -1,5 +1,5 @@
 <?php
-
+// Mostrar errores para depuración
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
@@ -7,24 +7,40 @@ error_reporting(E_ALL);
 include 'conexion.php';
 
 if (isset($_POST["registro"])) {
-    // Obtener datos del formulario
+    // Obtener datos del formulario y escapar caracteres peligrosos
     $nombre = mysqli_real_escape_string($enlace, $_POST["nombre"]);
+    $apellido_P = mysqli_real_escape_string($enlace, $_POST["apellido_P"]);
+    $apellido_M = isset($_POST["apellido_M"]) ? mysqli_real_escape_string($enlace, $_POST["apellido_M"]) : NULL;
+    $username = mysqli_real_escape_string($enlace, $_POST["username"]);
     $correo = mysqli_real_escape_string($enlace, $_POST["correo"]);
-    $contraseña = password_hash($_POST["contraseña"], PASSWORD_BCRYPT);
+    $contraseña = password_hash($_POST["contraseña"], PASSWORD_BCRYPT); // Encriptar contraseña
 
-    // Consulta SQL para insertar los datos (usando consulta preparada)
-    $insertarDatos = $enlace->prepare("INSERT INTO usuarios (nombre, correo, contraseña) VALUES (?, ?, ?)");
-    $insertarDatos->bind_param("sss", $nombre, $correo, $contraseña);
+    // Manejar la subida de la foto
+    $photo = NULL;
+    if (isset($_FILES['photo']) && $_FILES['photo']['error'] == 0) {
+        $photo_name = uniqid() . "_" . basename($_FILES["photo"]["name"]);
+        $photo_path = "uploads/" . $photo_name;
+        if (move_uploaded_file($_FILES["photo"]["tmp_name"], $photo_path)) {
+            $photo = $photo_path; // Guardamos la ruta de la foto
+        }
+    }
+
+    // Consulta SQL para insertar datos en la tabla usuarios
+    $sql = "INSERT INTO usuarios (nombre, apellido_P, apellido_M, username, email, password, photo) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $insertar = $enlace->prepare($sql);
+    $insertar->bind_param("sssssss", $nombre, $apellido_P, $apellido_M, $username, $correo, $contraseña, $photo);
 
     // Ejecutar la consulta
-    if ($insertarDatos->execute()) {
-        // Redirige correctamente a la página deseada
-        header("Location: ../menu.php");  // Ajusta la ruta según tu estructura de carpetas
-        exit();  // Asegura que la ejecución del script se detenga después de la redirección
+    if ($insertar->execute()) {
+        // Redirigir al menú o página principal después del registro
+        header("Location: ../menu.php");
+        exit(); // Asegurar que el script se detenga después de la redirección
+    } else {
+        echo "Error al registrar: " . $enlace->error;
     }
-    
-    // Cerrar la conexión
-    $insertarDatos->close();
+
+    // Cerrar la consulta y la conexión
+    $insertar->close();
     mysqli_close($enlace);
 } else {
     echo "No se recibieron datos del formulario.";
