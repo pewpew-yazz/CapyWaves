@@ -3,7 +3,7 @@
 
 <head>
    <!-- Title -->
-   <title>CapyWaves - Log In</title>
+   <title>CapyWaves</title>
 
     <!-- JavaScript -->
     <script src="js/fontawesome/solid.js"></script>
