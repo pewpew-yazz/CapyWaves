@@ -45,6 +45,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
     display: flex;
     align-items: center; /* Centrado vertical */
+    margin-left: 130px;
 }
 
 /* Menu List */
