@@ -30,40 +30,42 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-left">
-            <a href="menu.php">
-                <img src="fotos/logo1.gif" id="logo">
-            </a>
+<header class="header">
+    <div class="header-left">
+        <a href="<?php echo "menu.php"; ?>">
+            <img src="fotos/logo2.png" id="logo">
+        </a>
+    </div>
+    <div class="header-center">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-right">
+        <div class="profile-container">
+            <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
+            <i class="fas fa-chevron-down profile-arrow"></i>
         </div>
-        <div class="header-center">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="">Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-right">
-            <div class="profile-container">
-                <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
-                <i class="fas fa-chevron-down profile-arrow"></i>
-            </div>
-        </div>
-    </header>
+    </div>
+</header>
 
     <div class="main-content">
         <div class="slider">
