@@ -1,6 +1,21 @@
+<?php 
+require_once "inicio.php";
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    
+    if (login($username, $password)) {
+        error_log("Login succesfull for ".$_SESSION['num']);
+        header("Location: /");
+        exit();
+    } else {
+        $msg = 'Username or password incorrect.';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
-    <!-- holaaa example -->
 
 <head>
     <!-- Title -->
@@ -42,7 +57,7 @@
             </div>
 
             <!-- Login Form (Iniciar sesión) -->
-            <form class="form-box login-form" method="post" action="/proyecto/php/inicio.php">
+            <form class="form-box login-form" method="post" action="php/inicio.php">
                 <div class="form-title">
                     <span>Inicia sesión</span>
                 </div>
@@ -73,14 +88,14 @@
             </form>
 
             <!-- Register Form (Registrarse) -->
-            <form class="form-box register-form" method="post" action="/proyecto/php/registro.php">
+            <form class="form-box register-form" method="post" action="php/registro.php">
                 <div class="form-title">
                     <span>Regístrate</span>
                 </div>
                 <div class="form-inputs">
                     <!-- Campo para el usuario -->
                     <div class="input-box">
-                        <input type="text" name="usuario" class="inputs input-field" placeholder="Usuario" required />
+                        <input type="text" name="username" class="inputs input-field" placeholder="Usuario" required />
                         <ion-icon name="person-outline" class="icon"></ion-icon>
                     </div>
                     <!-- Campo para el nombre -->

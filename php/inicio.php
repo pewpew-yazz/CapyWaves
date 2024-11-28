@@ -2,35 +2,43 @@
 session_start();
 
 // Incluir la conexión
-include 'conexion.php';
-
-if (isset($_POST["login"])) {
-    $username = mysqli_real_escape_string($enlace, $_POST["usuario"]);
-    $contraseña = $_POST["contraseña"];
-
-    $sql = "SELECT * FROM usuarios WHERE username = ?";
-    $stmt = $enlace->prepare($sql);
+include_once 'conexion.php';
+function login($username, $password)
+{
+    // Establecer conexión a la base de datos
+    $db = connectdb();
+    
+    // Preparar la consulta para obtener el usuario por nombre de usuario
+    $stmt = $db->prepare("SELECT id, username, user_type, password FROM usuarios WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
-
+    
+    // Verificar si el usuario existe
     if ($result->num_rows > 0) {
-        $usuario = $result->fetch_assoc();
-        if (password_verify($contraseña, $usuario['password'])) {
-            $_SESSION['username'] = $usuario['username'];
-            header("Location: ../menu.php");
-            exit();
+        $user = $result->fetch_assoc();
+        
+        // Verificar la contraseña utilizando password_verify
+        if (password_verify($password, $user['password'])) {
+            // Si la contraseña es correcta, iniciar sesión
+            $_SESSION['id'] = $user['id'];
+            $_SESSION['username'] = $user['username'];
+            $_SESSION['user_type'] = $user['user_type'];
+            
+            // Retornar true si el login es exitoso
+            return true;
         } else {
+            // Contraseña incorrecta
             echo "Contraseña incorrecta.";
         }
     } else {
+        // Usuario no encontrado
         echo "Usuario no encontrado.";
     }
 
+    // Cerrar la declaración
     $stmt->close();
-} else {
-    echo "No se recibieron datos del formulario.";
+    
+    // Retornar false si el login no es exitoso
+    return false;
 }
-
-$enlace->close();
-?>
