@@ -13,7 +13,7 @@
     <script src="js/menu_desplegable.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/scroll.js"></script>
-    
+
     <!-- Stylesheets -->
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
@@ -22,142 +22,104 @@
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/themes.css" rel="stylesheet" />
-    
+
     <!-- Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-   
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="form-container">
+        <div class="form-col">
+            <!-- Botones para alternar entre formularios -->
+            <div class="btn-box">
+                <button class="btn btn-1" id="login">Iniciar sesión</button>
+                <button class="btn btn-2" id="register">Registrarse</button>
+            </div>
 
-<header class="header">
-    <div class="header-left">
-        <a href="menu.php">
-            <img src="fotos/logo1.gif" id="logo">
-        </a>
-    </div>
-    <div class="header-center">
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Explorar</a></li>
-                <li><a href="#">Nosotros</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header-right">
-        <div class="profile-container">
-            <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
-            <i class="fas fa-chevron-down profile-arrow"></i>
+            <!-- Login Form (Iniciar sesión) -->
+            <form class="form-box login-form" method="post" action="/proyecto/php/inicio.php">
+                <div class="form-title">
+                    <span>Inicia sesión</span>
+                </div>
+                <div class="form-inputs">
+                    <!-- Campo para el usuario -->
+                    <div class="input-box">
+                        <input type="text" name="usuario" class="inputs input-field" placeholder="Usuario" required />
+                        <ion-icon name="person-outline" class="icon"></ion-icon>
+                    </div>
+                    <!-- Campo para la contraseña -->
+                    <div class="input-box">
+                        <input type="password" name="contraseña" id="logPassword" class="inputs input-field"
+                            placeholder="Contraseña" required />
+                        <ion-icon name="lock-closed-outline" class="icon" id="log-password-icon"
+                            onclick="myLogPassword()"></ion-icon>
+                    </div>
+                    <!-- Botón para enviar -->
+                    <div class="input-box">
+                        <button type="submit" name="login" class="inputs submit-btn">
+                            <span>Iniciar sesión</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+            </form>
+
+            <!-- Register Form (Registrarse) -->
+            <form class="form-box register-form" method="post" action="/proyecto/php/registro.php">
+                <div class="form-title">
+                    <span>Regístrate</span>
+                </div>
+                <div class="form-inputs">
+                    <!-- Campo para el usuario -->
+                    <div class="input-box">
+                        <input type="text" name="usuario" class="inputs input-field" placeholder="Usuario" required />
+                        <ion-icon name="person-outline" class="icon"></ion-icon>
+                    </div>
+                    <!-- Campo para el nombre -->
+                    <div class="input-box">
+                        <input type="text" name="nombre" class="inputs input-field" placeholder="Nombre" required />
+                        <ion-icon name="person-outline" class="icon"></ion-icon>
+                    </div>
+                    <!-- Campos para apellidos -->
+                    <div class="input-row">
+                        <div class="input-box">
+                            <input type="text" name="apellido_paterno" class="inputs input-field"
+                                placeholder="Apellido paterno" required />
+                            <ion-icon name="person-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="apellido_materno" class="inputs input-field"
+                                placeholder="Apellido materno" />
+                            <ion-icon name="person-outline" class="icon"></ion-icon>
+                        </div>
+                    </div>
+                    <!-- Campo para el correo -->
+                    <div class="input-box">
+                        <input type="email" name="correo" class="inputs input-field" placeholder="Correo electrónico"
+                            required />
+                        <ion-icon name="mail-outline" class="icon"></ion-icon>
+                    </div>
+                    <!-- Campo para la contraseña -->
+                    <div class="input-box">
+                        <input type="password" name="contraseña" class="inputs input-field" placeholder="Contraseña"
+                            required />
+                        <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" name="registro" class="btn">Registrar</button>
+                    <button type="reset" class="btn">Limpiar</button>
+                </div>
+            </form>
         </div>
     </div>
-</header>
-
-<div class="form-container">
-    <div class="form-col">
-        <!-- Botones para alternar entre formularios -->
-        <div class="btn-box">
-            <button class="btn btn-1" id="login">Iniciar sesión</button>
-            <button class="btn btn-2" id="register">Registrarse</button>
-        </div>
-
-        <!-- Login Form (Iniciar sesión) -->
-        <form class="form-box login-form" method="post" action="/proyecto/php/inicio.php">
-            <div class="form-title">
-                <span>Inicia sesión</span>
-            </div>
-            <div class="form-inputs">
-                <!-- Campo para el correo -->
-                <div class="input-box">
-                    <input 
-                        type="email" 
-                        name="correo" 
-                        class="inputs input-field" 
-                        placeholder="Correo electrónico" 
-                        required 
-                    />
-                    <ion-icon name="person-outline" class="icon"></ion-icon>
-                </div>
-                <!-- Campo para la contraseña -->
-                <div class="input-box">
-                    <input 
-                        type="password" 
-                        name="contraseña" 
-                        id="logPassword" 
-                        class="inputs input-field" 
-                        placeholder="Contraseña" 
-                        required 
-                    />
-                    <ion-icon name="lock-closed-outline" class="icon" id="log-password-icon" onclick="myLogPassword()"></ion-icon>
-                </div>
-                <!-- Botón para enviar -->
-                <div class="input-box">
-                    <button 
-                        type="submit" 
-                        name="login" 
-                        class="inputs submit-btn"
-                    >
-                        <span>Iniciar sesión</span>
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </button>
-                </div>
-            </div>
-            <div class="forgot-password">
-                <a href="#">¿Olvidaste tu contraseña?</a>
-            </div>
-        </form>
-
-        <!-- Register Form (Registrarse) -->
-        <form class="form-box register-form" method="post" action="/proyecto/php/registro.php">
-            <div class="form-title">
-                <span>Regístrate</span>
-            </div>
-            <div class="form-inputs">
-                <!-- Campo para el nombre -->
-                <div class="input-box">
-                    <input 
-                        type="text" 
-                        name="nombre" 
-                        class="inputs input-field" 
-                        placeholder="Nombre" 
-                        required 
-                    />
-                    <ion-icon name="person-outline" class="icon"></ion-icon>
-                </div>
-                <!-- Campo para el correo -->
-                <div class="input-box">
-                    <input 
-                        type="email" 
-                        name="correo" 
-                        class="inputs input-field" 
-                        placeholder="Correo electrónico" 
-                        required 
-                    />
-                    <ion-icon name="mail-outline" class="icon"></ion-icon>
-                </div>
-                <!-- Campo para la contraseña -->
-                <div class="input-box">
-                    <input 
-                        type="password" 
-                        name="contraseña" 
-                        class="inputs input-field" 
-                        placeholder="Contraseña" 
-                        required 
-                    />
-                    <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
-                </div>
-            </div>
-            <div class="form-actions">
-                <button type="submit" name="registro" class="btn">Registrar</button>
-                <button type="reset" class="btn">Limpiar</button>
-            </div>
-        </form>
-    </div>
-</div>
-
 </body>
+
 </html>
