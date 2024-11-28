@@ -29,9 +29,10 @@
         rel="stylesheet">
 </head>
 
+<body>
 <header class="header">
     <div class="header-left">
-        <a href="<?php echo 'menu.php'; ?>">
+        <a href="<?php echo "menu.php"; ?>">
             <img src="fotos/logo2.png" id="logo">
         </a>
     </div>
@@ -62,9 +63,17 @@
         <div class="profile-container">
             <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
             <i class="fas fa-chevron-down profile-arrow"></i>
+            <ul class="dropdown-menu">
+                <li><a href="editar_perfil.php">Editar Información</a></li>
+                <li><a href="favoritos.php">Favoritos</a></li>
+                <li><a href="logout.php">Cerrar Sesión</a></li>
+            </ul>
         </div>
     </div>
 </header>
+
+
+
 
 
     <div class="main-content">
