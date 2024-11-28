@@ -11,6 +11,7 @@
 
     <!-- Stylesheets -->       <!-- No agregar login.css -->
     <link href="css/header1.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
