@@ -1,11 +1,6 @@
 <?php 
-require_once "php/inicio.php";
-require_once "php/registro.php";
-
+require_once "registro.php";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-    $username = $_POST['usuario'];
-    $password = $_POST['contraseña'];
 
     $user = $_POST['username'];
     $name = $_POST['nombre'];
@@ -19,18 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header("Location: ../discos.php");
         exit();
     }
-    
-    if (login($username, $password)) {
-        error_log("Login succesfull for ".$_SESSION['num']);
-        header("Location: ../discos.php");
-        exit();
-    } else {
-        $msg = 'Username or password incorrect.';
-    }
 }
 ?>
-<!DOCTYPE html>
-<html lang="es">
 
 <head>
     <!-- Title -->
@@ -65,43 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="form-container">
         <div class="form-col">
-            <!-- Botones para alternar entre formularios -->
-            <div class="btn-box">
-                <button class="btn btn-1" id="login">Iniciar sesión</button>
-                <button class="btn btn-2" id="register">Registrarse</button>
-            </div>
-
-            <!-- Login Form (Iniciar sesión) -->
-            <form class="form-box login-form" method="post" action="../discos.php">
-                <div class="form-title">
-                    <span>Inicia sesión</span>
-                </div>
-                <div class="form-inputs">
-                    <!-- Campo para el usuario -->
-                    <div class="input-box">
-                        <input type="text" name="usuario" class="inputs input-field" placeholder="Usuario" required />
-                        <ion-icon name="person-outline" class="icon"></ion-icon>
-                    </div>
-                    <!-- Campo para la contraseña -->
-                    <div class="input-box">
-                        <input type="password" name="contraseña" id="logPassword" class="inputs input-field"
-                            placeholder="Contraseña" required />
-                        <ion-icon name="lock-closed-outline" class="icon" id="log-password-icon"
-                            onclick="myLogPassword()"></ion-icon>
-                    </div>
-                    <!-- Botón para enviar -->
-                    <div class="input-box">
-                        <button type="submit" name="login" class="inputs submit-btn">
-                            <span>Iniciar sesión</span>
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                        </button>
-                    </div>
-                </div>
-                <div class="forgot-password">
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </div>
-            </form>
-
             <!-- Register Form (Registrarse) -->
             <form class="form-box register-form" method="post" action="../discos.php">
                 <div class="form-title">
