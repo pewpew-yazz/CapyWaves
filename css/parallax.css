@@ -1,0 +1,315 @@
+/*SECCION DE PARALLAX*/
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh; /* Ajusta la altura del contenedor */
+    overflow: hidden; /* Evita que los elementos se desborden */
+    background: #286a81;
+}
+#text1{
+    font-family: 'Jersey 10';
+    position: absolute;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 600px;
+    letter-spacing: 7px;
+    overflow: hidden;
+}
+#text2{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 500px;
+    overflow: hidden;
+}
+.parallax img{
+    padding-top: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+
+
+
+
+/*seccion 2 con el capibara*/
+.section2 {
+    position: relative;/* Esto asegura que la sección 2 comience después de la altura de la parallax */
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(#286a81,#5abed7, #FFF);
+}
+.imagen1 {
+    width: 25%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    max-width: 500px; /* Limita el tamaño máximo de la imagen */
+    margin-top: 40px; /* Añade espacio entre el párrafo y la imagen */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen */
+}
+.section2 h2{
+    font-family: 'Jersey 10';
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 7px;
+}
+.section2 p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+/* Segunda sección con las tres columnas */
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  /* Ajustado el gap para que haya un poco de espacio entre las columnas */
+    padding: 40px 3px;
+}
+.column {
+    flex: 1;
+    position: relative;
+    background-color: white;
+    text-align: center;
+}
+#prado-de-calma {
+    background-color: #f4eae0;
+}
+.column img {
+    transition: transform 0.3s ease; /* Transición suave */
+    width: 70%;  /* Ajustado para que la imagen ocupe el 80% del ancho de la columna */
+    height: auto;
+    border-radius: 130px; /* Bordes redondeados en las imágenes */
+    display: block;  /* Asegura que no haya espacio debajo de la imagen */
+    margin: 5px auto;  /* Centra la imagen en la columna */
+}
+.column .text-overlay {
+    color: #59553f;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* Flecha de descubrimiento */
+.discover-more {
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;  /* Centra el contenido verticalmente */
+    color: #f08c24;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;  /* Asegura que el contenedor tenga todo el ancho disponible */
+}
+.circle-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #f08c24;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.circle-arrow span {
+    font-size: 18px;
+}
+.section3 h3{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-family: 'Jersey 10';
+    font-size: 40px;
+    color: #59553f;
+    text-align: center;
+    letter-spacing: 6px;
+}
+.section3 p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #59553f;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.column:hover img {
+    transform: scale(0.9); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+
+
+
+
+
+
+
+/* Tercera Sección recuadro azul*/
+.third-section {
+    margin-top: 50px;
+    display: flex;
+    padding: 40px;
+    background-color: #5abed7;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.benefits-left {
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+.benefits-right {
+    flex: 1;
+    text-align: right; /* Alinea el contenido a la derecha */
+}
+.benefits-right ul {
+    list-style-type: none; /* Quitar los puntos */
+    padding: 0;
+    text-align: right; /* Asegura que la lista esté alineada a la derecha */
+}
+.benefits-right li {
+    margin-bottom: 10px; /* Separar cada ítem */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 180px;
+}
+.third-section h3{
+    font-family: 'Jersey 10';
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: 8px;
+}
+
+
+
+
+
+
+
+
+/* Cuarta Sección Capibara para registrar */
+.fourth-section {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna (apilado vertical) */
+    align-items: center;    /* Centra los elementos horizontalmente */
+    justify-content: center; /* Alinea los elementos verticalmente */
+    padding: 40px;
+    background-color: #ffffff;
+    color: #21596c;
+    line-height: 1.5;
+    text-align: center; /* Centra el texto */
+}
+.fourth-section h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Agrega un espacio entre el texto y el botón */
+}
+.fourth-section .btn-register-cta {
+    padding: 12px 20px;
+    background-color: #5abed7;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    margin-top: 12px;
+    margin-bottom: 20px; /* Agrega un espacio entre el botón y la imagen */
+}
+.fourth-section .btn-register-cta:hover {
+    opacity: 0.8;
+}
+.fourth-section .image-placeholder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.fourth-section .image-placeholder img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+}
+
+
+
+
+
+
+
+
+
+/* Estilo del Footer, pie de pagina*/
+.footer {
+    background-image: url('../fotos/ola.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    padding: 90px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo de la imagen en el footer */
+.footer-image img {
+    width: 100%;
+    height: 40vh;
+    max-width: 400px; /* Ajusta el tamaño máximo de la imagen */
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los iconos */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espacio entre los íconos */
+}
+
+.social-icons a {
+    color: #21596c;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Asegura que el ícono y el texto estén alineados */
+}
+
+.social-icons a:hover {
+    color: #f08c24;
+}
+
+.social-icons ion-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* Estilo del texto en el footer */
+.footer p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #21596c;
+}
+

@@ -1,0 +1,179 @@
+/* HEADER SESION INICIADA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    padding: 28px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #12addb;   /*background: linear-gradient(to bottom, #12addb, #c9e5ee);*/
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave para profundidad */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+    z-index: 100;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px); /* Agrega un leve blur de fondo */
+}
+
+.header-center{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.header-left img {
+    height: 24px;
+}
+
+
+/*MANU DESPLEGABLE*/
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    position: relative;
+    background-color: transparent; /*fondo transparente inicialmente */
+    
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */
+    font-weight: 500;
+    padding: 8px 40px;
+    border-radius: 30px;
+    
+}
+nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    
+}
+.dropdown-arrow {
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    
+}
+.dropdown-arrow i { /*flechas*/
+    font-size: 12px; 
+    color: #ffffff;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+nav ul li:hover {
+    background-color:#21264D;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera para resaltar el enlace */
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+/*cuadro que se despliega en el menu*/
+nav ul li .dropdown-menu { 
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+nav ul li .dropdown-menu li a {
+    padding: 10px;
+    color: #333;
+}
+nav ul li:hover .dropdown-arrow {
+    transform: rotate(180deg);/* Rota la flecha hacia arriba */
+}
+
+
+.header-right button {
+    font-style: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.header-right button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+}
+
+.btn-register {
+    background-color: #ffffff;
+    color: #12addb;
+    border-color: #FFF;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s;
+    
+}
+
+.btn-login {
+    background-color: #12addb;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 10px solid; /* Define el grosor y el estilo del outline */
+    outline-color: rgb(255, 255, 255); /* Especifica el color del outline */
+    transition: background-color 1s, color 1s, outline-color 1s;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-arrow {
+    font-size: 16px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.profile-container:hover .profile-arrow {
+    transform: rotate(180deg);
+}
