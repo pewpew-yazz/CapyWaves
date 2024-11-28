@@ -1,5 +1,5 @@
 <?php 
-require_once "registro.php";
+require_once "/php/registro.php";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $user = $_POST['username'];

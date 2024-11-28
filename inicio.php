@@ -1,44 +1,74 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
-  <!-- Metadata -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Título -->
-  <title>CapyWaves</title>
-  
-  <!-- Estilos -->
-  <link href="css/header1.css" rel="stylesheet" />
-  <link href="css/footer.css" rel="stylesheet" />
-  <link href="css/inicio.css" rel="stylesheet" />
-  <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
-  
-  <!-- Librerías -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Title -->
+    <title>CapyWaves discos</title>
+
+    <!-- JavaScript -->
+    <script src="js/fontawesome/solid.js"></script>
+    <script src="js/menu_desplegable.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Stylesheets -->
+    <link href="css/inicio.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
+    <link href="css/fontawesome/solid.css" rel="stylesheet" />
+
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="header-left">
-      <a href="#">
-        <img src="fotos/logo2.png" alt="Logo" id="logo">
-      </a>
+        <a href="<?php echo "menu.php"; ?>">
+            <img src="fotos/logo2.png" id="logo">
+        </a>
     </div>
     <div class="header-center">
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Explorar</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
     </div>
     <div class="header-right">
-      <a href="login.php" class="btn-register">Registrarse</a>
-      <a href="login.php" class="btn-login">Iniciar Sesión</a>
+        <div class="profile-container">
+            <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
+            <i class="fas fa-chevron-down profile-arrow"></i>
+            <ul class="dropdown-menu">
+                <li><a href="editar_perfil.php">Editar Información</a></li>
+                <li><a href="favoritos.php">Favoritos</a></li>
+                <li><a href="logout.php">Cerrar Sesión</a></li>
+            </ul>
+        </div>
     </div>
-  </header>
+</header>
 
   <!-- Contenedor principal -->
   <div class="container">
@@ -50,7 +80,7 @@
           <h2>Bienvenido a CapyWaves</h2>
           <p>La música es el lenguaje del alma, deja que te inspire cada día.</p>
         </div>
-        <img class="welcome-image" src="fotos/capybara.png" alt="Capybara">
+        <img class="welcome-image" src="images/capy.gif" alt="Capybara">
       </div>
       
       <!-- Popular -->

@@ -2,7 +2,10 @@
 require_once "php/inicio.php";
 require_once "php/registro.php";
 
+error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    print_r($_POST);
 
     $username = $_POST['usuario'];
     $password = $_POST['contraseña'];
@@ -72,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <!-- Login Form (Iniciar sesión) -->
-            <form class="form-box login-form" method="post" action="../discos.php">
+            <form class="form-box login-form" method="post" action="">
                 <div class="form-title">
                     <span>Inicia sesión</span>
                 </div>
@@ -103,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
 
             <!-- Register Form (Registrarse) -->
-            <form class="form-box register-form" method="post" action="../discos.php">
+            <form class="form-box register-form" method="post" action="">
                 <div class="form-title">
                     <span>Regístrate</span>
                 </div>

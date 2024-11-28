@@ -1,8 +1,8 @@
 <?php
 // Mostrar errores para depuración
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 // Configuración de la base de datos
 $servidor = 'localhost';
@@ -14,7 +14,9 @@ $basededatos = 'capywaves'; // Asegúrate de que coincide con tu base de datos
 function connectdb()
 {
     try {
+        echo ("ANTES DE LA CONEXION");
         $db = mysqli_connect($servidor, $usuario, $clave, $basededatos);
+       echo ("DESPUES DE LA CONEXION");
         return $db;
     } catch (Exception $e) {
         error_log($e->getMessage());

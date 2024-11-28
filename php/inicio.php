@@ -5,7 +5,7 @@ session_start();
 include_once 'conexion.php';
 function login($username, $password)
 {
-    // Establecer conexión a la base de datos
+    // Establecer conexión a la ase de datos
     $db = connectdb();
     
     // Preparar la consulta para obtener el usuario por nombre de usuario
