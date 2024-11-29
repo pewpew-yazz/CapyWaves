@@ -9,6 +9,7 @@
     background: #f29d43;
 }
 #text1{
+    margin-top: -27px;
     font-family: 'Jersey 10';
     position: absolute;
     font-size: 50px;
@@ -19,6 +20,7 @@
     overflow: hidden;
 }
 #text2{
+    margin-top: -24px;
     position: absolute;
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -26,6 +28,11 @@
     top: 180px;
     overflow: hidden;
 }
+
+#nubes{
+    margin-top: 90px;
+}
+
 .parallax img{
     padding-top: 55px;
     position: absolute;
@@ -39,11 +46,6 @@
     margin: 0; /* Quita márgenes */
     padding: 0; /* Quita cualquier espacio interno */
 }
-
-
-
-
-
 
 /*seccion 2 con el capibara*/
 .section2 {
