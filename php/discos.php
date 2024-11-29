@@ -1,5 +1,5 @@
 <?php
-    require_once "php/logFun.php";
+    require_once "logFun.php";
 
     if (isset($_GET['action']) && $_GET['action'] === 'logout') {
         logout(); // Llamar a la función logout si se solicita
@@ -20,10 +20,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Stylesheets -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/header.css" rel="stylesheet" />
-    <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
-    <link href="css/fontawesome/solid.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/fontawesome/fontawesome.css" rel="stylesheet" />
+    <link href="../css/fontawesome/solid.css" rel="stylesheet" />
 
     <!-- Metadata -->
     <meta charset="utf-8" />
@@ -40,8 +40,8 @@
 <body>
 <header class="header">
     <div class="header-left">
-        <a href="<?php echo "menu.php"; ?>">
-            <img src="fotos/logo2.png" id="logo">
+        <a href="<?php echo "../menu.php"; ?>">
+            <img src="../fotos/logo2.png" id="logo">
         </a>
     </div>
     <div class="header-center">
@@ -69,11 +69,11 @@
     </div>
     <div class="header-right">
         <div class="profile-container">
-            <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
+            <img src="../fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
             <i class="fas fa-chevron-down profile-arrow"></i>
             <ul class="dropdown-menu">
-                <li><a href="editar_perfil.php">Editar Información</a></li>
-                <li><a href="favoritos.php">Favoritos</a></li>
+                <li><a href="../editar_perfil.php">Editar Información</a></li>
+                <li><a href="../favoritos.php">Favoritos</a></li>
                 <li><a href="?action=logout">Cerrar Sesión</a></li>
             </ul>
         </div>
@@ -88,22 +88,22 @@
         <div class="slider">
             <div class="images">
                 <div class="item" style="--i: 1;">
-                    <img src="fotos/disco1.png">
+                    <img src="../fotos/disco1.png">
                 </div>
                 <div class="item" style="--i: 2;">
-                    <img src="fotos/disco2.png">
+                    <img src="../fotos/disco2.png">
                 </div>
                 <div class="item" style="--i: 3;">
-                    <img src="fotos/disco6.png">
+                    <img src="../fotos/disco6.png">
                 </div>
                 <div class="item" style="--i: 4;">
-                    <img src="fotos/disco3.png">
+                    <img src="../fotos/disco3.png">
                 </div>
                 <div class="item" style="--i: 5;">
-                    <img src="fotos/disco4.png">
+                    <img src="../fotos/disco4.png">
                 </div>
                 <div class="item" style="--i: 6;">
-                    <img src="fotos/disco5.png">
+                    <img src="../fotos/disco5.png">
                 </div>
             </div>
             <div class="content">
