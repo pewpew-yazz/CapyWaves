@@ -5,18 +5,16 @@
 // error_reporting(E_ALL);
 
 // Configuración de la base de datos
-$servidor = 'localhost';
-$usuario = 'yaz';
-$clave = 'ventilador';
-$basededatos = 'capywaves'; // Asegúrate de que coincide con tu base de datos
-
-
+define('DB_HOST', 'localhost');
+define('DB_USER', 'arturo');
+define('DB_PASSWORD', '300105');
+define('DB_NAME', 'capywaves');
 /*function connectdb()
 {
     try {
         echo ("ANTES DE LA CONEXION");
         $db = mysqli_connect($servidor, $usuario, $clave, $basededatos);
-       echo ("DESPUES DE LA CONEXION");
+        echo ("DESPUES DE LA CONEXION");
         return $db;
     } catch (Exception $e) {
         error_log($e->getMessage());
@@ -24,32 +22,19 @@ $basededatos = 'capywaves'; // Asegúrate de que coincide con tu base de datos
     }
 }*/
 
-function connectdb()
-{
-    // Definir las variables de conexión
-    $servidor = "localhost"; // Cambiar por tu host si es diferente
-    $usuario = "yaz";       // Cambiar por tu usuario
-    $clave = "ventilador";             // Cambiar por tu contraseña
-    $basededatos = "capywaves"; // Cambiar por tu base de datos
-
+function connectdb() {
     try {
-        echo ("ANTES DE LA CONEXION\n");
-        
-        // Crear la conexión usando PDO
-        $dsn = "mysql:host=$servidor;dbname=$basededatos;charset=utf8mb4";
-        $db = new PDO($dsn, $usuario, $clave);
-        
-        // Configurar PDO para que lance excepciones en caso de error
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        echo ("DESPUES DE LA CONEXION\n");
+        $db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+        if ($db->connect_error) {
+            throw new Exception("Error al conectar: " . $db->connect_error);
+        }
         return $db;
-    } catch (PDOException $e) {
-        error_log($e->getMessage()); // Registrar el error en el log
-        echo "Error: " . $e->getMessage(); // Mostrar un mensaje de error (opcional)
+    } catch (Exception $e) {
+        error_log($e->getMessage());
         return false;
     }
 }
+
 ?>
 
 

@@ -1,5 +1,5 @@
 <?php 
-require_once "php/inicio.php";
+require_once "php/logFun.php";
 require_once "php/registro.php";
 
 error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
@@ -8,29 +8,35 @@ error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     print_r($_POST);
 
-    $username = $_POST['usuario'];
-    $password = $_POST['contraseña'];
+    $username = $_POST['usuario'] ?? null;
+    $password = $_POST['contraseña'] ?? null;
 
-    $user = $_POST['username'];
-    $name = $_POST['nombre'];
-    $lastname1 = $_POST['apellido_paterno'];
-    $lastname2 = $_POST['apellido_materno'];
-    $email = $_POST['correo'];
-    $password = $_POST['contraseña'];
+    $user = $_POST['username'] ?? null;
+    $name = $_POST['nombre'] ?? null;
+    $lastname1 = $_POST['apellido_paterno'] ?? null;
+    $lastname2 = $_POST['apellido_materno'] ?? null;
+    $email = $_POST['correo'] ?? null;
+    
+    //SE HACE ASI YA QUE SI NO MARCA ERROR, YA QUE LLAMABA A AMBAS FUNCIONES
 
-    if(registroUsuario($user,$name,$lastname1,$lastname2,$email,$password)){
-        error_log("Login succesfull for ".$_SESSION['num']);
-        header("Location: ../discos.php");
-        exit();
+    if (!empty($username) && !empty($password)) {
+        if (login($username, $password)) {
+            error_log("Login succesfull for ".$_SESSION['num']);
+            header("Location: ../discos.php");
+            exit();
+        } else {
+            $msg = 'Username or password incorrect.';
+        }
+    }
+    elseif (!empty($user) && !empty($name) && !empty($lastname1) && !empty($email) && !empty($password)) {
+        if(registroUsuario($user,$name,$lastname1,$lastname2,$email,$password)){
+            error_log("Login succesfull for ".$_SESSION['num']);
+            header("Location: ../discos.php");
+            exit();
+        }
     }
     
-    if (login($username, $password)) {
-        error_log("Login succesfull for ".$_SESSION['num']);
-        header("Location: ../discos.php");
-        exit();
-    } else {
-        $msg = 'Username or password incorrect.';
-    }
+
 }
 ?>
 <!DOCTYPE html>
@@ -76,7 +82,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <!-- Login Form (Iniciar sesión) -->
+<<<<<<< HEAD
             <form id="login-section" class="form-box login-form" method="post" action="">
+=======
+            <form class="form-box login-form" method="post" action="" autocomplete="off">
+>>>>>>> 95996e440ee387bc222adb4e731bf6498cc077d6
                 <div class="form-title">
                     <span>Inicia sesión</span>
                 </div>
@@ -107,7 +117,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
 
             <!-- Register Form (Registrarse) -->
+<<<<<<< HEAD
             <form id="register-section" class="form-box register-form" method="post" action="">
+=======
+            <form class="form-box register-form" method="post" action="" autocomplete="off">
+>>>>>>> 95996e440ee387bc222adb4e731bf6498cc077d6
                 <div class="form-title">
                     <span>Regístrate</span>
                 </div>
