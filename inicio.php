@@ -112,8 +112,9 @@
     <div class="right-section">
       <h3>Tu estado de ánimo</h3>
       <div class="mood-chart">
-        <canvas id="moodChart"></canvas>
+    <canvas id="moodChart" width="400" height="200"></canvas>
       </div>
+
       <div class="mood-icons">
         <button onclick="registerMood(1)">😊</button>
         <button onclick="registerMood(2)">😁</button>
