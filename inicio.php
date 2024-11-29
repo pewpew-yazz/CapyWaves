@@ -41,21 +41,25 @@
                 <li>
                     <a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Submenu 1</a></li>
-                        <li><a href="#">Submenu 2</a></li>
+                      <li><a href="menu.php">Principal</a></li>
+                      <li><a href="php/discos.php">Inicio</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Submenu 1</a></li>
-                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="php/discos.php">Galeria</a></li>
+                        <li><a href="reproductor.html">Reproductor</a></li>
+                        <li><a href="juego/inicio.html">Videojuego</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Nosotros</a>
-                </li>
-            </ul>
+                    <a href="#">Nosotros</a></li>
+                    <li><a href="about_us.php">Sobre nosotros</a></li>
+                    <li><a href="#">Sobre Capy</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
     </div>
     <div class="header-right">

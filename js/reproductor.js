@@ -78,9 +78,11 @@ function playPause() {
     if (audio.paused) {
         audio.play();
         playButton.classList.replace("fa-play", "fa-pause");
+        cover.style.animationPlayState = "running";
     } else {
         audio.pause();
         playButton.classList.replace("fa-pause", "fa-play");
+        cover.style.animationPlayState = "paused";
     }
 }
 

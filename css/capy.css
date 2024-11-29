@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #ffffff;
     color: #333;
     scroll-behavior: smooth;
 }
@@ -16,66 +16,74 @@ body {
 /* Title Section */
 .title-section {
     text-align: center;
-    padding: 90px 20px;
-    background: linear-gradient(135deg, #5abed7, #f29d43);
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f29d43, #5abed7);
     color: #fff;
+}
+
+.title-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .story-title {
     font-size: 2.5rem;
     font-weight: bold;
     margin: 0;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #f0f0f0;
 }
 
 /* Story Section */
+/* Contenedor de la sección */
+/* Contenedor de la sección */
 .story-section {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 20px;
+    flex-direction: column; /* Cambia la dirección para que los elementos se apilen verticalmente */
+    align-items: center;
+    padding: 40px 5%; /* Espacio adicional en los costados */
     gap: 20px;
 }
 
+/* Contenedor de imagen */
+.story-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.story-image img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    border-radius: 15px;
+}
+
+/* Contenedor de texto */
 .story-content {
-    flex: 2;
-    padding-right: 20px;
+    width: 100%;
+    text-align: justify;
 }
 
 .story-text {
     font-size: 1.2rem;
     line-height: 1.8;
+    color: #333;
 }
 
-.story-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.story-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Magazine Section */
-.magazine-section {
-    padding: 40px 20px;
-    background: #fff;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #21264D;
-}
 
 /* Video Section */
 .video-section {
-    padding: 40px 20px;
+    padding: 40px 20px 80px;
     background: #f0f0f0;
     text-align: center;
 }
@@ -91,18 +99,17 @@ body {
     border-radius: 25px;
     padding: 10px 30px;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .orange-btn:hover {
-    transform: scale(1.05);
     background: #e6843d;
 }
 
 .game-link-text {
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
     font-weight: bold;
 }
+
+/* Footer */
 
