@@ -72,17 +72,13 @@
             <img src="../fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
             <i class="fas fa-chevron-down profile-arrow"></i>
             <ul class="dropdown-menu">
-                <li><a href="../editar_perfil.php">Editar Información</a></li>
+                <li><a href="../editar_perfil.hmtl">Editar Información</a></li>
                 <li><a href="../favoritos.php">Favoritos</a></li>
                 <li><a href="?action=logout">Cerrar Sesión</a></li>
             </ul>
         </div>
     </div>
 </header>
-
-
-
-
 
     <div class="main-content">
         <div class="slider">

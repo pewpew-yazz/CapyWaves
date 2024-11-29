@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
@@ -9,11 +11,19 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 80px; /* Espacio para evitar que el header tape contenido */
-  }
+    margin-top: 80px; /* Asegura espacio debajo del header */
+    overflow: hidden; /* Evita elementos desbordados que afecten el diseño */
+}
+
 
   .left-section, .right-section {
     width: 48%;
+  }
+
+  h2{
+    font-size: 75pt;
+    color: #007BFF;
+    font-family: "Jersey 10", serif;
   }
 
   /* Header */
@@ -74,18 +84,24 @@ body {
   }
 
   .welcome-image {
-    position: absolute;
-    top: -30px;
-    right: 20px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    width: 200px;
+    height: 200px;
+}
 
-  .welcome-image img {
-    width: 20px;
-    height: 20px;
-  }
+.welcome-image img {
+    width: 150px; /* Tamaño ajustado */
+    height: auto; /* Mantener proporción */
+    margin: 0; /* Elimina margen automático */
+}
+
 
   /* Sección Popular */
   .popular-image img {
+    padding: auto;
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
