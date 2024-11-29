@@ -23,21 +23,23 @@ CREATE TABLE usuarios (
   CONSTRAINT fk_user_type FOREIGN KEY (user_type) REFERENCES user_types(code)
 );
 
+
+--NO PODIA fecha tener DEFAULT CURRENT_DATE, NO LO ACEPTABA
 DROP TABLE IF EXISTS emociones;
 CREATE TABLE emociones (
   id INT PRIMARY KEY AUTO_INCREMENT,
-  user_id INT NOT NULL,
   emocion VARCHAR(20) NOT NULL,
-  fecha DATE NOT NULL DEFAULT CURRENT_DATE,
-  FOREIGN KEY (user_id) REFERENCES usuarios(id)
+  fecha DATE NOT NULL,
+  user_id INT NOT NULL,
+  CONSTRAINT fk_user_id_emociones FOREIGN KEY (user_id) REFERENCES usuarios(id)
 );
 
 DROP TABLE IF EXISTS favoritos;
 CREATE TABLE favoritos (
   id INT PRIMARY KEY AUTO_INCREMENT,
-  user_id INT NOT NULL,
   nombre_favorito VARCHAR(100) NOT NULL,
-  FOREIGN KEY (user_id) REFERENCES usuarios(id)
+  user_id INT NOT NULL,
+  CONSTRAINT fk_user_id_favoritos FOREIGN KEY (user_id) REFERENCES usuarios(id)
 );
 
 /*

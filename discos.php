@@ -1,3 +1,11 @@
+<?php
+    require_once "php/logFun.php";
+
+    if (isset($_GET['action']) && $_GET['action'] === 'logout') {
+        logout(); // Llamar a la función logout si se solicita
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -66,7 +74,7 @@
             <ul class="dropdown-menu">
                 <li><a href="editar_perfil.php">Editar Información</a></li>
                 <li><a href="favoritos.php">Favoritos</a></li>
-                <li><a href="logout.php">Cerrar Sesión</a></li>
+                <li><a href="?action=logout">Cerrar Sesión</a></li>
             </ul>
         </div>
     </div>
