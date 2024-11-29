@@ -250,3 +250,11 @@ body {
     transform: scale(0.9);
     color: #21264D;
 }
+
+.form-error{
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white;
+}
