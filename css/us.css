@@ -13,7 +13,6 @@ footer {
     text-align: center; /* Centrado del texto */
     padding: 20px 10px; /* Espaciado interno */
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra superior */
     margin-top: auto; /* Hace que el footer se empuje al final */
 }
 
@@ -239,7 +238,7 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 50px;
     margin-bottom: 30px;
     letter-spacing: 7px;
-    color: #049dcb;
+    color: #59553f;
 }
 
 .benefits-container {
@@ -268,7 +267,7 @@ nav ul li .dropdown-menu li a:hover {
 
 .benefit-icon {
     font-size: 50px;
-    color: #12addb;
+    color: #21596c;
     margin-bottom: 15px;
 }
 
@@ -276,11 +275,13 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: bold;
+    color: #049dcb;
 }
 
 .benefit-item p {
     font-size: 16px;
     line-height: 1.5;
+    color: #21596c;
 }
 
 /* Sección Público Dirigido */
@@ -296,7 +297,7 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 50px;
     margin-bottom: 30px;
     letter-spacing: 7px;
-    color: #049dcb;
+    color: #59553f;
 }
 
 .audience-container {
@@ -323,7 +324,7 @@ nav ul li .dropdown-menu li a:hover {
 
 .audience-icon {
     font-size: 50px;
-    color: #12addb;
+    color: #21596c;
     margin-bottom: 15px;
 }
 
@@ -331,9 +332,11 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #049dcb;;
 }
 
 .audience-item p {
     font-size: 16px;
     line-height: 1.5;
+    color: #21596c;
 }
