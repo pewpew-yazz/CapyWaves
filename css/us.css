@@ -1,5 +1,7 @@
 /* Estructura básica del cuerpo para mantener el footer al final */
 body {
+    overflow-y: visible
+    ;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Altura mínima para cubrir toda la ventana */
@@ -8,12 +10,14 @@ body {
 
 /* Ajustes del footer para que siempre esté al final */
 footer {
-    background: #333; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-    text-align: center; /* Centrado del texto */
-    padding: 20px 10px; /* Espaciado interno */
-    width: 100%;
-    margin-top: auto; /* Hace que el footer se empuje al final */
+   
+        margin-top: auto; /* Empuja el footer al final del contenedor flex */
+        padding: 20px; /* Añade un poco de espacio interno */
+        background-color: #21264D; /* Color del footer */
+        color: white;
+        text-align: center;
+    
+    
 }
 
 /* Logo */
@@ -290,6 +294,7 @@ nav ul li .dropdown-menu li a:hover {
     background: linear-gradient(#fce6d0, #ffffff);
     text-align: center;
     color: #ffffff;
+    margin-bottom: 100px;
 }
 
 .target-audience h2 {
