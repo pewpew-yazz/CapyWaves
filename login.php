@@ -8,7 +8,6 @@ error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    print_r($_POST);
 
     $username = $_POST['usuario'] ?? null;
     $password = $_POST['contraseña'] ?? null;
@@ -24,16 +23,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($username) && !empty($password)) {
         if (login($username, $password)) {
             error_log("Login succesfull for ".$_SESSION['num']);
-            header("Location: ../discos.php");
+            header("Location: /Capywaves/php/discos.php");
             exit();
         } else {
             $msg = 'Username or password incorrect.';
         }
     }
     elseif (!empty($user) && !empty($name) && !empty($lastname1) && !empty($email) && !empty($password)) {
-        if(registroUsuario($user,$name,$lastname1,$lastname2,$email,$password)){
+        if(registroUsuario($user,$email,$password,$name,$lastname1,$lastname2)){
             error_log("Login succesfull for ".$_SESSION['num']);
-            header("Location: ../discos.php");
+            header("Location: /Capywaves/php/discos.php");
             exit();
         }
     }
@@ -94,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-error" id="msg"><?php echo $msg; ?></div>
                     <?php $msg=''; ?>
                 <?php } ?>
-                
+
                 <div class="form-inputs">
                     <!-- Campo para el usuario -->
                     <div class="input-box">

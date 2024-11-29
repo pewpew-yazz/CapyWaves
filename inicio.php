@@ -62,9 +62,9 @@
             <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
             <i class="fas fa-chevron-down profile-arrow"></i>
             <ul class="dropdown-menu">
-                <li><a href="editar_perfil.php">Editar Información</a></li>
+                <li><a href="editar_perfil.html">Editar Información</a></li>
                 <li><a href="favoritos.php">Favoritos</a></li>
-                <li><a href="logout.php">Cerrar Sesión</a></li>
+                <li><a href="php/logout.php">Cerrar Sesión</a></li>
             </ul>
         </div>
     </div>
@@ -85,7 +85,7 @@
       
       <!-- Popular -->
       <div class="popular-image">
-        <img src="fotos/tu-imagen.png" alt="Canción popular">
+        <img src="images/escenariotop.png" alt="Canción popular">
       </div>
       
       <!-- Favoritos -->
