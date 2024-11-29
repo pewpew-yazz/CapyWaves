@@ -110,7 +110,7 @@
 
     <!-- Sección derecha -->
     <div class="right-section">
-      <h3>Tu estado de ánimo</h3>
+      <h4>Tu estado de ánimo</h4>
       <div class="mood-chart">
     <canvas id="moodChart" width="400" height="200"></canvas>
       </div>

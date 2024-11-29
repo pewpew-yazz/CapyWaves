@@ -188,15 +188,8 @@ body {
 
   /* Sección Derecha (Gráficas) */
   .mood-chart {
-    margin: 20px auto;
-    padding: 10px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 600px;
-}
-
+    margin: 20px 40px;
+  }
 
   .mood-icons button {
     background-color: transparent;
