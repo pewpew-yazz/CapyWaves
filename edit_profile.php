@@ -8,19 +8,12 @@
     <script src="data/config.js"></script>
     <script src="data/main.js"></script>
     <script src="js/fontawesome/solid.js"></script>
-    <script src="js/1.js"></script>
-    <script src="js/menu_desplegable.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/scroll.js"></script>
     
     <!-- Stylesheets -->
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
-    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/headerlogo.css" rel="stylesheet" />
     <link href="css/edit_profile.css" rel="stylesheet" />
-    <link href="css/parallax.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/themes.css" rel="stylesheet" />
     
     <!-- Metadata -->
     <meta charset="utf-8" />
@@ -36,20 +29,6 @@
         <a href="menu.php">
             <img src="fotos/logo1.gif" id="logo">
         </a>
-    </div>
-    <div class="header-center">
-        <nav>
-            <ul>
-                <li><a href="#"> Inicio </a></li>
-                <li><a href="#"> Explorar </a></li>
-                <li><a href="#"> Nosotros</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header-right">
-        <div class="profile-container">
-            <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
-        </div>
     </div>
 </header>
 

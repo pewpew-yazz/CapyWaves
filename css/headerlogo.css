@@ -28,5 +28,6 @@ header {
 
 /* Logo */
 .header-left img {
-    height: 40px; /* Altura ajustada para que coincida */
+    height: 30px; /* Altura de logo */
+    width: 200px; /*Ancho de logo*/
 }
