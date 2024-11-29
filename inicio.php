@@ -5,6 +5,7 @@
     <!-- JavaScript -->
     <script src="js/fontawesome/solid.js"></script>
     <script src="js/menu_desplegable.js"></script>
+    <script src="js/inicio.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -85,24 +86,35 @@
       
       <!-- Popular -->
       <div class="popular-image">
+        <h3>Popular</h3>
         <img src="images/escenariotop.png" alt="Canción popular">
       </div>
-      
-      <!-- Favoritos -->
+
+
       <div class="favorites-box expandable">
-        <span>⭐ Favoritos</span>
-        <div class="dropdown-content">
-          <p>Tu lista de canciones favoritas aparecerá aquí.</p>
-        </div>
-      </div>
-    </div>
+      <span><i class="fas fa-heart"></i> Favoritos</span>
+      <div class="dropdown-content">
+          <ul>
+              <li><i class="fas fa-heart"></i> Favorito 1</li>
+              <li><i class="fas fa-heart"></i> Favorito 2</li>
+              <li><i class="fas fa-heart"></i> Favorito 3</li>
+              <li><i class="fas fa-heart"></i> Favorito 4</li>
+          </ul>
+     </div>
+  </div>
+</div>
+      <!-- Favoritos -->
+    
+
+
 
     <!-- Sección derecha -->
     <div class="right-section">
-      <h3>Tu estado de ánimo</h3>
+      <h4>Tu estado de ánimo</h4>
       <div class="mood-chart">
-        <canvas id="moodChart"></canvas>
+    <canvas id="moodChart" width="400" height="200"></canvas>
       </div>
+
       <div class="mood-icons">
         <button onclick="registerMood(1)">😊</button>
         <button onclick="registerMood(2)">😁</button>
@@ -111,13 +123,18 @@
         <button onclick="registerMood(5)">😵</button>
         <button onclick="registerMood(6)">😡</button>
       </div>
-      <div class="recommendations-box expandable">
-        <span>🎵 Recomendaciones</span>
-        <div class="dropdown-content">
-          <p>Aquí aparecerán tus recomendaciones diarias.</p>
-        </div>
-      </div>
-    </div>
+     <div class="recommendations-box expandable">
+  <span><i class="fas fa-headphones"></i> Recomendaciones</span>
+  <div class="dropdown-content">
+      <ul>
+          <li><i class="fas fa-music"></i> Recomendación 1</li>
+          <li><i class="fas fa-music"></i> Recomendación 2</li>
+          <li><i class="fas fa-music"></i> Recomendación 3</li>
+          <li><i class="fas fa-music"></i> Recomendación 4</li>
+      </ul>
+  </div>
+</div>
+
   </div>
 
   <!-- Script para Gráficas -->
@@ -131,7 +148,7 @@
           datasets: [{
             label: "Estado de ánimo",
             data: [5, 8, 3, 2, 6, 4], // Datos simulados
-            backgroundColor: ["#FFD700", "#FFA500", "#FF4500", "#DC143C", "#8B0000", "#4B0082"],
+            backgroundColor: ["#FFD700", "#FFA500", "#f96128", "#DC143C", "#8B0000", "#c50e0e"],
           }]
         },
         options: {

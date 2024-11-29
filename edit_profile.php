@@ -85,7 +85,7 @@
             <button class="btn upload-btn">Subir foto</button>
         </div>
 
-        <a href="discos.php" class="btn redirect-btn">
+        <a href="php/discos.php" class="btn redirect-btn">
             Ir a la página principal
             <ion-icon name="arrow-forward-outline"></ion-icon>
         </a>
