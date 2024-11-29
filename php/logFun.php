@@ -21,14 +21,8 @@ function login($username, $password)
             $_SESSION['user_type'] = $user['user_type'];
 
             return true;
-        } else {
-            echo "Contraseña incorrecta.";
         }
-    } else {
-        // Usuario no encontrado
-        echo "Usuario no encontrado.";
     }
-
     $stmt->close();
     return false;
 }

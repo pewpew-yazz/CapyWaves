@@ -7,7 +7,6 @@ $msg='';
 error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    print_r($_POST);
 
     $username = $_POST['usuario'] ?? null;
     $password = $_POST['contraseña'] ?? null;
@@ -92,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-error" id="msg"><?php echo $msg; ?></div>
                     <?php $msg=''; ?>
                 <?php } ?>
-                
+
                 <div class="form-inputs">
                     <!-- Campo para el usuario -->
                     <div class="input-box">
