@@ -19,13 +19,7 @@ body {
   .left-section, .right-section {
     width: 48%;
   }
-
-  h2{
-    font-size: 75pt;
-    color: #007BFF;
-    font-family: "Jersey 10", serif;
-  }
-
+  
   /* Header */
   .header {
     display: flex;
@@ -39,27 +33,27 @@ body {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-
+  
   .header-left img {
     width: 100px;
   }
-
+  
   .header-center ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
   }
-
+  
   .header-center ul li {
     margin: 0 15px;
   }
-
+  
   .header-center ul li a {
     text-decoration: none;
     color: #000;
   }
-
+  
   .btn-login, .btn-register {
     text-decoration: none;
     color: #fff;
@@ -67,12 +61,29 @@ body {
     border-radius: 5px;
     background-color: #007BFF;
   }
+  
+  h2{
+      font-size: 50pt;
+      color: #ffffff;
+      line-height: 80px;
+      font-family: "Jersey 10", serif;
+      margin-bottom: 5px;
+      letter-spacing: 5px;
+      margin-left: 30px;
+  }
 
+  .welcome-content p{
+    margin-left: 25px;  } 
+  
   /* Caja de Bienvenida */
   .welcome-box {
+    margin-left: 40px;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    color: #fff;
+    line-height: 30px;
+    font-size:14pt;
+    background-color: #13a6cc;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -83,11 +94,21 @@ body {
     flex: 1;
   }
 
+  h3 {
+    font-size: 60pt;
+    color: #21596c;
+    line-height: 80px;
+    font-family: "Jersey 10", serif;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    margin-left: 30px;
+  }
+
   .welcome-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2px;
     width: 200px;
     height: 200px;
 }
@@ -95,7 +116,6 @@ body {
 .welcome-image img {
     width: 150px; /* Tamaño ajustado */
     height: auto; /* Mantener proporción */
-    margin: 0; /* Elimina margen automático */
 }
 
 

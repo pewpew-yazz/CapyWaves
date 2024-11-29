@@ -85,6 +85,7 @@
       
       <!-- Popular -->
       <div class="popular-image">
+        <h3>Popular</h3>
         <img src="images/escenariotop.png" alt="Canción popular">
       </div>
       
