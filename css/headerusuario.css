@@ -21,10 +21,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD:css/header.css
-    
-=======
->>>>>>> main:css/headerusuario.css
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
     z-index: 100;
     padding: 0 20px; /* Espaciado horizontal */
