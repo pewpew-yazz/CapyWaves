@@ -21,8 +21,8 @@
 <body>
     <header class="header">
         <div class="header-left">
-            <a href="../menu.php">
-                <img src="../fotos/logo2.png" id="logo">
+            <a href="menu.php">
+                <img src="fotos/logo2.png" id="logo">
             </a>
         </div>
         <div class="header-center">
@@ -52,11 +52,11 @@
         </div>
         <div class="header-right">
             <div class="profile-container">
-                <img src="../fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
+                <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
                 <i class="fas fa-chevron-down profile-arrow"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="../editar_perfil.html">Editar Información</a></li>
-                    <li><a href="../favoritos.php">Favoritos</a></li>
+                    <li><a href="editar_perfil.html">Editar Información</a></li>
+                    <li><a href="favoritos.php">Favoritos</a></li>
                     <li><a href="?action=logout">Cerrar Sesión</a></li>
                 </ul>
             </div>
@@ -79,25 +79,25 @@
             </div>
             <div class="story-content">
                 <p class="story-text">
-                El Viaje de Capy y la Gran Naranja
+                <p>El Viaje de Capy y la Gran Naranja</p>
 
-Había una vez una capibara llamada Capy, que vivía en un tranquilo bosque lleno de ríos cristalinos y cielos despejados. Desde pequeño, Capy tenía un sueño muy especial: probar una naranja. Había escuchado que las naranjas eran dulces, jugosas y refrescantes, como un rayo de sol en cada mordida. Sin embargo, en su hogar, nunca había visto una.
+                <p>Había una vez una capibara llamada Capy, que vivía en un tranquilo bosque lleno de ríos cristalinos y cielos despejados. Desde pequeño, Capy tenía un sueño muy especial: probar una naranja. Había escuchado que las naranjas eran dulces, jugosas y refrescantes, como un rayo de sol en cada mordida. Sin embargo, en su hogar, nunca había visto una.</p>
 
-Un día, mientras descansaba bajo la sombra de un árbol, se topó con una nutria curiosa que le habló de una antigua leyenda: la existencia de la Gran Naranja. “Dicen que está en el fondo del mar, escondida en un lugar mágico. Pero no es una naranja cualquiera... quien la encuentre será transformado para siempre”.
+                <p>Un día, mientras descansaba bajo la sombra de un árbol, se topó con una nutria curiosa que le habló de una antigua leyenda: la existencia de la Gran Naranja. “Dicen que está en el fondo del mar, escondida en un lugar mágico. Pero no es una naranja cualquiera... quien la encuentre será transformado para siempre”.</p>
 
-Capy, emocionado y determinado, decidió emprender una aventura. Primero, buscó la ayuda de las nutrias, quienes conocían muchos secretos de los ríos y mares. Sin embargo, estas solo conocían la leyenda y no podían confirmar si era real. Luego, habló con las serpientes del bosque, quienes le contaron que un misterioso viajero llamado Rango podría tener las respuestas que buscaba.
+                <p>Capy, emocionado y determinado, decidió emprender una aventura. Primero, buscó la ayuda de las nutrias, quienes conocían muchos secretos de los ríos y mares. Sin embargo, estas solo conocían la leyenda y no podían confirmar si era real. Luego, habló con las serpientes del bosque, quienes le contaron que un misterioso viajero llamado Rango podría tener las respuestas que buscaba.</p>
 
-Rango era un camaleón sabio, conocido por sus historias fantásticas. Cuando Capy lo encontró, el camaleón le reveló un gran secreto: “La Gran Naranja está protegida por el océano. No será fácil alcanzarla, pero si perseveras, la encontrarás. Esta no es solo una fruta, es un símbolo de paz y equilibrio”.
+                <p>Rango era un camaleón sabio, conocido por sus historias fantásticas. Cuando Capy lo encontró, el camaleón le reveló un gran secreto: “La Gran Naranja está protegida por el océano. No será fácil alcanzarla, pero si perseveras, la encontrarás. Esta no es solo una fruta, es un símbolo de paz y equilibrio”.</p>
 
-Con el consejo de Rango, Capy construyó un pequeño bote y se aventuró al vasto mar. Durante días navegó, enfrentándose a olas y tormentas, guiado únicamente por la esperanza de encontrar la naranja. Finalmente, en un amanecer dorado, vio un destello en el agua: ¡la Gran Naranja!
+                <p>Con el consejo de Rango, Capy construyó un pequeño bote y se aventuró al vasto mar. Durante días navegó, enfrentándose a olas y tormentas, guiado únicamente por la esperanza de encontrar la naranja. Finalmente, en un amanecer dorado, vio un destello en el agua: ¡la Gran Naranja!</p>
 
-Pero no fue tan sencillo como esperó. La naranja no flotaba; estaba sumergida en las profundidades. Con paciencia, Capy lanzó su caña de pescar, una y otra vez. Cada intento parecía más difícil que el anterior, pero Capy no se rindió. Finalmente, con un tirón firme y decidido, logró sacar la naranja del agua.
+                <p>Pero no fue tan sencillo como esperó. La naranja no flotaba; estaba sumergida en las profundidades. Con paciencia, Capy lanzó su caña de pescar, una y otra vez. Cada intento parecía más difícil que el anterior, pero Capy no se rindió. Finalmente, con un tirón firme y decidido, logró sacar la naranja del agua.</p>
 
-En ese instante, algo mágico sucedió: la naranja se iluminó y, como por arte de magia, se posó en la cabeza de Capy. Sentía que un aura de calma y alegría lo rodeaba. Había encontrado no solo la fruta que tanto deseaba, sino también un nuevo propósito: compartir la paz y la tranquilidad que la Gran Naranja le había otorgado.
+                <p>En ese instante, algo mágico sucedió: la naranja se iluminó y, como por arte de magia, se posó en la cabeza de Capy. Sentía que un aura de calma y alegría lo rodeaba. Había encontrado no solo la fruta que tanto deseaba, sino también un nuevo propósito: compartir la paz y la tranquilidad que la Gran Naranja le había otorgado.</p>
 
-Capy regresó a su hogar, no como el mismo capibara que partió, sino como un símbolo de perseverancia y serenidad. Desde entonces, cada vez que alguien se siente perdido o abrumado, Capy aparece para recordarles que, con paciencia y determinación, cualquier objetivo puede alcanzarse.
+                <p>Capy regresó a su hogar, no como el mismo capibara que partió, sino como un símbolo de perseverancia y serenidad. Desde entonces, cada vez que alguien se siente perdido o abrumado, Capy aparece para recordarles que, con paciencia y determinación, cualquier objetivo puede alcanzarse.</p>
 
-Moraleja: A veces, los objetivos más grandes parecen lejanos y difíciles de alcanzar, pero con perseverancia y fe en uno mismo, podemos lograr lo que parece imposible. Y al hacerlo, no solo alcanzamos nuestros sueños, sino que también encontramos paz interior.
+                <p>Moraleja: A veces, los objetivos más grandes parecen lejanos y difíciles de alcanzar, pero con perseverancia y fe en uno mismo, podemos lograr lo que parece imposible. Y al hacerlo, no solo alcanzamos nuestros sueños, sino que también encontramos paz interior.</p>
                 </p>
             </div>
         </div>
