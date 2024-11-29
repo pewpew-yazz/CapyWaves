@@ -5,6 +5,7 @@
     <!-- JavaScript -->
     <script src="js/fontawesome/solid.js"></script>
     <script src="js/menu_desplegable.js"></script>
+    <script src="js/inicio.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -88,15 +89,24 @@
         <h3>Popular</h3>
         <img src="images/escenariotop.png" alt="Canción popular">
       </div>
-      
-      <!-- Favoritos -->
+
+
       <div class="favorites-box expandable">
-        <span>⭐ Favoritos</span>
-        <div class="dropdown-content">
-          <p>Tu lista de canciones favoritas aparecerá aquí.</p>
-        </div>
-      </div>
-    </div>
+      <span><i class="fas fa-heart"></i> Favoritos</span>
+      <div class="dropdown-content">
+          <ul>
+              <li><i class="fas fa-heart"></i> Favorito 1</li>
+              <li><i class="fas fa-heart"></i> Favorito 2</li>
+              <li><i class="fas fa-heart"></i> Favorito 3</li>
+              <li><i class="fas fa-heart"></i> Favorito 4</li>
+          </ul>
+     </div>
+  </div>
+</div>
+      <!-- Favoritos -->
+    
+
+
 
     <!-- Sección derecha -->
     <div class="right-section">

@@ -4,21 +4,32 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f6f0ea;
   }
 
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Asegura que los hijos estén alineados horizontalmente */
+    align-items: flex-start; /* Alinea los hijos al inicio verticalmente */
     padding: 20px;
-    margin-top: 80px; /* Asegura espacio debajo del header */
-    overflow: hidden; /* Evita elementos desbordados que afecten el diseño */
+    margin-top: 80px;
+    gap: 20px; /* Espacio entre las secciones izquierda y derecha */
 }
 
+.left-section, .right-section {
+    width: 48%; /* Asegura que cada sección ocupe la mitad del ancho del contenedor */
+}
 
-  .left-section, .right-section {
-    width: 48%;
-  }
+.left-section {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos dentro de esta sección en columna */
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos de esta sección también en columna */
+}
+
   
   /* Header */
   .header {
@@ -34,25 +45,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  .header-left img {
-    width: 100px;
-  }
   
-  .header-center ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header-center ul li {
-    margin: 0 15px;
-  }
-  
-  .header-center ul li a {
-    text-decoration: none;
-    color: #000;
-  }
   
   .btn-login, .btn-register {
     text-decoration: none;
@@ -102,7 +95,7 @@ body {
     margin-top: 25px;
     margin-bottom: 15px;
     letter-spacing: 5px;
-    margin-left: 30px;
+    margin-left: 40px;
   }
 
   .welcome-image {
@@ -122,25 +115,91 @@ body {
   /* Sección Popular */
   .popular-image img {
     padding: auto;
-    width: 100%;
+    margin-left: 37px ;
+    width: 95%;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  /* Botones de Favoritos */
-  .favorites-box {
-    background-color: #fff;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
+.favorites-box {
+  margin-left: 34px; /* Ajusta el valor según lo que necesites */
+  background: linear-gradient(to left, #FFF, #13a6cc, #13a6cc);
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 20px;
+}
 
-  .favorites-box:hover {
-    transform: scale(1.05);
-  }
+.favorites-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de Favoritos */
+.favorites-box span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.favorites-box span i {
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+/* Contenido desplegable */
+.dropdown-content {
+  display: none;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.favorites-box.expandable.active .dropdown-content {
+  display: block;
+}
+
+/* Lista de Favoritos */
+.dropdown-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo alternado para los favoritos */
+.dropdown-content ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+/* Colores alternados */
+.dropdown-content ul li:nth-child(odd) {
+  background-color: #def1fa; /* Azul claro */
+}
+
+.dropdown-content ul li:nth-child(even) {
+  background-color: #f0f8ff; /* Azul un poco más oscuro */
+}
+
+/* Efecto al pasar el mouse */
+.dropdown-content ul li:hover {
+  background-color: #f29d43c1; /* Azul más intenso */
+}
+
+/* Íconos de corazón */
+.dropdown-content ul li i {
+  color: #ed640d;
+  margin-right: 8px;
+}
 
   /* Sección Derecha (Gráficas) */
   .mood-chart {
