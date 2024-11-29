@@ -1,28 +1,37 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
 include_once 'conexion.php';
 
-function registroUsuario($username, $nombre, $apellido_P, $apellido_M, $correo, $contraseña)
+function registroUsuario($username, $correo, $contraseña, $nombre, $apellido_P, $apellido_M)
 {
     // Establecer conexión a la base de datos
     $db = connectdb();
-    $query = "INSERT INTO usuarios (username, nombre, apellido_P, apellido_M, email, password) VALUES (?, ?, ?, ?, ?, ?)";
-    error_log($query);
-    // Preparar la consulta para insertar el nuevo usuario
+    if (!$db) {
+        echo "Error al conectar con la base de datos.";
+        return false;
+    }
+
+    // Preparar la consulta para llamar al procedimiento almacenado
+    $query = "CALL addUser(?, ?, ?, ?, ?, ?)";
     $stmt = $db->prepare($query);
-    $stmt->bind_param("ssssss", $username, $nombre, $apellido_P, $apellido_M, $correo, $contraseña);
+
+    if (!$stmt) {
+        echo "Error al preparar la consulta: " . $db->error;
+        return false;
+    }
+
+    // Vincular los parámetros
+    $stmt->bind_param("ssssss", $username, $correo, $contraseña, $nombre, $apellido_P, $apellido_M);
 
     // Ejecutar la consulta y verificar si fue exitosa
     if ($stmt->execute()) {
-        header("Location: ../discos.php");
-        exit();
+        $stmt->close();
+        $db->close();
+        return true;
     } else {
         echo "Error: " . $stmt->error;
+        $stmt->close();
+        $db->close();
+        return false;
     }
-
-    $stmt->close();
-    $db->close();
 }
 ?>
