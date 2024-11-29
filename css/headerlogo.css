@@ -1,0 +1,32 @@
+/* HEADER CON LOGO*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px; /* Ajustar la altura para que coincida con el diseño */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    z-index: 100;
+    padding: 0 20px;
+}
+
+/* Logo */
+.header-left img {
+    height: 40px; /* Altura ajustada para que coincida */
+}

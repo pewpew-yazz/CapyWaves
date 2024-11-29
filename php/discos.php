@@ -21,7 +21,7 @@
 
     <!-- Stylesheets -->
     <link href="../css/style.css" rel="stylesheet" />
-    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/headerusuario.css" rel="stylesheet" />
     <link href="../css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="../css/fontawesome/solid.css" rel="stylesheet" />
 

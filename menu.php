@@ -10,7 +10,7 @@
     <script src="js/scroll.js"></script>
 
     <!-- Stylesheets -->       <!-- No agregar login.css -->
-    <link href="css/header1.css" rel="stylesheet" />
+    <link href="css/headerbotones.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />

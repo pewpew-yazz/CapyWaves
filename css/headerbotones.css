@@ -1,4 +1,4 @@
-/* HEADER PÁGINA PRINCIPAL */
+/* 1 HEADER CON BOTONES DE INICIO DE SESION */
 
 * {
     margin: 0;
@@ -22,7 +22,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
     z-index: 100;
     padding: 0 20px; /* Espaciado horizontal */
@@ -38,14 +37,14 @@ header {
 .header-center {
     position: relative;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    background: rgba(255, 255, 255, 0.7); /* Fondo blanco con transparencia */
     backdrop-filter: blur(10px); /* Efecto de desenfoque */
     border-radius: 25px; /* Bordes redondeados */
-    padding: 10px 30px; /* Espaciado interno */
+    padding: 8px 30px; /* Espaciado interno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
     display: flex;
     align-items: center; /* Centrado vertical */
-    margin-left: 130px;
+    margin-left: 90px;
 }
 
 /* Menu List */
@@ -94,7 +93,7 @@ nav ul li:hover .dropdown-arrow {
     transform: rotate(180deg); /* Rotación de la flecha */
 }
 
-/* Dropdown Menu */
+/* Fondo de Submenu */
 nav ul li .dropdown-menu {
     display: none;
     position: absolute;

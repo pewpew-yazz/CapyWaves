@@ -1,4 +1,4 @@
-/* HEADER SESIÓN INICIADA */
+/* HEADER SESIÓN INICIADA CON USUARIO*/
 
 * {
     margin: 0;
@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent; /* Header completamente transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
     z-index: 100;
     padding: 0 20px;
 }
@@ -29,7 +29,6 @@ header {
 /* Logo */
 .header-left img {
     height: 40px; /* Altura ajustada para que coincida */
-    margin-left: 5px; /* Mover el logo 5px más hacia la derecha */
 }
 
 /* Central Menu */
@@ -43,7 +42,7 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
     display: flex;
     align-items: center; /* Centrado vertical */
-    margin-left: -100px; /*mover el menu al centro*/
+    margin-left: -105px; /*mover el menu al centro*/
 }
 
 /* Menu List */
