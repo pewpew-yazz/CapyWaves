@@ -26,10 +26,20 @@ body {
 }
 
 .right-section {
+    margin-top: -25px;
     display: flex;
     flex-direction: column; /* Alinea los elementos de esta sección también en columna */
 }
 
+.right-section h4{
+  font-size: 50pt;
+  color: #21596c;
+  line-height: 80px;
+  text-align: center;
+  font-family: "Jersey 10", serif;
+  letter-spacing: 5px;
+  margin-left: 30px;
+}
   
   
   .btn-login, .btn-register {
@@ -189,16 +199,105 @@ body {
   /* Sección Derecha (Gráficas) */
   .mood-chart {
     margin: 20px 40px;
+    align-items: center;
+    align-content: center;
   }
 
-  .mood-icons button {
+  .mood-icons {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Asegúrate de que el contenedor tenga altura suficiente */
+}
+.mood-icons button {
     background-color: transparent;
     border: none;
     font-size: 24px;
     margin: 0 5px;
     cursor: pointer;
-  }
+    transition: transform 0.2s ease-in-out; /* Agrega suavidad a la transición */
+}
+.mood-icons button:hover {
+    transform: scale(1.2); /* Efecto de ampliación al pasar el mouse */
+}
 
-  .mood-icons button:hover {
-    transform: scale(1.2);
-  }
+/* Recomendaciones (igual a Favoritos) */
+.recommendations-box {
+  margin-left: 34px; /* Ajusta el margen según lo necesario */
+  background: linear-gradient(to left, #FFF, #13a6cc, #13a6cc);
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.recommendations-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de Recomendaciones */
+.recommendations-box span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.recommendations-box span i {
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+/* Contenido desplegable */
+.recommendations-box .dropdown-content {
+  display: none;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.recommendations-box.expandable.active .dropdown-content {
+  display: block;
+}
+
+/* Lista de Recomendaciones */
+.recommendations-box .dropdown-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommendations-box .dropdown-content ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+/* Colores alternados */
+.recommendations-box .dropdown-content ul li:nth-child(odd) {
+  background-color: #def1fa; /* Azul claro */
+}
+
+.recommendations-box .dropdown-content ul li:nth-child(even) {
+  background-color: #f0f8ff; /* Azul un poco más oscuro */
+}
+
+/* Efecto al pasar el mouse */
+.recommendations-box .dropdown-content ul li:hover {
+  background-color: #f29d43c1; /* Azul más intenso */
+}
+
+/* Íconos de música */
+.recommendations-box .dropdown-content ul li i {
+  color: #ed640d;
+  margin-right: 8px;
+}
+

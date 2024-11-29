@@ -1,64 +1,60 @@
 let moodChart; // Declaración global de la gráfica
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const ctx = document.getElementById("moodChart").getContext("2d");
+    // Manejar la gráfica de emociones
+    try {
+        const ctx = document.getElementById("moodChart").getContext("2d");
 
-  try {
-      // Obtener datos de emociones desde el servidor
-      const response = await fetch("php/emociones.php"); // Ajusta la ruta si es necesario
-      if (!response.ok) {
-          throw new Error(`HTTP Error: ${response.status}`);
-      }
+        // Obtener datos de emociones desde el servidor
+        const response = await fetch("php/emociones.php");
+        if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
 
-      const emotionsData = await response.json();
+        const emotionsData = await response.json();
 
-      // Extraer etiquetas y datos
-      const labels = emotionsData.map(item => item.emocion);
-      const data = emotionsData.map(item => item.cantidad);
+        // Extraer etiquetas y datos
+        const labels = emotionsData.map((item) => item.emocion);
+        const data = emotionsData.map((item) => item.cantidad);
 
-      // Crear la gráfica
-      new Chart(ctx, {
-          type: "bar",
-          data: {
-              labels: labels,
-              datasets: [{
-                  label: "Tus emociones",
-                  data: data,
-                  backgroundColor: ["#FFD700", "#FFA500", "#FF4500", "#DC143C", "#8B0000", "#4B0082"]
-              }]
-          },
-          options: {
-              responsive: true,
-              scales: {
-                  y: { beginAtZero: true },
-                  x: { title: { display: true, text: "Emociones" } }
-              }
-          }
-      });
-  } catch (error) {
-      console.error("Error al cargar los datos para la gráfica:", error);
-  }
-
-
-    // Manejar favoritos desplegables
-    const favoritesBox = document.querySelector(".favorites-box");
-
-    if (favoritesBox) {
-        // Abrir y cerrar favoritos al hacer clic
-        favoritesBox.addEventListener("click", (event) => {
-            event.stopPropagation(); // Evita que el clic cierre el desplegable
-            favoritesBox.classList.toggle("active");
+        // Crear la gráfica
+        moodChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: "Tus emociones",
+                        data: data,
+                        backgroundColor: ["#FFD700", "#FFA500", "#FF4500", "#DC143C", "#8B0000", "#4B0082"],
+                    },
+                ],
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: { beginAtZero: true },
+                    x: { title: { display: true, text: "Emociones" } },
+                },
+            },
         });
-
-        // Cerrar favoritos al hacer clic fuera
-        document.addEventListener("click", (event) => {
-            if (!favoritesBox.contains(event.target)) {
-                favoritesBox.classList.remove("active");
-            }
-        });
-    } else {
-        console.warn("El elemento .favorites-box no fue encontrado.");
+    } catch (error) {
+        console.error("Error al cargar los datos para la gráfica:", error);
     }
+
+    // Manejar cajas desplegables (Favoritos, Recomendaciones, etc.)
+    const expandableBoxes = document.querySelectorAll(".expandable");
+
+    expandableBoxes.forEach((box) => {
+        // Abrir/cerrar la caja al hacer clic
+        box.addEventListener("click", (event) => {
+            event.stopPropagation(); // Evita que el clic cierre inmediatamente
+            box.classList.toggle("active");
+        });
+    });
+
+    // Cerrar todas las cajas al hacer clic fuera de ellas
+    document.addEventListener("click", () => {
+        expandableBoxes.forEach((box) => box.classList.remove("active"));
+    });
 });
 
 // Función para registrar estados de ánimo
