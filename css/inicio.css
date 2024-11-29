@@ -118,11 +118,10 @@ body {
 
 .favorites-box {
   margin-left: 34px; /* Ajusta el valor según lo que necesites */
-  background: linear-gradient(to left, #FFF, #13a6cc, #13a6cc);
+  background: linear-gradient(to left, #f6f0ea, #13a6cc, #13a6cc);
   padding: 20px;
   text-align: left;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin-top: 20px;
 }
@@ -224,11 +223,10 @@ body {
 /* Recomendaciones (igual a Favoritos) */
 .recommendations-box {
   margin-left: 34px; /* Ajusta el margen según lo necesario */
-  background: linear-gradient(to left, #FFF, #13a6cc, #13a6cc);
+  background: linear-gradient(to left, #f6f0ea, #13a6cc, #13a6cc);
   padding: 20px;
   text-align: left;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin-top: 20px;
 }
