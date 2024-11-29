@@ -3,25 +3,24 @@
 
 <head>
     <!-- Title -->
-    <title>CapyWaves - Sobre Nosotros</title>
+    <title>CapyWaves discos</title>
 
     <!-- JavaScript -->
     <script src="js/fontawesome/solid.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="js/menu_desplegable.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Stylesheets -->
-    <link href="css/header1.css" rel="stylesheet" />
-    <link href="css/footer.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
     <link href="css/us.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/headerusuario.css" rel="stylesheet" />
+    <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
+    <link href="css/fontawesome/solid.css" rel="stylesheet" />
 
     <!-- Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Web Icons Import -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

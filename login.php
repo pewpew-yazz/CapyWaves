@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <!-- Stylesheets -->
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
-    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/headerlogo.css" rel="stylesheet" />
     <link href="css/login.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
@@ -74,6 +74,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
+<header class="header">
+    <div class="header-left">
+        <a href="menu.php">
+            <img src="fotos/logo1.gif" id="logo">
+        </a>
+    </div>
+</header>
+
     <div class="form-container">
         <div class="form-col">
             <!-- Botones para alternar entre formularios -->
