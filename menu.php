@@ -64,8 +64,9 @@
             </nav>
         </div>
         <div class="header-right">
-            <a href="<?php echo "login.php";?>" class="btn-register">Registrarse</a>
             <a href="login.php" class="btn-login">Iniciar Sesión</a>
+            <a href="<?php echo "login.php";?>" class="btn-register">Registrarse</a>
+
 
         </div>
     </header>
@@ -123,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="discover-more">
+        <a href="discos.php" class="discover-more">
             Descubre más
             <div class="circle-arrow">
                 <i class="fas fa-arrow-right"></i> <!-- Usando el ícono de FontAwesome -->
@@ -146,7 +147,7 @@
 
     <section class="fourth-section">
         <h3>Únete a nuestra comunidad de personas que <br> han descubierto la paz en Capy Waves.</h3>
-        <button class="btn-register-cta">Registrarse</button>
+        <a href="login.php?section=register" class="btn-register-cta">Registrarse</a>
         <div class="image-placeholder">
             <img src="fotos/capybara2.png">
         </div>

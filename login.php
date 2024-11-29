@@ -4,6 +4,7 @@ require_once "php/registro.php";
 
 error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
 
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     print_r($_POST);
 
@@ -75,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <!-- Login Form (Iniciar sesión) -->
-            <form class="form-box login-form" method="post" action="">
+            <form id="login-section" class="form-box login-form" method="post" action="">
                 <div class="form-title">
                     <span>Inicia sesión</span>
                 </div>
@@ -106,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
 
             <!-- Register Form (Registrarse) -->
-            <form class="form-box register-form" method="post" action="">
+            <form id="register-section" class="form-box register-form" method="post" action="">
                 <div class="form-title">
                     <span>Regístrate</span>
                 </div>
