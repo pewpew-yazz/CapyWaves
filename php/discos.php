@@ -63,7 +63,11 @@
                         <ul class="dropdown-menu">
                             <li><a href="discos.php">Galeria</a></li>
                             <li><a href="../reproductor.html">Reproductor</a></li>
+<<<<<<< HEAD
                             <li><a href="reproductor.html">Videojuego</a></li>
+=======
+                            <li><a href="../juego/inicio.html">Videojuego</a></li>
+>>>>>>> diseño
                         </ul>
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
