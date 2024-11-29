@@ -19,10 +19,9 @@
 </head>
 
 <body>
-    
     <header class="header">
         <div class="header-left">
-            <a href="<?php echo "../menu.php"; ?>">
+            <a href="../menu.php">
                 <img src="../fotos/logo2.png" id="logo">
             </a>
         </div>
@@ -54,7 +53,7 @@
                 <img src="../fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
                 <i class="fas fa-chevron-down profile-arrow"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="../editar_perfil.hmtl">Editar Información</a></li>
+                    <li><a href="../editar_perfil.html">Editar Información</a></li>
                     <li><a href="../favoritos.php">Favoritos</a></li>
                     <li><a href="?action=logout">Cerrar Sesión</a></li>
                 </ul>
@@ -62,58 +61,52 @@
         </div>
     </header>
 
-    <!-- Título  -->
+    <!-- Título -->
     <section class="title-section">
-        <h1 class="story-title">¿Ya conoces la increíble historia de Capy?</h1>
+        <div class="title-container">
+            <h1 class="story-title">¿Ya conoces la increíble historia de Capy?</h1>
+            <p class="subtitle">Déjate llevar por esta mágica aventura llena de calma y determinación.</p>
+        </div>
     </section>
 
     <!-- Historia -->
     <section class="story-section">
-        <div class="story-content">
-            <p class="story-text">  
-                El Viaje de Capy y la Gran Naranja
-
-                Había una vez una capibara llamada Capy, que vivía en un tranquilo bosque lleno de ríos cristalinos y cielos despejados. Desde pequeño, Capy tenía un sueño muy especial: probar una naranja. Había escuchado que las naranjas eran dulces, jugosas y refrescantes, como un rayo de sol en cada mordida. Sin embargo, en su hogar, nunca había visto una.
-
-                Un día, mientras descansaba bajo la sombra de un árbol, se topó con una nutria curiosa que le habló de una antigua leyenda: la existencia de la Gran Naranja. “Dicen que está en el fondo del mar, escondida en un lugar mágico. Pero no es una naranja cualquiera... quien la encuentre será transformado para siempre”.
-
-                Capy, emocionado y determinado, decidió emprender una aventura. Primero, buscó la ayuda de las nutrias, quienes conocían muchos secretos de los ríos y mares. Sin embargo, estas solo conocían la leyenda y no podían confirmar si era real. Luego, habló con las serpientes del bosque, quienes le contaron que un misterioso viajero llamado Rango podría tener las respuestas que buscaba.
-
-                Rango era un camaleón sabio, conocido por sus historias fantásticas. Cuando Capy lo encontró, el camaleón le reveló un gran secreto: “La Gran Naranja está protegida por el océano. No será fácil alcanzarla, pero si perseveras, la encontrarás. Esta no es solo una fruta, es un símbolo de paz y equilibrio”.
-
-                Con el consejo de Rango, Capy construyó un pequeño bote y se aventuró al vasto mar. Durante días navegó, enfrentándose a olas y tormentas, guiado únicamente por la esperanza de encontrar la naranja. Finalmente, en un amanecer dorado, vio un destello en el agua: ¡la Gran Naranja!
-
-                Pero no fue tan sencillo como esperó. La naranja no flotaba; estaba sumergida en las profundidades. Con paciencia, Capy lanzó su caña de pescar, una y otra vez. Cada intento parecía más difícil que el anterior, pero Capy no se rindió. Finalmente, con un tirón firme y decidido, logró sacar la naranja del agua.
-
-                En ese instante, algo mágico sucedió: la naranja se iluminó y, como por arte de magia, se posó en la cabeza de Capy. Sentía que un aura de calma y alegría lo rodeaba. Había encontrado no solo la fruta que tanto deseaba, sino también un nuevo propósito: compartir la paz y la tranquilidad que la Gran Naranja le había otorgado.
-
-                Capy regresó a su hogar, no como el mismo capibara que partió, sino como un símbolo de perseverancia y serenidad. Desde entonces, cada vez que alguien se siente perdido o abrumado, Capy aparece para recordarles que, con paciencia y determinación, cualquier objetivo puede alcanzarse.
-            </p>
-        </div>
-        <div class="story-image">
-            <img src="fotos/capy_logo.png" alt="Imagen de Capy">
+        <div class="story-container">
+            <div class="story-image">
+                <img src="images/capypj.jpg" alt="Imagen de Capy">
+            </div>
+            <div class="story-content">
+                <p class="story-text">
+                    <strong>El Viaje de Capy y la Gran Naranja</strong><br><br>
+                    Había una vez una capibara llamada Capy, que vivía en un tranquilo bosque lleno de ríos cristalinos y cielos despejados...
+                    <!-- Texto completo aquí -->
+                </p>
+            </div>
         </div>
     </section>
+    
+    
 
     <!-- Revista -->
     <section class="magazine-section">
-        <h2 class="section-title">Revista interactiva</h2>
-        <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/4f93d38ca7.html"
+        <h2 class="section-title"> </h2>
+        <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe"
+            src="https://heyzine.com/flip-book/4f93d38ca7.html"
             style="border: 1px solid lightgray; width: 100%; height: 600px;"></iframe>
     </section>
 
     <!-- Video del videojuego -->
     <section class="video-section">
-        <h2 class="section-title">Descubre nuestro videojuego</h2>
+        <h2 class="section-title">  </h2>
         <div class="video-container">
-           
             <video controls style="width: 100%; max-width: 800px;">
                 <source src="videos/game_trailer.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos. Por favor, utiliza un navegador actualizado.
             </video>
         </div>
         <div class="game-link">
             <button class="orange-btn">
-                <a href="#" class="game-link-text">¡Jugar ahora!</a>
+                <a href="" class="game-link-text">¡Jugar ahora!</a>
             </button>
         </div>
     </section>
@@ -126,7 +119,7 @@
             <a href="https://mx.pinterest.com/capywaves/"><ion-icon name="logo-pinterest"></ion-icon></a>
             <a href="https://www.youtube.com/@CapyWaves"><ion-icon name="logo-youtube"></ion-icon></a>
         </div>
-        <p>Copyright y créditos: © 2024 Capy Waves. Todos los derechos reservados.</p>
+        <p>Copyright © 2024 CapyWaves. Todos los derechos reservados.</p>
     </footer>
 </body>
 
