@@ -2,7 +2,10 @@
 require_once "php/logFun.php";
 require_once "php/registro.php";
 
+$msg='';
+
 error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     print_r($_POST);
@@ -81,10 +84,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <!-- Login Form (Iniciar sesión) -->
+<<<<<<< HEAD
+            <form id="login-section" class="form-box login-form" method="post" action="">
+=======
             <form class="form-box login-form" method="post" action="" autocomplete="off">
+>>>>>>> 95996e440ee387bc222adb4e731bf6498cc077d6
                 <div class="form-title">
                     <span>Inicia sesión</span>
                 </div>
+
+                <?php if (!empty($msg)) { ?>
+                    <div class="form-error" id="msg"><?php echo $msg; ?></div>
+                    <?php $msg=''; ?>
+                <?php } ?>
+                
                 <div class="form-inputs">
                     <!-- Campo para el usuario -->
                     <div class="input-box">
@@ -112,7 +125,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
 
             <!-- Register Form (Registrarse) -->
+<<<<<<< HEAD
+            <form id="register-section" class="form-box register-form" method="post" action="">
+=======
             <form class="form-box register-form" method="post" action="" autocomplete="off">
+>>>>>>> 95996e440ee387bc222adb4e731bf6498cc077d6
                 <div class="form-title">
                     <span>Regístrate</span>
                 </div>

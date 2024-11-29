@@ -14,7 +14,7 @@
     font-size: 50px;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-bottom: 600px;
+    top: 110px;
     letter-spacing: 7px;
     overflow: hidden;
 }
@@ -23,7 +23,7 @@
     font-size: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-bottom: 500px;
+    top: 180px;
     overflow: hidden;
 }
 .parallax img{
@@ -33,6 +33,11 @@
     left: 0;
     width: 100%;
     pointer-events: none;
+    height: 100%; /* Asegura que las imágenes ocupen toda la altura del contenedor */
+    object-fit: cover; /* Escala la imagen para cubrir sin deformarse */
+    pointer-events: none; /* Evita interacción con las imágenes */
+    margin: 0; /* Quita márgenes */
+    padding: 0; /* Quita cualquier espacio interno */
 }
 
 
