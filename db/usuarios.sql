@@ -11,7 +11,7 @@ USE capywaves;
 DROP TABLE usuarios;
 CREATE TABLE usuarios (
   id INT PRIMARY KEY AUTO_INCREMENT,
-  username varchar(50) NOT NULL,
+  username varchar(50) NOT NULL UNIQUE,
   email varchar(50) NOT NULL,
   password varchar(40) NOT NULL,
   nombre VARCHAR(30) NOT NULL,
