@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 116vh; /* Ajusta la altura del contenedor */
+    height: 111vh; /* Ajusta la altura del contenedor */
     overflow: hidden; /* Evita que los elementos se desborden */
     background: #f29d43;
 }
