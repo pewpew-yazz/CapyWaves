@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background: #ffffff;
     color: #333;
     scroll-behavior: smooth;
 }
@@ -112,11 +112,4 @@ body {
 }
 
 /* Footer */
-.footer {
-    background: #21264D;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    clear: both;
-    position: relative;
-}
+

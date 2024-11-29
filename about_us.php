@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -16,7 +14,7 @@
     <!-- Stylesheets -->
     <link href="css/us.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
-    <link href="../css/headerusuario.css" rel="stylesheet" />
+    <link href="css/headerusuario.css" rel="stylesheet" />
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
 
@@ -36,8 +34,8 @@
     <!-- Header -->
     <header class="header">
     <div class="header-left">
-        <a href="<?php echo "../menu.php"; ?>">
-            <img src="../fotos/logo2.png" id="logo">
+        <a href="<?php echo "menu.php"; ?>">
+            <img src="fotos/logo2.png" id="logo">
         </a>
     </div>
     <div class="header-center">
@@ -67,7 +65,7 @@
     </div>
     <div class="header-right">
         <div class="profile-container">
-            <img src="../fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
+            <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
             <i class="fas fa-chevron-down profile-arrow"></i>
             <ul class="dropdown-menu">
                 <li><a href="../edit_profile.php">Editar Información</a></li>

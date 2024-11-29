@@ -52,12 +52,13 @@
                         <ul class="dropdown-menu">
                             <li><a href="php/discos.php">Galeria</a></li>
                             <li><a href="reproductor.html">Reproductor</a></li>
+                            <li><a href="juego/inicio.html">Videojuego</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
                         <li><a href="about_us.php">Sobre nosotros</a></li>
-                            <li><a href="#">Sobre Capy</a></li>
+                            <li><a href="capy.php">Sobre Capy</a></li>
                         </ul>
                     </li>
                 </ul>
