@@ -23,6 +23,7 @@ CREATE TABLE usuarios (
   CONSTRAINT fk_user_type FOREIGN KEY (user_type) REFERENCES user_types(code)
 );
 
+ALTER TABLE emociones ADD UNIQUE (fecha, user_id);
 
 --NO PODIA fecha tener DEFAULT CURRENT_DATE, NO LO ACEPTABA
 DROP TABLE IF EXISTS emociones;
@@ -54,3 +55,4 @@ CREATE TABLE user_types (
   description VARCHAR(50),
   active BIT DEFAULT TRUE
   );
+  
