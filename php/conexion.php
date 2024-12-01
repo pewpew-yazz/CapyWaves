@@ -1,19 +1,35 @@
 <?php
-//cambios
-// Configuración de la base de datos
+
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'capywaves');
-
-function connectdb()
+/*function connectdb()
 {
-    $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-
-    if ($conn->connect_error) {
-        die("Error al conectar a la base de datos: " . $conn->connect_error);
+    try {
+        echo ("ANTES DE LA CONEXION");
+        $db = mysqli_connect($servidor, $usuario, $clave, $basededatos);
+        echo ("DESPUES DE LA CONEXION");
+        return $db;
+    } catch (Exception $e) {
+        error_log($e->getMessage());
+        return false;
     }
+}*/
 
-    return $conn;
+function connectdb() {
+    try {
+        $db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+        if ($db->connect_error) {
+            throw new Exception("Error al conectar: " . $db->connect_error);
+        }
+        return $db;
+    } catch (Exception $e) {
+        error_log($e->getMessage());
+        return false;
+    }
 }
+
 ?>
+
+
