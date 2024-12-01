@@ -1,0 +1,347 @@
+/* Estructura básica del cuerpo para mantener el footer al final */
+body {
+    overflow-y: visible
+    ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima para cubrir toda la ventana */
+    margin: 0;
+}
+
+/* Ajustes del footer para que siempre esté al final */
+footer {
+   
+        margin-top: auto; /* Empuja el footer al final del contenedor flex */
+        padding: 20px; /* Añade un poco de espacio interno */
+        background-color: #21264D; /* Color del footer */
+        color: white;
+        text-align: center;
+    
+    
+}
+
+/* Logo */
+.header-left img {
+    height: 40px; /* Tamaño del logo */
+}
+
+/* Central Menu */
+.header-center {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 25px; /* Bordes redondeados */
+    padding: 10px 30px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    margin-left: 130px;
+}
+
+/* Menu List */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+nav ul li {
+    position: relative;
+    padding: 8px 15px; /* Espaciado interno */
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+nav ul li a {
+    font-size: 16px; /* Tamaño de texto */
+    text-decoration: none;
+    font-weight: bold;
+    color: #21264D; /* Color del texto */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #12addb; /* Color de texto al hacer hover */
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+    margin-left: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-arrow i {
+    font-size: 12px;
+    color: #21264D;
+}
+
+nav ul li:hover .dropdown-arrow {
+    transform: rotate(180deg); /* Rotación de la flecha */
+}
+
+/* Dropdown Menu */
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px); /* Espaciado ajustado debajo del botón */
+    left: 0;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 10px 15px; /* Espaciado interno */
+    z-index: 100;
+    min-width: 230px; /* Ancho mínimo */
+}
+
+nav ul li:hover .dropdown-menu {
+    display: block; /* Mostrar el menú al hacer hover */
+}
+
+nav ul li .dropdown-menu li {
+    list-style: none; /* Eliminar viñetas */
+    margin: 5px 0; /* Espaciado entre opciones */
+    border-radius: 45px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px; /* Espaciado interno */
+    color: #21264D; /* Color del texto */
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .dropdown-menu li a:hover {
+    background-color: rgba(18, 173, 219, 0.1); /* Fondo azul claro al hacer hover */
+    color: #12addb;
+}
+
+/* Botones de Registro e Inicio de Sesión */
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.btn-register, .btn-login {
+    display: inline-block;
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de texto */
+    cursor: pointer;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-register {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #f29d43; /* Texto naranja */
+    border: 2px solid #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.btn-login {
+    background-color: #f29d43; /* Fondo naranja */
+    color: #FFF; /* Texto blanco */
+    border: 2px solid #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.btn-register:hover {
+    background-color: #f29d43;
+    color: #FFF;
+    transform: scale(0.95);
+}
+
+.btn-login:hover {
+    background-color: #FFF;
+    color: #f29d43;
+    transform: scale(0.95);
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+/* Sección Sobre Nosotros */
+.about-us {
+    padding: 100px 20px;
+    background: linear-gradient(#ed7a00, #f1b97e); /* Fondo original */
+    color: #ffffff; /* Texto blanco */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 20px; /* Espaciado entre el texto y la imagen */
+    font-family: 'Josefin Sans', sans-serif; /* Fuente moderna */
+    text-align: center; /* Centrado del título */
+}
+
+.about-us h2 {
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 60px; /* Tamaño grande para destacar */
+    margin-bottom: 20px;
+    letter-spacing: 7px; /* Espaciado entre letras */
+}
+
+.about-us p {
+    font-size: 20px; /* Texto más grande para mejor visibilidad */
+    line-height: 1.8; /* Espaciado entre líneas */
+    max-width: 800px; /* Limita el ancho del texto */
+    text-align: justify; /* Justifica el texto */
+}
+
+.about-image {
+    max-width: 400px; /* Ajusta el ancho máximo de la imagen */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+.about-image img {
+    width: 100%; /* Escalar automáticamente */
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+/* Ajusta la posición del contenedor */
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px; /* Mueve todo el contenido más abajo */
+}
+
+/* Sección de Beneficios */
+.benefits {
+    padding: 60px 20px;
+    background: linear-gradient(#f1b97e, #fce6d0);
+    text-align: center;
+    color: #ffffff;
+}
+
+.benefits h2 {
+    font-family: 'Jersey 10';
+    font-size: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+    color: #59553f;
+}
+
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    flex: 1;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.benefit-icon {
+    font-size: 50px;
+    color: #21596c;
+    margin-bottom: 15px;
+}
+
+.benefit-item h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #049dcb;
+}
+
+.benefit-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #21596c;
+}
+
+/* Sección Público Dirigido */
+.target-audience {
+    padding: 60px 20px;
+    background: linear-gradient(#fce6d0, #ffffff);
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.target-audience h2 {
+    font-family: 'Jersey 10';
+    font-size: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 7px;
+    color: #59553f;
+}
+
+.audience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.audience-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.audience-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.audience-icon {
+    font-size: 50px;
+    color: #21596c;
+    margin-bottom: 15px;
+}
+
+.audience-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #049dcb;;
+}
+
+.audience-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #21596c;
+}

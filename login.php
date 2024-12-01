@@ -6,6 +6,7 @@ $msg='';
 
 error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
 
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $username = $_POST['usuario'] ?? null;
@@ -22,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($username) && !empty($password)) {
         if (login($username, $password)) {
             error_log("Login succesfull for ".$_SESSION['num']);
-            header("Location: ../discos.php");
+            header("Location: /Capywaves/php/discos.php");
             exit();
         } else {
             $msg = 'Username or password incorrect.';
@@ -31,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     elseif (!empty($user) && !empty($name) && !empty($lastname1) && !empty($email) && !empty($password)) {
         if(registroUsuario($user,$email,$password,$name,$lastname1,$lastname2)){
             error_log("Login succesfull for ".$_SESSION['num']);
-            header("Location: ../discos.php");
+            header("Location: /Capywaves/php/discos.php");
             exit();
         }
     }
@@ -58,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <!-- Stylesheets -->
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
-    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/headerlogo.css" rel="stylesheet" />
     <link href="css/login.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
@@ -73,6 +74,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
+<header class="header">
+    <div class="header-left">
+        <a href="menu.php">
+            <img src="fotos/logo1.gif" id="logo">
+        </a>
+    </div>
+</header>
+
     <div class="form-container">
         <div class="form-col">
             <!-- Botones para alternar entre formularios -->
@@ -82,7 +91,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <!-- Login Form (Iniciar sesión) -->
-            <form class="form-box login-form" method="post" action="" autocomplete="off">
+            <form class="form-box login-form" id="login-seccion" method="post" action="" autocomplete="off">
+
                 <div class="form-title">
                     <span>Inicia sesión</span>
                 </div>
@@ -119,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </form>
 
             <!-- Register Form (Registrarse) -->
-            <form class="form-box register-form" method="post" action="" autocomplete="off">
+            <form id="register-section" class="form-box register-form" method="post" action="" autocomplete="off">
                 <div class="form-title">
                     <span>Regístrate</span>
                 </div>

@@ -10,7 +10,7 @@
     <script src="js/scroll.js"></script>
 
     <!-- Stylesheets -->       <!-- No agregar login.css -->
-    <link href="css/header1.css" rel="stylesheet" />
+    <link href="css/headerbotones.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
@@ -44,28 +44,30 @@
                 <ul>
                     <li><a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
+                            <li><a href="menu.php">Principal</a></li>
+                            <li><a href="php/discos.php">Inicio</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
+                            <li><a href="php/discos.php">Galeria</a></li>
+                            <li><a href="reproductor.html">Reproductor</a></li>
+                            <li><a href="juego/inicio.html">Videojuego</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1</a></li>
-                            <li><a href="#">Submenu 2</a></li>
+                        <li><a href="about_us.php">Sobre nosotros</a></li>
+                            <li><a href="capy.php">Sobre Capy</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="header-right">
-            <a href="<?php echo "login.php";?>" class="btn-register">Registrarse</a>
             <a href="login.php" class="btn-login">Iniciar Sesión</a>
+            <a href="<?php echo "login.php";?>" class="btn-register">Registrarse</a>
+
 
         </div>
     </header>
@@ -123,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="discover-more">
+        <a href="php/discos.php" class="discover-more">
             Descubre más
             <div class="circle-arrow">
                 <i class="fas fa-arrow-right"></i> <!-- Usando el ícono de FontAwesome -->
@@ -146,7 +148,7 @@
 
     <section class="fourth-section">
         <h3>Únete a nuestra comunidad de personas que <br> han descubierto la paz en Capy Waves.</h3>
-        <button class="btn-register-cta">Registrarse</button>
+        <a href="login.php?section=register" class="btn-register-cta">Registrarse</a>
         <div class="image-placeholder">
             <img src="fotos/capybara2.png">
         </div>

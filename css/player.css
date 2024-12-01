@@ -100,6 +100,16 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover; /* Mantiene las proporciones dentro del contenedor */
+        animation: rotateClockwise 5s linear infinite;
+    }
+
+    @keyframes rotateClockwise {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
     
     .music-info {
