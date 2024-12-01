@@ -1,20 +1,17 @@
 <?php
-    require_once "logFun.php";
+include 'log_out.php'; // Incluir el archivo donde se define la función logout
 
-    if (isset($_GET['action']) && $_GET['action'] === 'logout') {
-        logout(); // Llamar a la función logout si se solicita
-    }
+if (isset($_GET['action']) && $_GET['action'] === 'logout') {
+    logout(); // Llamar a la función logout si se solicita
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <!-- Title -->
     <title>CapyWaves discos</title>
 
     <!-- JavaScript -->
-
     <script src="js/fontawesome/solid.js"></script>
     <script src="../js/menu_desplegable.js"></script>
     <script src="../js/inicio.js"></script>
@@ -28,7 +25,6 @@
     <link href="../css/fontawesome/solid.css" rel="stylesheet" />
     <link href="../css/inicio.css" rel="stylesheet" />
 
-
     <!-- Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,39 +36,41 @@
         href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
 <header class="header">
     <div class="header-left">
-        <a href="<?php echo "../menu.php"; ?>">
+        <a href="../menu.php">
             <img src="../fotos/logo2.png" id="logo">
         </a>
     </div>
     <div class="header-center">
         <nav>
-           <ul>
-                    <li><a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../menu.php">Principal</a></li>
-                            <li><a href="discos.php">Inicio</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="discos.php">Galeria</a></li>
-                            <li><a href="../reproductor.html">Reproductor</a></li>
-                            <li><a href="../juego/inicio.html">Videojuego</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
-                        <ul class="dropdown-menu">
+            <ul>
+                <li>
+                    <a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../menu.php">Página principal</a></li>
+                        <li><a href="discos.php">Mi Espacio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discos.php">Galería</a></li>
+                        <li><a href="../reproductor.html">Reproductor</a></li>
+                        <li><a href="../juego/inicio.html">Videojuego</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <ul class="dropdown-menu">
                         <li><a href="../about_us.php">Sobre nosotros</a></li>
-                            <li><a href="../capy.php">Sobre Capy</a></li>
-                        </ul>
-                    </li>
-          </ul>
+                        <li><a href="../capy.php">Sobre Capy</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </div>
     <div class="header-right">
@@ -86,6 +84,7 @@
         </div>
     </div>
 </header>
+
 
     <div class="main-content">
         <div class="slider">
