@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Incluir la conexión holaaa
 include_once 'conexion.php';
 function login($username, $password)
 {
@@ -27,6 +26,8 @@ function login($username, $password)
     return false;
 }
 
+
+//AQUI ESTA CERRAR SESION :D
 function logout() {
     // Iniciar la sesión (si no está ya iniciada)
     if (session_status() === PHP_SESSION_NONE) {
