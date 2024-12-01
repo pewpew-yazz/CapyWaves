@@ -77,20 +77,25 @@
         
     </div>
     <div class="edit-photo">
-        <div class="photo-container">
-            <img src="fotos/sinfoto.jpg" alt="Foto de usuario" class="photo">
-            <button class="camera-btn">
-                <i class="fa fa-camera"></i>
-            </button>
-            <button class="btn upload-btn">Subir foto</button>
-        </div>
-
-        <a href="php/discos.php" class="btn redirect-btn">
-            Ir a la página principal
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-        </a>
-        
+    <div class="photo-container">
+        <img src="fotos/sinfoto.jpg" alt="Foto de usuario" class="photo">
+        <form action="edit_profile.php" method="POST" enctype="multipart/form-data">
+            <!-- Campo de subir archivo oculto -->
+            <input type="file" id="profile_photo"  class="btn upload-btn" name="profile_photo" accept="image/*" required>
+            <!-- Botón estilizado -->
+            
+            <button type="submit" name="upload_photo" class="btn upload-btn">Subir foto</button>
+        </form>
     </div>
+    <a href="php/discos.php" class="btn redirect-btn">
+        Ir a la página principal
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+    </a>
+</div>
+
+
+
+
 </div>
 </body>
 </html>
