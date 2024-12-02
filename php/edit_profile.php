@@ -91,7 +91,7 @@
                 <!-- Campo para el usuario -->
                 <div class="input-box">
                     <input type="text" name="username" class="inputs input-field" placeholder="Usuario" required 
-                        value="<?= htmlspecialchars($userData['username'] ?? '') ?>" />
+                        value="<?= htmlspecialchars($userData['username'] ?? '') ?>" readonly />
                     <ion-icon name="person-outline" class="icon"></ion-icon>
                 </div>
                 <!-- Campo para el nombre -->

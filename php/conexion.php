@@ -1,8 +1,8 @@
 <?php
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'arturo');
-define('DB_PASSWORD', '300105');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
 define('DB_NAME', 'capywaves');
 /*function connectdb()
 {
