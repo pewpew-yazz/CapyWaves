@@ -3,8 +3,6 @@
     require "userFun.php";
 
 
-    session_start();
-
     $username = $_SESSION['username'];
 
     $userPhoto = getUserPhoto($username);

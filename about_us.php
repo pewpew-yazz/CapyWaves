@@ -1,3 +1,19 @@
+<?php
+    require_once "logFun.php";
+    require "userFun.php";
+
+
+    $username = $_SESSION['username'];
+
+    $userPhoto = getUserPhoto($username);
+
+
+
+    if (isset($_GET['action']) && $_GET['action'] === 'logout') {
+        logout(); // Llamar a la función logout si se solicita
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 

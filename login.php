@@ -123,9 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         </button>
                     </div>
                 </div>
-                <div class="forgot-password">
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </div>
+               
             </form>
 
             <!-- Register Form (Registrarse) -->
