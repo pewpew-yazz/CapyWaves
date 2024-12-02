@@ -83,81 +83,58 @@
     </div>
 </header>
 
-<div class="edit-container">
-    <div class="edit-info">
-        <h2 class="form-title">Editar perfil</h2>
-        <form class="edit-form" action="" method="post" autocomplete="off">
-        <div class="edit-photo">
-        <div class="photo-container">
-            <!-- Mostrar la foto del usuario si está disponible, de lo contrario usar una por defecto -->
-            <img src="<?= htmlspecialchars($userData['photo'] ?? '../fotos/sinfoto.jpg') ?>" 
-                alt="Foto de usuario" class="photo">
-            <form action="" method="POST" enctype="multipart/form-data">
-                <!-- Campo de subir archivo oculto -->
-                <input type="file" id="profile_photo" class="btn upload-btn" name="profile_photo" accept="image/*" required>
-                <!-- Botón estilizado -->
-                <button type="submit" name="upload_photo" class="btn upload-btn">Subir foto</button>
+ <div class="edit-container">
+        <div class="edit-info">
+            <h2 class="form-title">Editar perfil</h2>
+            <form class="edit-form" action="" method="post" autocomplete="off">
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input type="text" name="username" class="inputs input-field" placeholder="Usuario" required value="<?= htmlspecialchars($userData['username'] ?? '') ?>"/>
+                        <ion-icon name="person-outline" class="icon"></ion-icon>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="nombre" class="inputs input-field" placeholder="Nombre(s)" required value="<?= htmlspecialchars($userData['nombre'] ?? '') ?>" />
+                        <ion-icon name="person-outline" class="icon"></ion-icon>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-box">
+                            <input type="text" name="apellido_paterno" class="inputs input-field" placeholder="Apellido paterno" required value="<?= htmlspecialchars($userData['apellido_P'] ?? '') ?>" />
+                            <ion-icon name="person-outline" class="icon"></ion-icon>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" name="apellido_materno" class="inputs input-field" placeholder="Apellido materno" value="<?= htmlspecialchars($userData['apellido_M'] ?? '') ?>" />
+                            <ion-icon name="person-outline" class="icon"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="correo" class="inputs input-field" placeholder="Correo electrónico" required value="<?= htmlspecialchars($userData['email'] ?? '') ?>" />
+                        <ion-icon name="mail-outline" class="icon"></ion-icon>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" name="contraseña" class="inputs input-field" placeholder="Contraseña" required value="<?= htmlspecialchars($userData['password'] ?? '') ?>" />
+                        <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" name="guardar" class="btn">Guardar cambios</button>
+                    <button type="reset" class="btn">Limpiar</button>
+                    <a href="discos.php" class="btn redirect-btn">
+                        Ir a la página principal
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
             </form>
         </div>
-    </div>
-            <div class="form-inputs">
-                <!-- Campo para el usuario -->
-                <div class="input-box">
-                    <input type="text" name="username" class="inputs input-field" placeholder="Usuario" required 
-                        value="<?= htmlspecialchars($userData['username'] ?? '') ?>" readonly />
-                    <ion-icon name="person-outline" class="icon"></ion-icon>
-                </div>
-                <!-- Campo para el nombre -->
-                <div class="input-box">
-                    <input type="text" name="nombre" class="inputs input-field" placeholder="Nombre(s)" required 
-                        value="<?= htmlspecialchars($userData['nombre'] ?? '') ?>" />
-                    <ion-icon name="person-outline" class="icon"></ion-icon>
-                </div>
-                <!-- Campos para apellidos -->
-                <div class="input-row">
-                    <div class="input-box">
-                        <input type="text" name="apellido_paterno" class="inputs input-field" placeholder="Apellido paterno" required 
-                            value="<?= htmlspecialchars($userData['apellido_P'] ?? '') ?>" />
-                        <ion-icon name="person-outline" class="icon"></ion-icon>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" name="apellido_materno" class="inputs input-field" placeholder="Apellido materno" 
-                            value="<?= htmlspecialchars($userData['apellido_M'] ?? '') ?>" />
-                        <ion-icon name="person-outline" class="icon"></ion-icon>
-                    </div>
-                </div>
-                <!-- Campo para el correo -->
-                <div class="input-box">
-                    <input type="email" name="correo" class="inputs input-field" placeholder="Correo electrónico" required 
-                        value="<?= htmlspecialchars($userData['email'] ?? '') ?>" />
-                    <ion-icon name="mail-outline" class="icon"></ion-icon>
-                </div>
-                <!-- Campo para la contraseña -->
-                <div class="input-box">
-                    <input type="text" name="contraseña" class="inputs input-field" placeholder="Contraseña" required 
-                        value="<?= htmlspecialchars($userData['password'] ?? '') ?>" />
-                    <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
-                </div>
+        <div class="edit-photo">
+            <div class="photo-container">
+                <img src="<?= htmlspecialchars($userData['photo'] ?? '../fotos/sinfoto.jpg') ?>" alt="Foto de usuario" class="photo">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <input type="file" id="profile_photo" name="profile_photo" accept="image/*" class="upload-btn">
+                    <button type="submit" name="upload_photo" class="btn upload-btn">Subir nueva foto</button>
+                </form>
             </div>
-            <div class="form-actions">
-                <button type="submit" name="guardar" class="btn">Guardar cambios</button>
-                <button type="reset" class="btn">Limpiar</button>
-                    <a href="discos.php" class="btn redirect-btn">
-                Ir a la página principal
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
-            </div>
-        </form>
+        </div>
     </div>
-</div>
-
-
-
-
-
-
-
-</div>
 </body>
 </html>
 

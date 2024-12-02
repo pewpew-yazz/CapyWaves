@@ -1,0 +1,22 @@
+:root {
+    
+    /*Transparencias*/
+    --lowTransparency: ;
+    --mediumTransparency: rgba(255, 255, 255, 0.9); /*header-center*/
+    --highTransparency: ;
+
+    /*Colores azules*/
+    --lighBlue: #5abed7;
+    --blue: #049dcb; 
+    --darkBlue: #21596c;
+
+    /*Colores naranjas*/
+    --lighOrange: #fce6d0;
+    --mediumOrange:#f1b97e;
+    --orange: #ed7a00;
+
+    --white: #fff;
+    --black: #000;
+
+
+}

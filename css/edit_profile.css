@@ -21,39 +21,107 @@ body {
 }
 
 /* CONTAINER */
-.edit-container,
-.form-container {
+.edit-container {
     display: flex;
     width: 800px;
     height: 600px;
     border-radius: 30px;
     border: 3px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
-    overflow: hidden;   
-}
-
-.edit-container {
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    gap: 20px; /* Espaciado entre las secciones */
-    height: 790px;
-    width: 90%;
+    overflow: hidden;
 }
 
 /* LEFT SECTION */
 .edit-info {
-    width: 60%;
+    flex: 3;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* FORM TITLE */
+.form-title {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* INPUT BOX */
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.inputs {
+    width: 100%;
+    height: 55px;
+    padding: 0 40px;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.inputs::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* INPUT ROW */
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-row .input-box {
+    flex: 1;
+}
+
+/* FORM ACTIONS */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background: #21264D;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
 }
 
 /* RIGHT SECTION */
 .edit-photo {
-    width: 100%;
+    flex: 2;
+    background: rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,83 +129,31 @@ body {
     position: relative;
 }
 
-.form-photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Espaciado entre los elementos */
-}
-
-.file-input {
-    display: none;
-}
-
 /* PHOTO */
 .photo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100px;
-    height: 250px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
 }
 
-
-.camera-btn {
-    position: absolute;
-    bottom: 50px; /* Ajusta la posición vertical */
-    right: 15px; /* Ajusta la posición horizontal */
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, opacity 0.2s;
-}
-
-.camera-btn:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-}
-
-.camera-btn i {
-    font-size: 18px;
-    color: #21264D; /* Mismo color que el resto de los botones */
-}
-
-.upload-label {
-    padding: 8px 20px;
-    font-size: 14px;
-    background: #21264D;
-    color: #fff;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
+/* BUTTONS */
 .upload-btn {
-    padding: 8px 20px;
-    font-size: 14px;
     background: #21264D;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 50px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .upload-btn:hover {
@@ -145,102 +161,9 @@ body {
     opacity: 0.85;
 }
 
-/* FORM ALIGNMENT */
-.edit-form,
-.form-inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espaciado reducido entre inputs */
-}
-
-/* INPUT BOX */
-.input-box {
-    position: relative;
-    margin-bottom: 10px; /* Espaciado reducido */
-}
-
-.inputs {
-    width: 100%;
-    height: 55px;
-    margin: 3px 0;
-    color: #fff;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    padding: 0 40px 0 20px;
-    background: rgba(255, 255, 255, 0.2);
-    outline: none;
-    backdrop-filter: blur(20px);
-}
-
-.inputs::placeholder {
-    color: #fff;
-    font-size: 15px;
-}
-
-.input-box .icon {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    color: #fff;
-    width: 17px;
-    height: 17px;
-}
-
-/* INPUT ROW (APELLIDOS) */
-.input-row {
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.input-row .input-box {
-    flex: 1;
-    min-width: 0;
-}
-
-/* FORM TITLE */
-.form-title {
-    margin-bottom: 30px;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 600;
-    text-align: center;
-}
-
-/* FORM ACTIONS */
-.form-actions {
-    display: flex;
-    justify-content: center; /* Centra los botones */
-    gap: 20px; /* Espaciado entre botones */
-}
-
-.form-actions .btn {
-    font-weight: 500;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 30px;
-    background: #21264D;
-    color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    margin-top: 10px;
-    text-align: center;
-    flex: 1;  /* Hace que ambos botones ocupen el mismo espacio disponible*/ 
-}
-
-.form-actions .btn:hover {
-    opacity: 0.85;
-    transform: scale(1.05);
-}
-
 /* Botón de redirección */
 .redirect-btn {
-    position: absolute; /* Posición absoluta dentro del contenedor */
+    position: absolute; /* Asegura que el botón esté posicionado dentro del contenedor */
     bottom: 20px; /* Alineado al fondo con un margen */
     right: 20px; /* Alineado al lado derecho con un margen */
     width: 230px;
@@ -255,12 +178,13 @@ body {
     border-radius: 30px;
     text-decoration: none; /* Elimina el subrayado */
     cursor: pointer;
-    transition: .3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra similar */
+    transition: 0.3s; /* Transición suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    z-index: 10; /* Asegura que el botón esté por encima de todas las capas */
 }
 
 .redirect-btn:hover {
-    gap: 15px;
+    gap: 15px; /* Cambia el espaciado al pasar el mouse */
 }
 
 .redirect-btn ion-icon {
