@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
-    <title>CapyWaves - La historia de Capy</title>
+    <title>CapyWaves - Conoce a Capy</title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/headerusuario.css">

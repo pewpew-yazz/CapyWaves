@@ -19,7 +19,7 @@
 
 <head>
     <!-- Title -->
-    <title>CapyWaves discos</title>
+    <title>CapyWaves - Menu</title>
 
     <!-- JavaScript -->
 

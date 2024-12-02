@@ -3,13 +3,13 @@
 
 <head>
    <!-- Title -->
-   <title>CapyWaves</title>
+   <title>CapyWaves - Inicio</title>
 
     <!-- JavaScript -->
     <script src="js/fontawesome/solid.js"></script>
     <script src="js/scroll.js"></script>
 
-    <!-- Stylesheets -->       <!-- No agregar login.css -->
+    <!-- Stylesheets -->
     <link href="css/headerbotones.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />

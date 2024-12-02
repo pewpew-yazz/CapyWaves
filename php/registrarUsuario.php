@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <head>
     <!-- Title -->
-    <title>CapyWaves - Log In</title>
+    <title>CapyWaves - Registro</title>
 
     <!-- JavaScript -->
     <script src="data/config.js"></script>

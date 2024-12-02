@@ -19,7 +19,7 @@
 
 <head>
     <!-- Title -->
-    <title>CapyWaves discos</title>
+    <title>CapyWaves - Nosotros</title>
 
     <!-- JavaScript -->
     <script src="../js/fontawesome/solid.js"></script>

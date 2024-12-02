@@ -89,7 +89,7 @@
             <form class="edit-form" action="" method="post" autocomplete="off">
                 <div class="form-inputs">
                     <div class="input-box">
-                        <input type="text" name="username" class="inputs input-field" placeholder="Usuario" required value="<?= htmlspecialchars($userData['username'] ?? '') ?>"/>
+                        <input type="text" name="username" class="inputs input-field" placeholder="Usuario" required value="<?= htmlspecialchars($userData['username'] ?? '') ?>"readonly/>
                         <ion-icon name="person-outline" class="icon"></ion-icon>
                     </div>
                     <div class="input-box">
