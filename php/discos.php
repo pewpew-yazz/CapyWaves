@@ -1,5 +1,15 @@
 <?php
     require_once "logFun.php";
+    require "userFun.php";
+
+
+    session_start();
+
+    $username = $_SESSION['username'];
+
+    $userPhoto = getUserPhoto($username);
+
+
 
     if (isset($_GET['action']) && $_GET['action'] === 'logout') {
         logout(); // Llamar a la función logout si se solicita
@@ -77,10 +87,10 @@
     </div>
     <div class="header-right">
         <div class="profile-container">
-            <img src="../fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
+        <img src="<?php echo $userPhoto ? "../fotos/" . $userPhoto : '../fotos/sinfoto.jpg'; ?>" alt="Foto de perfil" class="profile-picture">
             <i class="fas fa-chevron-down profile-arrow"></i>
             <ul class="dropdown-menu">
-                <li><a href="../edit_profile.php">Editar Información</a></li>
+                <li><a href="edit_profile.php">Editar Información</a></li>
                 <li><a href="?action=logout">Cerrar Sesión</a></li>
             </ul>
         </div>
