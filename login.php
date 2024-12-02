@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($username) && !empty($password)) {
         if (login($username, $password)) {
             error_log("Login succesfull for ".$_SESSION['num']);
-            header("Location: /Capywaves/php/discos.php");
+            header("Location: /Capywaves/php/discos.php"); //SI NO FUNCIONA AGREGAR ESTO /Capywaves/php/discos.php
             exit();
         } else {
             $msg = 'Username or password incorrect.';
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     elseif (!empty($user) && !empty($name) && !empty($lastname1) && !empty($email) && !empty($password)) {
         if(registroUsuario($user,$email,$password,$name,$lastname1,$lastname2)){
             error_log("Login succesfull for ".$_SESSION['num']);
-            header("Location: /Capywaves/php/discos.php");
+            header("Location: /Capywaves/php/discos.php"); //SI NO FUNCIONA AGREGAR ESTO /Capywaves/php/discos.php
             exit();
         }
     }
@@ -123,9 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         </button>
                     </div>
                 </div>
-                <div class="forgot-password">
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </div>
+               
             </form>
 
             <!-- Register Form (Registrarse) -->

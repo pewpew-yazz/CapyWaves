@@ -3,8 +3,6 @@
     require "userFun.php";
 
 
-    session_start();
-
     $username = $_SESSION['username'];
 
     $userPhoto = getUserPhoto($username);
@@ -12,7 +10,7 @@
 
 
     if (isset($_GET['action']) && $_GET['action'] === 'logout') {
-        logout(); // Llamar a la función logout si se solicita
+        logout();
     }
 ?>
 
@@ -78,8 +76,8 @@
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                        <li><a href="../about_us.php">Sobre nosotros</a></li>
-                            <li><a href="../capy.php">Sobre Capy</a></li>
+                        <li><a href="about_us.php">Sobre nosotros</a></li>
+                            <li><a href="capy.php">Sobre Capy</a></li>
                         </ul>
                     </li>
           </ul>
