@@ -13,6 +13,15 @@ body {
     height: 70px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
 /* Title Section */
 .title-section {
     text-align: center;
@@ -42,15 +51,47 @@ body {
     color: #f0f0f0;
 }
 
-/* Story Section */
-/* Contenedor de la sección */
-/* Contenedor de la sección */
 .story-section {
     display: flex;
-    flex-direction: column; /* Cambia la dirección para que los elementos se apilen verticalmente */
-    align-items: center;
-    padding: 40px 5%; /* Espacio adicional en los costados */
-    gap: 20px;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #f9f9f9;
+    padding: 40px 5%; /* Espaciado alrededor */
+}
+
+.story-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Columna de imágenes y texto */
+    gap: 40px; /* Espaciado entre imágenes y texto */
+    align-items: center; /* Alinea verticalmente cada columna */
+}
+
+.story-images {
+    display: flex;
+    flex-direction: column; /* Apila las imágenes verticalmente */
+    gap: 20px; /* Espacio entre imágenes */
+    align-items: center; /* Centra las imágenes dentro de su columna */
+}
+
+.stacked-image {
+    width: 100%; /* Ajusta el ancho relativo al contenedor */
+    max-width: 700px; /* Tamaño máximo aumentado */
+    height: auto; /* Mantiene proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto elegante */
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el texto verticalmente */
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.8;
+}
+
+.story-text {
+    margin-bottom: 20px;
 }
 
 /* Contenedor de imagen */
@@ -60,14 +101,6 @@ body {
     align-items: center;
     margin-bottom: 20px; /* Espacio entre la imagen y el texto */
 }
-
-.story-image img {
-    max-width: 100%;
-    height: auto; /* Mantiene la proporción */
-    object-fit: contain; /* Asegura que la imagen no se deforme */
-    border-radius: 15px;
-}
-
  
 
 /* Video Section */
@@ -101,4 +134,14 @@ body {
 }
 
 /* Footer */
+footer {
+   
+    margin-top: auto; /* Empuja el footer al final del contenedor flex */
+    padding: 20px; /* Añade un poco de espacio interno */
+    background-color: #21264D; /* Color del footer */
+    color: white;
+    text-align: center;
+
+
+}
 
