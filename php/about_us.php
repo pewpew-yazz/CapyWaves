@@ -10,7 +10,7 @@
 
 
     if (isset($_GET['action']) && $_GET['action'] === 'logout') {
-        logout(); // Llamar a la función logout si se solicita
+        logout();
     }
 ?>
 
@@ -22,17 +22,17 @@
     <title>CapyWaves discos</title>
 
     <!-- JavaScript -->
-    <script src="js/fontawesome/solid.js"></script>
-    <script src="js/menu_desplegable.js"></script>
+    <script src="../js/fontawesome/solid.js"></script>
+    <script src="../js/menu_desplegable.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Stylesheets -->
-    <link href="css/us.css" rel="stylesheet" />
-    <link href="css/footer.css" rel="stylesheet" />
-    <link href="css/headerusuario.css" rel="stylesheet" />
-    <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
-    <link href="css/fontawesome/solid.css" rel="stylesheet" />
+    <link href="../css/us.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/headerusuario.css" rel="stylesheet" />
+    <link href="../css/fontawesome/fontawesome.css" rel="stylesheet" />
+    <link href="../css/fontawesome/solid.css" rel="stylesheet" />
 
     <!-- Metadata -->
     <meta charset="utf-8" />
@@ -51,7 +51,7 @@
     <header class="header">
     <div class="header-left">
         <a href="<?php echo "menu.php"; ?>">
-            <img src="fotos/logo2.png" id="logo">
+            <img src="../fotos/logo2.png" id="logo">
         </a>
     </div>
     <div class="header-center">
@@ -60,14 +60,14 @@
                     <li><a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="menu.php">Principal</a></li>
-                            <li><a href="php/discos.php">Inicio</a></li>
+                            <li><a href="discos.php">Inicio</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="php/discos.php">Galeria</a></li>
-                            <li><a href="reproductor.html">Reproductor</a></li>
-                            <li><a href="juego/inicio.html">Videojuego</a></li>
+                            <li><a href="discos.php">Galeria</a></li>
+                            <li><a href="../reproductor.html">Reproductor</a></li>
+                            <li><a href="../juego/inicio.html">Videojuego</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
@@ -81,7 +81,7 @@
     </div>
     <div class="header-right">
         <div class="profile-container">
-            <img src="fotos/sinfoto.jpg" alt="Foto de perfil" class="profile-picture">
+            <img src="<?php echo $userPhoto ? "../fotos/" . $userPhoto : '../fotos/sinfoto.jpg'; ?>" alt="Foto de perfil" class="profile-picture">
             <i class="fas fa-chevron-down profile-arrow"></i>
             <ul class="dropdown-menu">
                 <li><a href="edit_profile.php">Editar Información</a></li>
@@ -107,7 +107,7 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="fotos/capy_logo.png" alt="Nuestro equipo" />
+                <img src="../fotos/capy_logo.png" alt="Nuestro equipo" />
             </div>
         </div>
     </section>
