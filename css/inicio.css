@@ -1,3 +1,6 @@
+/*modificar colores*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 body {
     font-family: 'Jersey 10', sans-serif;
@@ -32,7 +35,7 @@ body {
 
 .right-section h4{
   font-size: 50pt;
-  color: #21596c;
+  color: var(--darkBlue);
   line-height: 80px;
   text-align: center;
   font-family: "Jersey 10", serif;
@@ -46,7 +49,7 @@ body {
     color: #fff;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: var(--blue);
   }
   
   h2{
@@ -70,7 +73,7 @@ body {
     color: #fff;
     line-height: 30px;
     font-size:14pt;
-    background-color: #13a6cc;
+    background-color: var(--blue);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -83,7 +86,7 @@ body {
 
   h3 {
     font-size: 60pt;
-    color: #21596c;
+    color: var(--darkBlue);
     line-height: 80px;
     font-family: "Jersey 10", serif;
     margin-top: 25px;
@@ -168,7 +171,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #555;
+  color: var(--darkBlue);
   padding: 10px;
   border-radius: 8px;
   transition: background-color 0.3s;
@@ -176,7 +179,7 @@ body {
 
 /* Colores alternados */
 .dropdown-content ul li:nth-child(odd) {
-  background-color: #def1fa; /* Azul claro */
+  background-color: var(--ligthBlue); /* Azul claro */
 }
 
 .dropdown-content ul li:nth-child(even) {
@@ -190,7 +193,7 @@ body {
 
 /* Íconos de corazón */
 .dropdown-content ul li i {
-  color: #ed640d;
+  color: var(--orange);
   margin-right: 8px;
 }
 
@@ -222,7 +225,7 @@ body {
 /* Recomendaciones (igual a Favoritos) */
 .recommendations-box {
   margin-left: 34px; /* Ajusta el margen según lo necesario */
-  background: linear-gradient(to left, #f6f0ea, #13a6cc, #13a6cc);
+  background: linear-gradient(to left, #f6f0ea, #5abed7, #049dcb);
   padding: 20px;
   text-align: left;
   border-radius: 10px;
@@ -294,7 +297,7 @@ body {
 
 /* Íconos de música */
 .recommendations-box .dropdown-content ul li i {
-  color: #ed640d;
+  color: var(--orange);
   margin-right: 8px;
 }
 

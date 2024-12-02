@@ -59,7 +59,7 @@
     font-family: 'Jersey 10';
     margin-top: 20px;
     font-size: 30pt;
-    color: #21596c;
+    color: var(--darkBlue);
     margin-bottom: 15px;
 }
 
@@ -71,7 +71,7 @@
     margin: 30px 0 0 0; /* Elimina el margen izquierdo */
     padding: 10px 30px;
     border-radius: 20px;
-    background-color: #E88735;
+    background-color: var(--orange);
     color: #fff;
     border: none;
     display: inline-block;
@@ -116,7 +116,7 @@
     top: 70%;
     font-size: 40px; /* Tamaño de los íconos */
     background-color: transparent;
-    color: #12acdb;
+    color: var(--blue);
     font-weight: bold;
     opacity: 0.3;
     border: none;

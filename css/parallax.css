@@ -97,7 +97,7 @@
     text-align: center;
 }
 #prado-de-calma {
-    background-color: #f4eae0;
+    background-color: var(--lightOrange);
 }
 .column img {
     transition: transform 0.3s ease; /* Transición suave */
@@ -108,7 +108,7 @@
     margin: 5px auto;  /* Centra la imagen en la columna */
 }
 .column .text-overlay {
-    color: #59553f;
+    color: var(--mediumBlue);
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
@@ -118,7 +118,7 @@
     display: flex;
     justify-content: center;  /* Centra el contenido horizontalmente */
     align-items: center;  /* Centra el contenido verticalmente */
-    color: #f08c24;
+    color: var(--orange);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -127,7 +127,7 @@
 .circle-arrow {
     width: 30px;
     height: 30px;
-    background-color: #f08c24;
+    background-color: var(--orange);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -143,14 +143,14 @@
     margin-bottom: 30px;
     font-family: 'Jersey 10';
     font-size: 40px;
-    color: #59553f;
+    color: var(--mediumBlue);
     text-align: center;
     letter-spacing: 6px;
 }
 .section3 p{
     margin-top: 20px;
     font-size: 18px;
-    color: #59553f;
+    color: var(--mediumBlue);
     text-align: center;
     line-height: 1.5;
     font-weight: bold;
@@ -172,7 +172,7 @@
     margin-top: 50px;
     display: flex;
     padding: 40px;
-    background-color: #5abed7;
+    background-color: var(--lightBlue);
     color: white;
     align-items: center;
     justify-content: space-between;
@@ -181,7 +181,7 @@
     flex: 1;
     font-size: 24px;
     font-weight: bold;
-    text-align: left;
+    text-align: right;
 }
 .benefits-right {
     flex: 1;
@@ -221,7 +221,7 @@
     justify-content: center; /* Alinea los elementos verticalmente */
     padding: 40px;
     background-color: #ffffff;
-    color: #21596c;
+    color: var(--darkBlue);
     line-height: 1.5;
     text-align: center; /* Centra el texto */
 }
@@ -232,7 +232,7 @@
 }
 .fourth-section .btn-register-cta {
     padding: 12px 20px;
-    background-color: #5abed7;
+    background-color: var(--blue);
     color: white;
     border: none;
     border-radius: 30px;

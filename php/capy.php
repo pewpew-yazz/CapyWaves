@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="../css/capy.css">
     <link rel="stylesheet" href="../css/footer.css" />
     <link href="../css/us.css" rel="stylesheet" />
+    <link href="../css/colors.css" rel="stylesheet" />
     <link href="../css/headerusuario.css" rel="stylesheet" />
     <link href="../css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="../css/fontawesome/solid.css" rel="stylesheet" />
@@ -50,8 +51,8 @@
             <ul>
                     <li><a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../menu.php">Principal</a></li>
-                            <li><a href="discos.php">Inicio</a></li>
+                            <li><a href="../menu.php">Inicio</a></li>
+                            <li><a href="discos.php">Menu</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
@@ -63,8 +64,8 @@
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                        <li><a href="about_us.php">Sobre nosotros</a></li>
-                            <li><a href="capy.php">Sobre Capy</a></li>
+                        <li><a href="about_us.php">¿Qué es CapyWaves?</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -85,7 +86,7 @@
     <!-- Título -->
     <section class="title-section">
         <div class="title-container">
-            <h1 class="story-title">¿Ya conoces la increíble historia de Capy?</h1>
+            <h1 class="page-title">¿Ya conoces la increíble historia de Capy?</h1>
             <p class="subtitle">Déjate llevar por esta mágica aventura llena de calma y determinación.</p>
         </div>
     </section>
@@ -98,7 +99,7 @@
                 <img src="../fotos/pescando.jpg" alt="Imagen de Capy" class="stacked-image">
             </div>
             <div class="story-content">
-                <p class="story-text"><strong>El Viaje de Capy y la Gran Naranja</strong></p>
+                <p class="story-title"><strong>El Viaje de Capy y la Gran Naranja</strong></p>
                 <p class="story-text">Había una vez una capibara llamada Capy, que vivía en un tranquilo bosque lleno de ríos cristalinos y cielos despejados. Desde pequeño, Capy tenía un sueño muy especial: probar una naranja. Había escuchado que las naranjas eran dulces, jugosas y refrescantes, como un rayo de sol en cada mordida. Sin embargo, en su hogar, nunca había visto una.</p>
                 <p class="story-text">Un día, mientras descansaba bajo la sombra de un árbol, se topó con una nutria curiosa que le habló de una antigua leyenda: la existencia de la Gran Naranja. “Dicen que está en el fondo del mar, escondida en un lugar mágico. Pero no es una naranja cualquiera... quien la encuentre será transformado para siempre”.</p>
                 <p class="story-text">Capy, emocionado y determinado, decidió emprender una aventura. Primero, buscó la ayuda de las nutrias, quienes conocían muchos secretos de los ríos y mares. Sin embargo, estas solo conocían la leyenda y no podían confirmar si era real. Luego, habló con las serpientes del bosque, quienes le contaron que un misterioso viajero llamado Rango podría tener las respuestas que buscaba.</p>

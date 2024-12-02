@@ -13,6 +13,7 @@
     <link href="css/headerbotones.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/parallax.css" rel="stylesheet" />
+    <link href="css/colors.css" rel="stylesheet" />
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
 
@@ -44,8 +45,7 @@
                 <ul>
                     <li><a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="menu.php">Principal</a></li>
-                            <li><a href="php/discos.php">Inicio</a></li>
+                            <li><a href="php/discos.php">Menu</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
@@ -57,8 +57,8 @@
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                        <li><a href="about_us.php">Sobre nosotros</a></li>
-                            <li><a href="capy.php">Sobre Capy</a></li>
+                        <li><a href="php/about_us.php">¿Qué es CapyWaves?</a></li>
+                            <li><a href="php/capy.php">Conoce a Capy</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -67,8 +67,6 @@
         <div class="header-right">
             <a href="login.php" class="btn-login">Iniciar Sesión</a>
             <a href="<?php echo "login.php";?>" class="btn-register">Registrarse</a>
-
-
         </div>
     </header>
 
@@ -139,9 +137,9 @@
         </div>
         <div class="benefits-right">
             <ul>
-                <li>• Música relajante que calma tu mente.</li>
-                <li>• Escenarios interactivos que te ayudan a desconectar.</li>
-                <li>• Experiencias personalizadas para tu bienestar.</li>
+                <li>• Música relajante que calma tu mente</li>
+                <li>• Escenarios interactivos que te ayudan a desconectar</li>
+                <li>• Experiencias personalizadas para tu bienestar</li>
             </ul>
         </div>
     </section>

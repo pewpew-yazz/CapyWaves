@@ -13,7 +13,7 @@ footer {
    
         margin-top: auto; /* Empuja el footer al final del contenedor flex */
         padding: 20px; /* Añade un poco de espacio interno */
-        background-color: #21264D; /* Color del footer */
+        background-color: var(--darkBlue); /* Color del footer */
         color: white;
         text-align: center;
     
@@ -59,14 +59,14 @@ nav ul li a {
     font-size: 16px; /* Tamaño de texto */
     text-decoration: none;
     font-weight: bold;
-    color: #21264D; /* Color del texto */
+    color: var(--darkBlue); /* Color del texto */
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #12addb; /* Color de texto al hacer hover */
+    color: var(--blue); /* Color de texto al hacer hover */
 }
 
 /* Dropdown Arrow */
@@ -78,7 +78,7 @@ nav ul li a:hover {
 
 .dropdown-arrow i {
     font-size: 12px;
-    color: #21264D;
+    color: var(--darkBlue);
 }
 
 nav ul li:hover .dropdown-arrow {
@@ -113,7 +113,7 @@ nav ul li .dropdown-menu li {
 nav ul li .dropdown-menu li a {
     display: block;
     padding: 10px 20px; /* Espaciado interno */
-    color: #21264D; /* Color del texto */
+    color: var(--darkBlue); /* Color del texto */
     text-decoration: none;
     font-size: 16px; /* Tamaño de fuente */
     transition: background-color 0.3s ease;
@@ -121,7 +121,7 @@ nav ul li .dropdown-menu li a {
 
 nav ul li .dropdown-menu li a:hover {
     background-color: rgba(18, 173, 219, 0.1); /* Fondo azul claro al hacer hover */
-    color: #12addb;
+    color: var(--blue);
 }
 
 /* Botones de Registro e Inicio de Sesión */
@@ -146,27 +146,27 @@ nav ul li .dropdown-menu li a:hover {
 
 .btn-register {
     background-color: #ffffff; /* Fondo blanco */
-    color: #f29d43; /* Texto naranja */
+    color: var(--orange); /* Texto naranja */
     border: 2px solid #FFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 .btn-login {
-    background-color: #f29d43; /* Fondo naranja */
+    background-color: var(--orange); /* Fondo naranja */
     color: #FFF; /* Texto blanco */
     border: 2px solid #FFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 .btn-register:hover {
-    background-color: #f29d43;
+    background-color: var(--orange);
     color: #FFF;
     transform: scale(0.95);
 }
 
 .btn-login:hover {
     background-color: #FFF;
-    color: #f29d43;
+    color: var(--orange);
     transform: scale(0.95);
 }
 
@@ -242,7 +242,7 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 50px;
     margin-bottom: 30px;
     letter-spacing: 7px;
-    color: #59553f;
+    color: var(--mediumBlue);
 }
 
 .benefits-container {
@@ -271,7 +271,7 @@ nav ul li .dropdown-menu li a:hover {
 
 .benefit-icon {
     font-size: 50px;
-    color: #21596c;
+    color: var(--mediumBlue);
     margin-bottom: 15px;
 }
 
@@ -279,13 +279,13 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: bold;
-    color: #049dcb;
+    color: var(--blue);
 }
 
 .benefit-item p {
     font-size: 16px;
     line-height: 1.5;
-    color: #21596c;
+    color: var(--mediumBlue);
 }
 
 /* Sección Público Dirigido */
@@ -302,7 +302,7 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 50px;
     margin-bottom: 30px;
     letter-spacing: 7px;
-    color: #59553f;
+    color: var(--mediumBlue);
 }
 
 .audience-container {
@@ -329,7 +329,7 @@ nav ul li .dropdown-menu li a:hover {
 
 .audience-icon {
     font-size: 50px;
-    color: #21596c;
+    color: var(--mediumBlue);
     margin-bottom: 15px;
 }
 
@@ -337,11 +337,11 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #049dcb;;
+    color: var(--blue);
 }
 
 .audience-item p {
     font-size: 16px;
     line-height: 1.5;
-    color: #21596c;
+    color: var(--mediumBlue);
 }

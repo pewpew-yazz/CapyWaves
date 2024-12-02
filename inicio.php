@@ -12,6 +12,7 @@
     <!-- Stylesheets -->
     <link href="css/inicio.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
+    <link href="css/colors.css" rel="stylesheet" />
     <link href="css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="css/fontawesome/solid.css" rel="stylesheet" />
 
@@ -55,8 +56,8 @@
                 </li>
                 <li>
                     <a href="#">Nosotros</a></li>
-                    <li><a href="about_us.php">Sobre nosotros</a></li>
-                    <li><a href="#">Sobre Capy</a></li>
+                    <li><a href="about_us.php">¿Qué es CapyWaves?</a></li>
+                    <li><a href="#">Conoce a Capy</a></li>
               </ul>
             </li>
           </ul>

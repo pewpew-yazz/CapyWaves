@@ -67,14 +67,14 @@ nav ul li a {
     font-size: 16px; /* Tamaño consistente con el diseño */
     text-decoration: none;
     font-weight: bold;
-    color: #21264D; /* Color del texto */
+    color: var(--darkBlue); /* Color del texto */
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #12addb; /* Cambio de color al hover */
+    color: var(--blue); /* Cambio de color al hover */
 }
 
 /* Dropdown Arrow */
@@ -86,7 +86,7 @@ nav ul li a:hover {
 
 .dropdown-arrow i {
     font-size: 12px;
-    color: #21264D;
+    color: var(--darkBlue);
 }
 
 nav ul li:hover .dropdown-arrow {
@@ -114,7 +114,7 @@ nav ul li:hover .dropdown-menu {
 nav ul li .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
-    color: #21264D;
+    color: var(--darkBlue);
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -157,7 +157,7 @@ nav ul li .dropdown-menu li a {
 
 .profile-arrow {
     font-size: 16px;
-    color: #21264D;
+    color: var(--darkBlue);
     transition: transform 0.3s ease;
 }
 
@@ -190,7 +190,7 @@ nav ul li .dropdown-menu li a {
 .profile-container .dropdown-menu li a {
     display: block;
     padding: 10px 20px;
-    color: #21264D;
+    color: var(--darkBlue);
     text-decoration: none;
     font-weight: bold;
     font-size: 16px; /* Tamaño de fuente uniforme */
@@ -200,7 +200,7 @@ nav ul li .dropdown-menu li a {
 .profile-container .dropdown-menu li a:hover {
    
     background-color: rgba(18, 173, 219, 0.1);
-    color: #12addb;
+    color: var(--blue);
     border-radius: 15px;
 }
 

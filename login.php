@@ -64,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href="css/parallax.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/themes.css" rel="stylesheet" />
+    <link href="css/colors.css" rel="stylesheet" />
 
     <!-- Metadata -->
     <meta charset="utf-8" />

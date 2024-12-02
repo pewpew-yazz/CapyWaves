@@ -60,7 +60,7 @@ body {
 }
 
 .btn-1 {
-    background: #21264D;
+    background: var(--darkBlue);
 }
 
 .btn:hover {
@@ -74,7 +74,7 @@ body {
     padding: 8px 40px;
     border: none;
     border-radius: 30px;
-    background: #21264D;
+    background: var(--darkBlue);
     color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -206,7 +206,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: #21264D;
+    background: var(--darkBlue);
     cursor: pointer;
     transition: .3s;
 }
@@ -248,11 +248,11 @@ body {
 
 .social-login-box:hover {
     transform: scale(0.9);
-    color: #21264D;
+    color: var(--darkBlue);
 }
 
 .form-error{
-    color: red;
+    color: var(--orange);
     font-size: 16px;
     text-align: center;
     font-weight: bold;

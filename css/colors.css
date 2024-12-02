@@ -6,17 +6,15 @@
     --highTransparency: ;
 
     /*Colores azules*/
-    --lighBlue: #5abed7;
+    --lightBlue: #5abed7;
     --blue: #049dcb; 
-    --darkBlue: #21596c;
+    --mediumBlue: #21596c;
+    --darkBlue: #21264D;
 
     /*Colores naranjas*/
-    --lighOrange: #fce6d0;
+    --lightOrange: #fff3e7;
     --mediumOrange:#f1b97e;
     --orange: #ed7a00;
-
-    --white: #fff;
-    --black: #000;
 
 
 }

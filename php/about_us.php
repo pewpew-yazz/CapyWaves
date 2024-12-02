@@ -30,6 +30,7 @@
     <!-- Stylesheets -->
     <link href="../css/us.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/colors.css" rel="stylesheet" />
     <link href="../css/headerusuario.css" rel="stylesheet" />
     <link href="../css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="../css/fontawesome/solid.css" rel="stylesheet" />
@@ -59,8 +60,8 @@
            <ul>
                     <li><a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="menu.php">Principal</a></li>
-                            <li><a href="discos.php">Inicio</a></li>
+                            <li><a href="menu.php">Inicio</a></li>
+                            <li><a href="php/discos.php">Menu</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
@@ -72,8 +73,7 @@
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                        <li><a href="about_us.php">Sobre nosotros</a></li>
-                            <li><a href="capy.php">Sobre Capy</a></li>
+                            <li><a href="capy.php">Conoce a Capy</a></li>
                         </ul>
                     </li>
           </ul>
@@ -93,7 +93,7 @@
 
     <!-- Sección Sobre Nosotros -->
     <section class="about-us">
-        <h2>Sobre Nosotros</h2>
+        <h2>¿Qué es CapyWaves?</h2>
         <div class="about-container">
             <div class="about-text">
                 <p>

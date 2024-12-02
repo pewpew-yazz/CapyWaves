@@ -1,54 +1,46 @@
 /* General Reset */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #ffffff;
-    color: #333;
-    scroll-behavior: smooth;
-}
 
-/* Header */
-.header {
-    height: 70px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: #ffffff;
-    color: #333;
     scroll-behavior: smooth;
 }
 
 /* Title Section */
 .title-section {
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #f29d43, #5abed7);
+    padding: 120px 20px;
+    background: var(--lightBlue);
     color: #fff;
 }
 
 .title-container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
+    padding: 80px 120px; /* Ajuste de altura */
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
-.story-title {
-    font-size: 2.5rem;
+.page-title {
+    font-family: 'Jersey 10';
+    font-size: 60px;
     font-weight: bold;
     margin: 0;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: #f0f0f0;
+    color: #fff;
 }
 
 .story-section {
@@ -56,7 +48,7 @@ body {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     min-height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 40px 5%; /* Espaciado alrededor */
 }
 
@@ -89,6 +81,16 @@ body {
     text-align: justify; /* Justifica el texto */
     line-height: 1.8;
 }
+.story-title {
+    font-size: 36px; /* Tamaño más grande */
+    font-family: 'Jersey 10';
+    color: var(--mediumBlue); /* Color definido como variable */
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 20px; /* Espaciado inferior */
+    max-width: 700px; /* Limita el ancho para que coincida con el texto */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto;
+}
 
 .story-text {
     margin-bottom: 20px;
@@ -106,7 +108,7 @@ body {
 /* Video Section */
 .video-section {
     padding: 40px 20px 80px;
-    background: #f0f0f0;
+    background: #fff;
     text-align: center;
 }
 
@@ -116,15 +118,16 @@ body {
 }
 
 .orange-btn {
-    background: #f29d43;
+    background: var(--orange);
     border: none;
-    border-radius: 25px;
-    padding: 10px 30px;
+    border-radius: 30px;
+    padding: 20px 60px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .orange-btn:hover {
-    background: #e6843d;
+    background: var(--orange);
 }
 
 .game-link-text {
@@ -133,15 +136,4 @@ body {
     font-weight: bold;
 }
 
-/* Footer */
-footer {
-   
-    margin-top: auto; /* Empuja el footer al final del contenedor flex */
-    padding: 20px; /* Añade un poco de espacio interno */
-    background-color: #21264D; /* Color del footer */
-    color: white;
-    text-align: center;
-
-
-}
 

@@ -183,7 +183,7 @@ body {
     }
     
     .fa-solid:hover {
-        color: #1d8db9;
+        color: var(--blue);
     }
     .favorite-button {
         color: white;
@@ -197,6 +197,6 @@ body {
     }
     
     .favorite-button.favorited {
-        color: red;
+        color: var(--orange);
     }
     

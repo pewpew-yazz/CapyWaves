@@ -65,6 +65,7 @@
     <link href="../css/fontawesome/solid.css" rel="stylesheet" />
     <link href="../css/headerlogo.css" rel="stylesheet" />
     <link href="../css/edit_profile.css" rel="stylesheet" />
+    <link href="../css/colors.css" rel="stylesheet" />
     
     <!-- Metadata -->
     <meta charset="utf-8" />
