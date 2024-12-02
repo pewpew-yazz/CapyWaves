@@ -87,6 +87,19 @@
     <div class="edit-info">
         <h2 class="form-title">Editar perfil</h2>
         <form class="edit-form" action="" method="post" autocomplete="off">
+        <div class="edit-photo">
+        <div class="photo-container">
+            <!-- Mostrar la foto del usuario si está disponible, de lo contrario usar una por defecto -->
+            <img src="<?= htmlspecialchars($userData['photo'] ?? '../fotos/sinfoto.jpg') ?>" 
+                alt="Foto de usuario" class="photo">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <!-- Campo de subir archivo oculto -->
+                <input type="file" id="profile_photo" class="btn upload-btn" name="profile_photo" accept="image/*" required>
+                <!-- Botón estilizado -->
+                <button type="submit" name="upload_photo" class="btn upload-btn">Subir foto</button>
+            </form>
+        </div>
+    </div>
             <div class="form-inputs">
                 <!-- Campo para el usuario -->
                 <div class="input-box">
@@ -129,28 +142,16 @@
             <div class="form-actions">
                 <button type="submit" name="guardar" class="btn">Guardar cambios</button>
                 <button type="reset" class="btn">Limpiar</button>
+                    <a href="discos.php" class="btn redirect-btn">
+                Ir a la página principal
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
             </div>
         </form>
     </div>
 </div>
 
-    <div class="edit-photo">
-        <div class="photo-container">
-            <!-- Mostrar la foto del usuario si está disponible, de lo contrario usar una por defecto -->
-            <img src="<?= htmlspecialchars($userData['photo'] ?? '../fotos/sinfoto.jpg') ?>" 
-                alt="Foto de usuario" class="photo">
-            <form action="" method="POST" enctype="multipart/form-data">
-                <!-- Campo de subir archivo oculto -->
-                <input type="file" id="profile_photo" class="btn upload-btn" name="profile_photo" accept="image/*" required>
-                <!-- Botón estilizado -->
-                <button type="submit" name="upload_photo" class="btn upload-btn">Subir foto</button>
-            </form>
-        </div>
-        <a href="discos.php" class="btn redirect-btn">
-            Ir a la página principal
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-        </a>
-    </div>
+
 
 
 
