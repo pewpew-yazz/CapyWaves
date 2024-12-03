@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if(registroUsuario($user,$name,$lastname1,$lastname2,$email,$password)){
         error_log("Login succesfull for ".$_SESSION['num']);
-        header("Location: ../discos.php");
+        header("Location: ../galeria.php");
         exit();
     }
 }
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="form-container">
         <div class="form-col">
             <!-- Register Form (Registrarse) -->
-            <form class="form-box register-form" method="post" action="../discos.php">
+            <form class="form-box register-form" method="post" action="../galeria.php">
                 <div class="form-title">
                     <span>Regístrate</span>
                 </div>

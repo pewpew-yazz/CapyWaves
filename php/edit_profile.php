@@ -119,7 +119,7 @@
                 <div class="form-actions">
                     <button type="submit" name="guardar" class="btn">Guardar cambios</button>
                     <button type="reset" class="btn">Limpiar</button>
-                    <a href="discos.php" class="btn redirect-btn">
+                    <a href="galeria.php" class="btn redirect-btn">
                         Ir a la página principal
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </a>

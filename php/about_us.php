@@ -58,15 +58,9 @@
     <div class="header-center">
         <nav>
            <ul>
-                    <li><a href="#">Inicio <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="menu.php">Inicio</a></li>
-                            <li><a href="php/discos.php">Menu</a></li>
-                        </ul>
-                    </li>
                     <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="discos.php">Galeria</a></li>
+                            <li><a href="galeria.php">Galeria</a></li>
                             <li><a href="../reproductor.html">Reproductor</a></li>
                             <li><a href="../juego/inicio.html">Videojuego</a></li>
                         </ul>
