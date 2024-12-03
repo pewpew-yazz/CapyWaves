@@ -72,11 +72,17 @@
                         </ul>
                     </li>
 
-
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
                         <li><a href="about_us.php">¿Qué es CapyWaves?</a></li>
                             <li><a href="capy.php">Conoce a Capy</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Tienda <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://capywaves.rdi.store/products">Productos</a></li>
+                            <li><a href="login.php">Escenarios exclusivos</a></li>
                         </ul>
                     </li>
           </ul>
