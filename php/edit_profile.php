@@ -126,15 +126,18 @@
                 </div>
             </form>
         </div>
+
         <div class="edit-photo">
             <div class="photo-container">
                 <img src="<?= htmlspecialchars($userData['photo'] ?? '../fotos/sinfoto.jpg') ?>" alt="Foto de usuario" class="photo">
                 <form action="" method="POST" enctype="multipart/form-data">
+                    
                     <input type="file" id="profile_photo" name="profile_photo" accept="image/*" class="upload-btn">
                     <button type="submit" name="upload_photo" class="btn upload-btn">Subir nueva foto</button>
                 </form>
             </div>
         </div>
+        
     </div>
 </body>
 </html>
