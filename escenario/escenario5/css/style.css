@@ -1,0 +1,17 @@
+/* Archivo style.css */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita barras de desplazamiento */
+  }
+  
+  #game-container {
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% del alto de la ventana */
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro como respaldo */
+  }
+  

@@ -1,0 +1,17 @@
+/* CSS para el contenedor del juego */
+#game-container {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: 100vh; /* Ocupa el 100% del alto de la ventana */
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* Asegúrate de que el body y html también ocupen toda la pantalla */
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita las barras de desplazamiento */
+}
