@@ -8,25 +8,35 @@ body {
     font-family: Arial, sans-serif;
     background: #ffffff;
     scroll-behavior: smooth;
+
+    background: url("../images/capy-waves.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+    backdrop-filter: blur(20px);
 }
 
 /* Title Section */
 .title-section {
     text-align: center;
-    padding: 120px 20px;
-    background: var(--lightBlue);
+    width: 100%;
+    margin-top: 120px;
     color: #fff;
 }
 
 .title-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 80px 120px; /* Ajuste de altura */
-    border-radius: 15px;
+    
+    margin: 0 5%;
+    padding: 60px 20%; /* Ajuste de altura */
+    border-radius: 30px;
     border: 3px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+   
 }
 
 .page-title {
@@ -48,7 +58,6 @@ body {
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     min-height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: #fff;
     padding: 40px 5%; /* Espaciado alrededor */
 }
 
@@ -57,7 +66,12 @@ body {
     grid-template-columns: auto 1fr; /* Columna de imágenes y texto */
     gap: 40px; /* Espaciado entre imágenes y texto */
     align-items: center; /* Alinea verticalmente cada columna */
+    border-radius: 30px;
+    padding: 40px 5%; /* Espaciado alrededor */
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
+
 
 .story-images {
     display: flex;
@@ -84,7 +98,7 @@ body {
 .story-title {
     font-size: 36px; /* Tamaño más grande */
     font-family: 'Jersey 10';
-    color: var(--mediumBlue); /* Color definido como variable */
+    color: var(--darkBlue); /* Color definido como variable */
     text-align: center; /* Alineación centrada */
     margin-bottom: 20px; /* Espaciado inferior */
     max-width: 700px; /* Limita el ancho para que coincida con el texto */
@@ -105,11 +119,24 @@ body {
 }
  
 
+/*Magazine Section*/
+.magazine-section {
+    margin-top: 50px;
+    display: flex;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: var(--orange);
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 /* Video Section */
 .video-section {
     padding: 40px 20px 80px;
-    background: #fff;
+    background: 000;
     text-align: center;
+    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
 }
 
 .video-container {

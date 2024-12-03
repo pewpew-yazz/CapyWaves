@@ -166,8 +166,8 @@ body {
 /* Botón de redirección */
 .redirect-btn {
     position: absolute; /* Asegura que el botón esté posicionado dentro del contenedor */
-    bottom: 20px; /* Alineado al fondo con un margen */
-    right: 20px; /* Alineado al lado derecho con un margen */
+    bottom: 20px;
+    right: 20px; 
     width: 230px;
     display: flex; /* Asegura que el texto e ícono estén alineados */
     align-items: center;

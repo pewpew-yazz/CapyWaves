@@ -235,6 +235,7 @@
     background-color: var(--blue);
     color: white;
     border: none;
+    text-decoration: none; 
     border-radius: 30px;
     font-size: 18px;
     cursor: pointer;
