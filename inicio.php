@@ -97,7 +97,7 @@
         <p>
             Explora mundos interactivos y déjate envolver por sonidos <br> relajantes. Capy Waves está aquí para ayudarte a encontrar tu paz.
         </p>
-        <img class="imagen1" src="fotos/capybara1.png">
+        <img class="imagen1" src="images/Capy4.png">
     </section>
 
     <section class="section3">
@@ -149,7 +149,7 @@
         <h3>Únete a nuestra comunidad de personas que <br> han descubierto la paz en Capy Waves.</h3>
         <a href="login.php?section=register" class="btn-register-cta">Registrarse</a>
         <div class="image-placeholder">
-            <img src="fotos/capybara2.png">
+            <img src="images/Capy2.png">
         </div>
     </section>
     
