@@ -9,7 +9,7 @@ body {
     background: #ffffff;
     scroll-behavior: smooth;
 
-    background: url("../images/capy-waves.png");
+    background: url("../images/background.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
