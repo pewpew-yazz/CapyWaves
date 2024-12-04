@@ -226,23 +226,26 @@ function update() {
 
     if (cursors.left.isDown) {
         reno.body.setVelocityX(-200);
-        reno.play('left', true);
+        reno.anims.play('left', true);
         isWalking = true;
     } else if (cursors.right.isDown) {
         reno.body.setVelocityX(200);
-        reno.play('right', true);
+        reno.anims.play('right', true);
         isWalking = true;
     } else if (cursors.up.isDown) {
         reno.body.setVelocityY(-200);
-        reno.play('up', true);
+        reno.anims.play('up', true);
         isWalking = true;
     } else if (cursors.down.isDown) {
         reno.body.setVelocityY(200);
-        reno.play('down', true);
+        reno.anims.play('down', true);
         isWalking = true;
-    } else {
-        reno.anims.stop();
     }
+    if (!isMoving) {
+        reno.anims.stop();
+        reno.setFrame(1); // Establecer un cuadro neutral al detenerse (ajusta según tu sprite)
+    }
+
 
     if (isWalking && !reno.stepSound.isPlaying) {
         reno.stepSound.play();
