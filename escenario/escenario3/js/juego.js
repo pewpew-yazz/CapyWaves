@@ -36,13 +36,13 @@ const phrases = [
 
 function preload() {
     // Cargar imágenes y sprites
-    this.load.image('backgroundOff', '../fotos/fondoR.png'); // Fondo con luces apagadas
-    this.load.image('backgroundOn', '../fotos/fondoPR.png'); // Fondo con luces encendidas
-    this.load.spritesheet('snowman', '../fotos/mno.png', { frameWidth: 400, frameHeight: 230 });
-    this.load.spritesheet('snowmanClick', '../fotos/msee.png', { frameWidth: 400, frameHeight: 230 });
-    this.load.spritesheet('chimney', '../fotos/humoR.png', { frameWidth: 500, frameHeight: 400 });
-    this.load.spritesheet('reno', '../fotos/renoR.png', { frameWidth: 245.3, frameHeight: 250 });
-    this.load.image('snowflake', '../fotos/copo.png');
+    this.load.image('backgroundOff', 'fotos/fondoR.png'); // Fondo con luces apagadas
+    this.load.image('backgroundOn', 'fotos/fondoPR.png'); // Fondo con luces encendidas
+    this.load.spritesheet('snowman', 'fotos/mno.png', { frameWidth: 400, frameHeight: 230 });
+    this.load.spritesheet('snowmanClick', 'fotos/msee.png', { frameWidth: 400, frameHeight: 230 });
+    this.load.spritesheet('chimney', 'fotos/humoR.png', { frameWidth: 500, frameHeight: 400 });
+    this.load.spritesheet('reno', 'fotos/renoR.png', { frameWidth: 245.3, frameHeight: 250 });
+    this.load.image('snowflake', 'fotos/copo.png');
     this.load.glsl('vividColors', 'vividColors.glsl');
 
     // Cargar sonidos

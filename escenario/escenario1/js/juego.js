@@ -30,12 +30,12 @@ let hongosApagados = true; // Estado inicial de los hongos.
 
 function preload() {
     // Cargar los spritesheet de las ranas (reposo y croak).
-    this.load.spritesheet("ranaAmarilla", "/fotos/ranaaafk.png ", { frameWidth: 375, frameHeight: 375 });
-    this.load.spritesheet("ranaMorada", "/fotos/ranamafk.png", { frameWidth: 375, frameHeight: 375 });
-    this.load.spritesheet("ranaVerde", "/fotos/ranavafk.png", { frameWidth: 375, frameHeight: 375 });
-    this.load.spritesheet("ranaAmarillaCroak", "/fotos/ranaacroak.png", { frameWidth: 374.6, frameHeight: 374});
-    this.load.spritesheet("ranaMoradaCroak", "/fotos/ranamcroak.png", { frameWidth: 374.6, frameHeight: 374 });
-    this.load.spritesheet("ranaVerdeCroak", "/fotos/ranavcroak.png", { frameWidth: 374.6, frameHeight: 374 });
+    this.load.spritesheet("ranaAmarilla", "fotos/ranaaafk.png ", { frameWidth: 375, frameHeight: 375 });
+    this.load.spritesheet("ranaMorada", "fotos/ranamafk.png", { frameWidth: 375, frameHeight: 375 });
+    this.load.spritesheet("ranaVerde", "fotos/ranavafk.png", { frameWidth: 375, frameHeight: 375 });
+    this.load.spritesheet("ranaAmarillaCroak", "fotos/ranaacroak.png", { frameWidth: 374.6, frameHeight: 374});
+    this.load.spritesheet("ranaMoradaCroak", "fotos/ranamcroak.png", { frameWidth: 374.6, frameHeight: 374 });
+    this.load.spritesheet("ranaVerdeCroak", "fotos/ranavcroak.png", { frameWidth: 374.6, frameHeight: 374 });
 
     // Cargar sonido
     this.load.audio("sonidoCroak", "fotos/croak.mp3");
