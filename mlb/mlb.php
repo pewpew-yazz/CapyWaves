@@ -1,3 +1,19 @@
+<?php
+    require_once "../php/logFun.php";
+    require "../php/userFun.php";
+
+
+    $username = $_SESSION['username'];
+
+    $userPhoto = getUserPhoto($username);
+
+
+
+    if (isset($_GET['action']) && $_GET['action'] === 'logout') {
+        logout();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es"> <!-- idioma español -->
 
@@ -32,6 +48,7 @@
                <ul>
                         <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                             <ul class="dropdown-menu">
+                                 <li><a href="../php/galeria.php">Galeria</a></li>
                                 <li><a href="../reproductor.html">Reproductor</a></li>
                                 <li><a href="../juego/inicio.html">Videojuego</a></li>
                             </ul>
@@ -39,8 +56,8 @@
     
                         <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                             <ul class="dropdown-menu">
-                            <li><a href="about_us.php">¿Qué es CapyWaves?</a></li>
-                                <li><a href="capy.php">Conoce a Capy</a></li>
+                            <li><a href="../php/about_us.php">¿Qué es CapyWaves?</a></li>
+                                <li><a href="../php/capy.php">Conoce a Capy</a></li>
                             </ul>
                         </li>
     
@@ -58,7 +75,7 @@
             <img src="<?php echo $userPhoto ? "../fotos/" . $userPhoto : '../fotos/sinfoto.jpg'; ?>" alt="Foto de perfil" class="profile-picture">
                 <i class="fas fa-chevron-down profile-arrow"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="edit_profile.php">Editar Información</a></li>
+                    <li><a href="../php/edit_profile.php">Editar Información</a></li>
                     <li><a href="?action=logout">Cerrar Sesión</a></li>
                 </ul>
             </div>

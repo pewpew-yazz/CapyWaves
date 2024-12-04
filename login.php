@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <header class="header">
     <div class="header-left">
         <a href="inicio.php">
-            <img src="fotos/logo1.gif" id="logo">
+            <img src="fotos/logo2.png" id="logo">
         </a>
     </div>
 </header>

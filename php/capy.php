@@ -67,6 +67,7 @@
                             <li><a href="galeria.php">Galeria</a></li>
                             <li><a href="../reproductor.html">Reproductor</a></li>
                             <li><a href="../juego/inicio.html">Videojuego</a></li>
+                            <li><a href="../mlb/mlb.php">CapyWaves X MLB</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>

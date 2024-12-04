@@ -55,7 +55,7 @@
 <body>
 <header class="header">
     <div class="header-left">
-        <a href="<?php echo "../menu.php"; ?>">
+        <a href="<?php echo "galeria.php"; ?>">
             <img src="../fotos/logo2.png" id="logo">
         </a>
     </div>
@@ -69,6 +69,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="../reproductor.html">Reproductor</a></li>
                             <li><a href="../juego/inicio.html">Videojuego</a></li>
+                            <li><a href="../mlb/mlb.php">CapyWaves X MLB</a></li>
                         </ul>
                     </li>
 
