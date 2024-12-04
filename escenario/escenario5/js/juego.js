@@ -9,7 +9,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 300 },
-      debug: true
+      debug: false
     }
   },
   scene: {
@@ -31,14 +31,14 @@ let respawnTimer;
 
 function preload() {
   // Carga de imágenes y sprites
-  this.load.image('background', '../fotos/fondoR.png');
-  this.load.image('base', '../fotos/base.png');
-  this.load.spritesheet('cuervo', '../fotos/crowR.png', { frameWidth: 250, frameHeight: 250 });
+  this.load.image('background', 'fotos/fondoR.png');
+  this.load.image('base', 'fotos/base.png');
+  this.load.spritesheet('cuervo', 'fotos/crowR.png', { frameWidth: 250, frameHeight: 250 });
 
   // Carga de sonidos
-  this.load.audio('fly', '../fotos/fly.mp3');
-  this.load.audio('caw', '../fotos/craw.mp3');
-  this.load.audio('fall', '../fotos/fall.mp3');
+  this.load.audio('fly', 'fotos/fly.mp3');
+  this.load.audio('caw', 'fotos/craw.mp3');
+  this.load.audio('fall', 'fotos/fall.mp3');
 }
 
 function create() {

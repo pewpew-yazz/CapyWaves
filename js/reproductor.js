@@ -1,11 +1,11 @@
 // Lista de canciones
 const songs = [
-    { title: "Costa de susurros", artist: "CapyWaves", src: "music/animacion.mp3", cover: "covers/disco1.png", background: "covers/fogata.gif" },
-    { title: "Noche entre Edificios", artist: "CapyWaves", src: "music/city audio.mp3", cover: "covers/disco2.png", background: "covers/atardecer.gif" },
-    { title: "Noche de Luna Llena", artist: "CapyWaves", src: "music/rain music.mp3", cover: "covers/disco3.png", background: "covers/fogata.gif" },
-    { title: "Prado de Calma", artist: "CapyWaves", src: "music/wa wa.mp3", cover: "covers/disco4.png", background: "covers/atardecer.gif" },
-    { title: "Fogata Bajo Estrellas", artist: "CapyWaves", src: "music/animacion.mp3", cover: "covers/disco5.png", background: "covers/fogata.gif" },
-    { title: "Bosque de Luciérnagas", artist: "CapyWaves", src: "music/city audio.mp3", cover: "covers/disco6.png", background: "atardecer.gif" },
+    { title: "Costa de susurros", artist: "CapyWaves", src: "music/animacion.mp3", cover: "covers/disco1.png", },
+    { title: "Noche entre Edificios", artist: "CapyWaves", src: "music/city audio.mp3", cover: "covers/disco2.png", },
+    { title: "Noche de Luna Llena", artist: "CapyWaves", src: "music/rain music.mp3", cover: "covers/disco3.png", },
+    { title: "Prado de Calma", artist: "CapyWaves", src: "music/wa wa.mp3", cover: "covers/disco4.png",  },
+    { title: "Fogata Bajo Estrellas", artist: "CapyWaves", src: "music/animacion.mp3", cover: "covers/disco5.png", },
+    { title: "Bosque de Luciérnagas", artist: "CapyWaves", src: "music/city audio.mp3", cover: "covers/disco6.png", },
 ];
 
 let currentSongIndex = 0;

@@ -6,11 +6,40 @@
     <script src="js/phaser.min.js"></script>
     <script src="js/juego.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/player.css">
     <title>Nieve</title>
 </head> 
 
 <body>
     <!-- Contenedor del lienzo del juego -->
-    <div id="game-container"></div>
+    <div id="game-container">
+        <div class="background"></div>
+        <div class="container">
+            <div class="player-img">
+                <img id="music-cover" src="../../covers/disco3.png" alt="Music Cover">
+            </div>
+    
+            <div class="music-info">
+                <span id="music-title">Canción 1</span>
+                <span id="music-artist">Artista 1</span>
+            </div>
+    
+            <div class="player-progress" id="player-progress">
+                <div class="progress" id="progress"></div>
+                <div class="music-duration">
+                    <span id="current-time">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+    
+            <div class="player-controls">
+                <i class="fa-solid fa-heart favorite-button" title="Favorite" id="favorite"></i>
+                <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
+                <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
+                <i class="fa-solid fa-forward" title="Next" id="next"></i>
+            </div>
+        </div>
+    </div>
+    <script src="js/reproductor.js"></script>
 </body>
 </html>
