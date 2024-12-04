@@ -1,0 +1,34 @@
+:root {
+    --background: #21264D;
+    --paletteBackground: #049dcb;
+    --border: #000;
+    --iconLight: #CFD8DC;
+    --iconLightHover: #ECEFF1;
+
+    /* status bar */
+    --statusBarBackground: #049dcb;
+    --statusBarLabel: #CFD8DC ;
+    --statusBarBorder: #FFF;
+}
+
+.blank-element{
+    fill: #FFF;
+    stroke: var(--border);
+    stroke-width: 1px;
+}
+.shaded-element {
+    fill: rgba(128, 128, 128, 0.3); /* Gris transparente */
+    pointer-events: none; /* Evita que sea seleccionable o interactivo */
+}
+.selected-element{
+    fill: #FFF;
+    stroke: #ed7a00;
+    stroke-width: 3px;
+    stroke-dasharray: 10px, 7px;
+
+    /* Efecto de neón */
+    filter: drop-shadow(0 0 10px #d96a00) drop-shadow(0 0 20px #e89b52) drop-shadow(0 0 30px #f4c186);
+
+    transition: filter 0.3s ease-in-out;
+}
+

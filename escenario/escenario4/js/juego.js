@@ -18,28 +18,28 @@ const config = {
   const game = new Phaser.Game(config);
   
   function preload() {
-    this.load.image('background', '../fotos/fondoR.png');
-    this.load.spritesheet('character1', '../fotos/alex1R.png', {
+    this.load.image('background', 'fotos/fondoR.png');
+    this.load.spritesheet('character1', 'fotos/alex1R.png', {
       frameWidth: 1000,
       frameHeight: 1000,
     });
-    this.load.spritesheet('character2', '../fotos/max1RC.png', {
+    this.load.spritesheet('character2', 'fotos/max1RC.png', {
       frameWidth: 1000,
       frameHeight: 641,
     });
-    this.load.spritesheet('character3', '../fotos/perla1R.png', {
+    this.load.spritesheet('character3', 'fotos/perla1R.png', {
       frameWidth: 1000,
       frameHeight: 1000,
     });
-    this.load.spritesheet('character4', '../fotos/marino1R.png', {
+    this.load.spritesheet('character4', 'fotos/marino1R.png', {
       frameWidth: 1000,
       frameHeight: 1000,
     });
-    this.load.spritesheet('character5', '../fotos/yaz1R.png', {
+    this.load.spritesheet('character5', 'fotos/yaz1R.png', {
       frameWidth: 1000,
       frameHeight: 1000,
     });
-    this.load.audio('sound', '../fotos/talk.mp3');
+    this.load.audio('sound', 'fotos/talk.mp3');
     console.log('Recursos cargados correctamente');
   }
   

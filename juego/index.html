@@ -23,11 +23,44 @@
     </style>
 </head>
 <body>
+
     <div id="game-conteiner">
         <h1 class="game-over"></h1>
     <button id="restart-btn" style="display: none;">Reiniciar</button>
     <button id="view-scores-btn" style="display: none;">Ver Puntajes</button>
     </div>
+    <!-- Elemento de audio -->
+    <audio id="background-audio" loop autoplay>
+        <source src="musica/juego.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <script>
+        // Intentar reproducir el audio automáticamente
+        const audio = document.getElementById('background-audio');
+
+        // Verificar si el navegador permite autoplay
+        window.addEventListener('load', () => {
+            audio.volume = 0.4; // Volumen inicial (50%)
+            audio.play().catch(error => {
+                console.warn('El navegador bloqueó el autoplay. Se requiere interacción del usuario.');
+                // Mostrar un botón si autoplay está bloqueado
+                const playButton = document.createElement('button');
+                playButton.textContent = 'Reproducir música';
+                playButton.style.position = 'absolute';
+                playButton.style.top = '20px';
+                playButton.style.left = '20px';
+                document.body.appendChild(playButton);
+
+                playButton.addEventListener('click', () => {
+                    audio.play().then(() => {
+                        playButton.remove(); // Eliminar botón al reproducir correctamente
+                    }).catch(err => {
+                        console.error('Error al intentar reproducir el audio:', err);
+                    });
+                });
+            });
+        });
+    </script>
     <script src="scripts/phaser.js"></script>
     <script src="scripts/script.js"></script>
     <script src="app.js"></script>

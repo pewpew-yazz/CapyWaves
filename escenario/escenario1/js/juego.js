@@ -30,19 +30,19 @@ let hongosApagados = true; // Estado inicial de los hongos.
 
 function preload() {
     // Cargar los spritesheet de las ranas (reposo y croak).
-    this.load.spritesheet("ranaAmarilla", "/fotos/ranaaafk.png ", { frameWidth: 375, frameHeight: 375 });
-    this.load.spritesheet("ranaMorada", "/fotos/ranamafk.png", { frameWidth: 375, frameHeight: 375 });
-    this.load.spritesheet("ranaVerde", "/fotos/ranavafk.png", { frameWidth: 375, frameHeight: 375 });
-    this.load.spritesheet("ranaAmarillaCroak", "/fotos/ranaacroak.png", { frameWidth: 374.6, frameHeight: 374});
-    this.load.spritesheet("ranaMoradaCroak", "/fotos/ranamcroak.png", { frameWidth: 374.6, frameHeight: 374 });
-    this.load.spritesheet("ranaVerdeCroak", "/fotos/ranavcroak.png", { frameWidth: 374.6, frameHeight: 374 });
+    this.load.spritesheet("ranaAmarilla", "http://localhost/Capywaves/escenario/escenario1/fotos/ranaaafk.png", { frameWidth: 375, frameHeight: 375 });
+    this.load.spritesheet("ranaMorada", "http://localhost/Capywaves/escenario/escenario1/fotos/ranamafk.png", { frameWidth: 375, frameHeight: 375 });
+    this.load.spritesheet("ranaVerde", "http://localhost/Capywaves/escenario/escenario1/fotos/ranavafk.png", { frameWidth: 375, frameHeight: 375 });
+    this.load.spritesheet("ranaAmarillaCroak", "http://localhost/Capywaves/escenario/escenario1/fotos/ranaacroak.png", { frameWidth: 374.6, frameHeight: 374});
+    this.load.spritesheet("ranaMoradaCroak", "http://localhost/Capywaves/escenario/escenario1/fotos/ranamcroak.png", { frameWidth: 374.6, frameHeight: 374 });
+    this.load.spritesheet("ranaVerdeCroak", "http://localhost/Capywaves/escenario/escenario1/fotos/ranavcroak.png", { frameWidth: 374.6, frameHeight: 374 });
 
     // Cargar sonido
-    this.load.audio("sonidoCroak", "fotos/croak.mp3");
+    this.load.audio("sonidoCroak", "http://localhost/Capywaves/escenario/escenario1/fotos/croak.mp3");
 
     // Cargar hongos
-    this.load.image('hongoPrendido', 'fotos/base1-1R.png');
-    this.load.image('hongoApagado', 'fotos/base1-2R.png');
+    this.load.image('hongoPrendido', 'http://localhost/Capywaves/escenario/escenario1/fotos/base1-1R.png');
+    this.load.image('hongoApagado', 'http://localhost/Capywaves/escenario/escenario1/fotos/base1-2R.png');
 }
 
 function create() {

@@ -35,8 +35,21 @@
     <link href="../css/fontawesome/fontawesome.css" rel="stylesheet" />
     <link href="../css/fontawesome/solid.css" rel="stylesheet" />
 
+      <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- JavaScript -->
-    <script src="../js/scroll.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="../js/fontawesome/solid.js"></script>
+    <script src="../js/menu_desplegable.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -67,6 +80,7 @@
                             <li><a href="login.php">Escenarios exclusivos</a></li>
                         </ul>
                     </li>
+                </ul>
             </nav>
         </div>
         <div class="header-right">
@@ -92,12 +106,13 @@
     <!-- Historia -->
     <section class="story-section">
         <div class="story-container">
+        <h1 class="story-title">El Viaje de Capy y la Gran Naranja</h1>
             <div class="story-images">
                 <img src="../fotos/camaleon.jpg" alt="Imagen de Capy y Camaleon" class="stacked-image">
                 <img src="../fotos/pescando.jpg" alt="Imagen de Capy" class="stacked-image">
             </div>
             <div class="story-content">
-                <p class="story-title"><strong>El Viaje de Capy y la Gran Naranja</strong></p>
+                
                 <p class="story-text">Había una vez una capibara llamada Capy, que vivía en un tranquilo bosque lleno de ríos cristalinos y cielos despejados. Desde pequeño, Capy tenía un sueño muy especial: probar una naranja. Había escuchado que las naranjas eran dulces, jugosas y refrescantes, como un rayo de sol en cada mordida. Sin embargo, en su hogar, nunca había visto una.</p>
                 <p class="story-text">Un día, mientras descansaba bajo la sombra de un árbol, se topó con una nutria curiosa que le habló de una antigua leyenda: la existencia de la Gran Naranja. “Dicen que está en el fondo del mar, escondida en un lugar mágico. Pero no es una naranja cualquiera... quien la encuentre será transformado para siempre”.</p>
                 <p class="story-text">Capy, emocionado y determinado, decidió emprender una aventura. Primero, buscó la ayuda de las nutrias, quienes conocían muchos secretos de los ríos y mares. Sin embargo, estas solo conocían la leyenda y no podían confirmar si era real. Luego, habló con las serpientes del bosque, quienes le contaron que un misterioso viajero llamado Rango podría tener las respuestas que buscaba.</p>
@@ -132,7 +147,7 @@
         </div>
         <div class="game-link">
             <button class="orange-btn">
-                <a href="juego/inicio.html" class="game-link-text">¡Jugar ahora!</a>
+                <a href="../juego/inicio.html" class="game-link-text">¡Jugar ahora!</a>
             </button>
         </div>
     </section>
