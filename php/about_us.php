@@ -67,7 +67,7 @@
 
                         </ul>
                     </li>
-                    <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <li><a href="#">Conocenos<span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="capy.php">Conoce a Capy</a></li>
                         </ul>

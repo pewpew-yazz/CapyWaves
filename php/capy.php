@@ -70,7 +70,7 @@
                             <li><a href="../mlb/mlb.php">CapyWaves x MLB</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <li><a href="#">Conocenos<span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about_us.php">¿Qué es CapyWaves?</a></li>
                         </ul>

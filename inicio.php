@@ -51,7 +51,7 @@
                             <li><a href="login.php">CapyWaves x MLB</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contacto <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
+                    <li><a href="#">Conocenos <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="login.php">¿Qué es CapyWaves?</a></li>
                             <li><a href="login.php">Conoce a Capy</a></li>
