@@ -1,24 +1,33 @@
 /* Estilo general */
 body, html {
-    margin: 0;
-    padding: 0;
     height: 100%;
-    width: 100%;
     font-family: 'Arial', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    scroll-behavior: smooth;
+    background: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    backdrop-filter: blur(20px);
 }
 
 /* Contenedor principal */
 .container {
     text-align: center;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
 }
 /* Contenedor interno con fondo blanco */
 .inner-container {
-    background: rgba(255, 255, 255, 0.423);
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
     padding: 20px 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -46,7 +55,7 @@ body, html {
     background: linear-gradient(135deg, #f89c41f3, #eeaa51);
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     padding: 15px 40px;
     font-size: 20px;
     font-weight: bold;
