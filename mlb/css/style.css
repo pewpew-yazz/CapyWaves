@@ -3,6 +3,7 @@
 }
 body {
     margin: 0px;
+    margin-top: 70px; 
     background: var(--background);
     height: calc(100vh - 70px);
 }
