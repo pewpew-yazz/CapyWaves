@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 <header class="header">
     <div class="header-left">
-        <a href="menu.php">
+        <a href="inicio.php">
             <img src="fotos/logo1.gif" id="logo">
         </a>
     </div>
