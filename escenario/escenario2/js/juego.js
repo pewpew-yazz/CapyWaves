@@ -24,17 +24,18 @@ let pyramids = [];
 let pyramidTips = [];
 let spaceship;
 let cursors;
+let wasdKeys; // Contendrá las teclas A, W, S, D
 let moveSound;
 let isMoving = false;
 let spaceshipActive = false; // Controla si la nave está activa
 
 // Precarga de recursos
 function preload() {
-    this.load.image('pyramid', 'fotos/fondoR.png');
-    this.load.image('pyramidTip', 'fotos/piramideR.png');
-    this.load.image('spaceship', 'fotos/naveR.png');
-    this.load.image('cactus_static', 'fotos/cactus1.2R.png');
-    this.load.spritesheet('cactus_animated', 'fotos/cactuspriteR.png', {
+    this.load.image('pyramid', 'http://localhost/Capywaves/escenario/escenario2/fotos/fondoR.png');
+    this.load.image('pyramidTip', 'http://localhost/Capywaves/escenario/escenario2/fotos/piramideR.png');
+    this.load.image('spaceship', 'http://localhost/Capywaves/escenario/escenario2/fotos//naveR.png');
+    this.load.image('cactus_static', 'http://localhost/Capywaves/escenario/escenario2/fotos/cactus1.2R.png');
+    this.load.spritesheet('cactus_animated', 'http://localhost/Capywaves/escenario/escenario2/fotos/cactuspriteR.png', {
         frameWidth: 500,
         frameHeight: 500
     });
@@ -102,11 +103,11 @@ function create() {
     cactusPositionsX.forEach((xPos, index) => {
         // Usamos cactusPositionsY para definir la altura en Y
         let cactusY = (config.height + cactusPositionsY[index]) * scaleY;
-    
+
         let cactus = this.add.sprite(xPos * scaleX, cactusY, 'cactus_static'); // Eje X y Y personalizados
         cactus.setScale(0.3); // Escala de los cactus
         cactus.setInteractive();
-    
+
         cactus.on('pointerdown', () => {
             cactus.play('cactusAnimation'); // Reproducir animación
             cactus.once('animationcomplete', () => {
@@ -125,6 +126,12 @@ function create() {
 
     // Controles del teclado
     cursors = this.input.keyboard.createCursorKeys();
+    wasdKeys = this.input.keyboard.addKeys({
+        up: Phaser.Input.Keyboard.KeyCodes.W,
+        down: Phaser.Input.Keyboard.KeyCodes.S,
+        left: Phaser.Input.Keyboard.KeyCodes.A,
+        right: Phaser.Input.Keyboard.KeyCodes.D
+    });
 
     // Sonido de movimiento
     moveSound = this.sound.add('move_sound');
@@ -137,10 +144,10 @@ function update() {
     isMoving = false;
 
     // Movimiento horizontal
-    if (cursors.left.isDown) {
+    if (cursors.left.isDown || wasdKeys.left.isDown) {
         spaceship.setVelocityX(-200);
         isMoving = true;
-    } else if (cursors.right.isDown) {
+    } else if (cursors.right.isDown || wasdKeys.right.isDown) {
         spaceship.setVelocityX(200);
         isMoving = true;
     } else {
@@ -148,10 +155,10 @@ function update() {
     }
 
     // Movimiento vertical
-    if (cursors.up.isDown) {
+    if (cursors.up.isDown || wasdKeys.up.isDown) {
         spaceship.setVelocityY(-200);
         isMoving = true;
-    } else if (cursors.down.isDown) {
+    } else if (cursors.down.isDown || wasdKeys.down.isDown) {
         spaceship.setVelocityY(200);
         isMoving = true;
     } else if (!isMoving) {
