@@ -1,105 +1,32 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #1e3c72, #2a5298);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f8ff;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capycatch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <h1 class="pixel-text">Top 3 Puntajes</h1>
+            <table id="scoreTable">
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <button class="start-button" onclick="location.href='inicio.html'">Regresar al Inicio</button>
+            <button class="start-button" onclick="location.href=''"> Volver a capy wabes</button>
+            <button class="start-button" id="clear-scores">Limpiar Scores</button>
+        </div>
+    </div>
 
-
-}
-#game-conteiner{
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-}
-canvas {
-    display: block;
-    border: 5px solid #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
- /* Estilos del botón de reinicio dentro del contenedor del juego */
-#restart-btn {
-    margin: 5px;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    color: white;
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    cursor: pointer;
-    backdrop-filter: blur(5px);
-    transition: background 0.3s, transform 0.3s;
-
-}
-#view-scores-btn{
-    margin: 5px;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    color: white;
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    cursor: pointer;
-    backdrop-filter: blur(5px);
-    transition: background 0.3s, transform 0.3s;
-}
-#view-scores-btn:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
-
-}
-#restart-btn:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.05);
-
-}
-.game-over-conteiner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    z-index: 100; /* Asegurarse de que esté encima del juego */
-}
-.game-over-text{
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.final-score{
-    font-size: 32px;
-    margin-bottom: 20px;
-
-}
-.endgame-conteiner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    height: 600px;
-    border-radius: 30px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.1);
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
-
-}
-/* Estilo para el texto de "Game Over" */
-.game-over {
-    font-size: 3rem;
-    color: white;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
+    <script src="scripts/scores.js"></script>
+</body>
+</html>
