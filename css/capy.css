@@ -1,49 +1,48 @@
 /* General Reset */
-
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
     font-family: Arial, sans-serif;
     background: #ffffff;
     scroll-behavior: smooth;
-
     background: url("../images/background.png");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    display: flex;
     min-height: 100vh;
     backdrop-filter: blur(20px);
 }
 
 /* Title Section */
 .title-section {
+    padding: 40px 10px; /* Menos espacio en la parte superior y costados */
+    padding-top: 100px;
     text-align: center;
-    width: 100%;
-    margin-top: 120px;
+    margin-top: 0; /* Elimina espacio superior */
     color: #fff;
 }
 
 .title-container {
-    
-    margin: 0 5%;
-    padding: 60px 20%; /* Ajuste de altura */
-    border-radius: 30px;
+    max-width: 90%; /* Ocupa más espacio en el ancho */
+    margin: 0 auto;
+    padding: 40px 5%; /* Ajuste para menos espacio a los costados */
+    border-radius: 30px; /* Ajustado el border-radius */
     border: 3px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-   
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .page-title {
     font-family: 'Jersey 10';
     font-size: 60px;
     font-weight: bold;
-    margin: 0;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -53,114 +52,108 @@ body {
     color: #fff;
 }
 
+/* Story Section */
 .story-section {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    min-height: 100vh; /* Ocupa toda la altura de la ventana */
-    padding: 40px 5%; /* Espaciado alrededor */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0; /* Reduce espacio superior e inferior */
 }
 
 .story-container {
     display: grid;
-    grid-template-columns: auto 1fr; /* Columna de imágenes y texto */
-    gap: 40px; /* Espaciado entre imágenes y texto */
-    align-items: center; /* Alinea verticalmente cada columna */
-    border-radius: 30px;
-    padding: 40px 5%; /* Espaciado alrededor */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Reduce el espacio entre columnas */
+    width: 90%; /* Amplía el ancho del contenedor */
+    max-width: 1400px;
+    border-radius: 30px; /* Ajustado el border-radius */
+    padding: 20px; /* Reduce el padding interno */
     background: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Columna de imágenes */
 .story-images {
     display: flex;
-    flex-direction: column; /* Apila las imágenes verticalmente */
-    gap: 20px; /* Espacio entre imágenes */
-    align-items: center; /* Centra las imágenes dentro de su columna */
+    flex-direction: column;
+    gap: 15px; /* Reduce el espacio entre imágenes */
+    align-items: center;
+    justify-content: center;
 }
 
 .stacked-image {
-    width: 100%; /* Ajusta el ancho relativo al contenedor */
-    max-width: 700px; /* Tamaño máximo aumentado */
-    height: auto; /* Mantiene proporciones */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto elegante */
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    border-radius: 30px; /* Ajustado el border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Columna de texto */
 .story-content {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el texto verticalmente */
-    text-align: justify; /* Justifica el texto */
+    justify-content: center;
+    text-align: justify;
     line-height: 1.8;
-}
-.story-title {
-    font-size: 36px; /* Tamaño más grande */
-    font-family: 'Jersey 10';
-    color: var(--darkBlue); /* Color definido como variable */
-    text-align: center; /* Alineación centrada */
-    margin-bottom: 20px; /* Espaciado inferior */
-    max-width: 700px; /* Limita el ancho para que coincida con el texto */
-    margin-left: auto; /* Centra horizontalmente */
-    margin-right: auto;
+    padding: 10px; /* Menos padding interno */
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px; /* Ajustado el border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.story-text {
+.story-title {
+    font-size: 36px;
+    font-family: 'Jersey 10';
+    color: var(--darkBlue);
+    text-align: center;
     margin-bottom: 20px;
 }
 
-/* Contenedor de imagen */
-.story-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
-}
- 
-
-/*Magazine Section*/
-.magazine-section {
-    margin-top: 50px;
-    display: flex;
-    padding: 40px;
-    border-radius: 30px;
-    background-color: var(--orange);
-    align-items: center;
-    justify-content: space-between;
+.story-text {
+    margin-bottom: 15px; /* Reduce espacio entre párrafos */
+    font-size: 18px;
+    color: #333;
 }
 
 
 /* Video Section */
 .video-section {
-    padding: 40px 20px 80px;
-    background: 000;
+    padding: 40px 20px;
     text-align: center;
-    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
 }
 
 .video-container {
     margin: 0 auto 20px;
     max-width: 800px;
 }
-
 .orange-btn {
-    background: var(--orange);
-    border: none;
-    border-radius: 30px;
-    padding: 20px 60px;
-    cursor: pointer;
-    font-size: 20px;
+    display: inline-block; /* Se comporta como botón */
+    background: var(--orange); /* Fondo del botón */
+    color: #fff !important; /* Forzar texto blanco */
+    text-decoration: none !important; /* Forzar eliminación del subrayado */
+    border: none; /* Sin bordes */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 15px 40px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Negritas */
+    text-align: center; /* Alineación centrada */
+    cursor: pointer; /* Cursor de mano */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: all 0.3s ease; /* Suaviza transiciones */
 }
 
 .orange-btn:hover {
-    background: var(--orange);
+    background: var(--mediumOrange); /* Fondo al pasar */
+    transform: scale(1.05); /* Aumenta tamaño */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    opacity: 0.9; /* Transparencia ligera */
 }
 
-.game-link-text {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+/* Opcional: Para que todos los enlaces dentro de .orange-btn no tengan subrayado */
+.orange-btn a {
+    text-decoration: none !important; /* Sin subrayado */
+    color: inherit !important; /* Hereda el color del botón */
 }
-
-

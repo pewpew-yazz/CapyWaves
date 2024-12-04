@@ -36,7 +36,11 @@
     <link href="../css/fontawesome/solid.css" rel="stylesheet" />
 
     <!-- JavaScript -->
-    <script src="../js/scroll.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="../js/fontawesome/solid.js"></script>
+    <script src="../js/menu_desplegable.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -67,6 +71,7 @@
                             <li><a href="login.php">Escenarios exclusivos</a></li>
                         </ul>
                     </li>
+                </ul>
             </nav>
         </div>
         <div class="header-right">
@@ -132,7 +137,7 @@
         </div>
         <div class="game-link">
             <button class="orange-btn">
-                <a href="juego/inicio.html" class="game-link-text">¡Jugar ahora!</a>
+                <a href="../juego/inicio.html" class="game-link-text">¡Jugar ahora!</a>
             </button>
         </div>
     </section>
