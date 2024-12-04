@@ -51,6 +51,15 @@ body {
     font-size: 1.2rem;
     color: #fff;
 }
+.story-title {
+    grid-column: 1 / -1; /* Ocupa todo el ancho del contenedor */
+    font-size: 60px; /* Tamaño del texto */
+    font-family: 'Jersey 10'; /* Estilo de fuente */
+    color: var(--darkBlue); /* Color del texto */
+    text-align: center; /* Centrado horizontal */
+    margin-bottom: 20px; /* Espacio debajo del título */
+ 
+}
 
 /* Story Section */
 .story-section {
@@ -103,13 +112,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.story-title {
-    font-size: 36px;
-    font-family: 'Jersey 10';
-    color: var(--darkBlue);
-    text-align: center;
-    margin-bottom: 20px;
-}
+
 
 .story-text {
     margin-bottom: 15px; /* Reduce espacio entre párrafos */
