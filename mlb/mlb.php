@@ -23,16 +23,13 @@
 <body onload="init()">
     <header class="header">
         <div class="header-left">
-            <a href="<?php echo "../menu.php"; ?>">
+            <a href="?php echo "../menu.php"; ?>
                 <img src="../fotos/logo2.png" id="logo">
             </a>
         </div>
         <div class="header-center">
             <nav>
                <ul>
-                        
-    
-    
                         <li><a href="#">Explorar <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="../reproductor.html">Reproductor</a></li>
