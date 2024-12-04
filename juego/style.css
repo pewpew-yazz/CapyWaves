@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Jersey 10', sans-serif;
+    font-family: 'Jersey 10';
     background: linear-gradient(to bottom, #1e3c72, #2a5298);
     display: flex;
     justify-content: center;

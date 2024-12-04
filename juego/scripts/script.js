@@ -16,26 +16,7 @@ var config = {
         preload: preload,
         create: create,
         update: update,
-        endGame: function() {
-            console.log("se ejecutó endGame");
-            gameOver = true;
-            this.add.text(centerX, centerY - 30, 'GAME OVER', { fontSize: '68px', fill: '#ff0000' }).setOrigin(0.5);
-            this.add.text(centerX, centerY + 40, 'Puntaje final: ' + score, { fontSize: '32px', fill: '#ff0000' }).setOrigin(0.5);
-
-             // Guardar el puntaje en la tabla de puntajes altos
-    saveHighScore(score);
-    
-            this.physics.pause();
-            this.input.keyboard.enabled = false;
-
-             // Mostrar puntajes más altos
-            displayHighScores();
-            
-             // Mostrar botón de reinicio
-    const restartBtn = document.getElementById('restart-btn');
-    restartBtn.style.display = 'block';
-    restartBtn.addEventListener('click', restartGame);
-        }
+        endGame: endGame,
     }
 };
 
@@ -398,7 +379,7 @@ function collectFish(gancho, fish) {
     scoreText.setText('Puntos: ' + score);
     // Destruir el pez temporalmente y reactivarlo después de 5 segundos
     fish.disableBody(true, true); // Desactiva el objeto en lugar de destruirlo
-    this.time.delayedCall(10000, () => {
+    this.time.delayedCall(5000, () => {
         fish.enableBody(true, Phaser.Math.Between(50, config.width - 50), Phaser.Math.Between(200, config.height - 200), true, true);
         fish.setVelocityX(Phaser.Math.Between(40, 100)); // Reaparecer con nueva velocidad
     });
