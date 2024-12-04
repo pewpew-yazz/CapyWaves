@@ -39,7 +39,7 @@
 <body onload="init()">
     <header class="header">
         <div class="header-left">
-            <a href="?php echo "../menu.php"; ?>
+            <a href="<?php echo "../php/galeria.php"; ?>">
                 <img src="../fotos/logo2.png" id="logo">
             </a>
         </div>
