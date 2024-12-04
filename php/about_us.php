@@ -97,7 +97,7 @@
         <div class="about-container">
             <div class="about-text">
                 <p>
-                Nuestra plataforma ofrece videos interactivos con música relajante y escenarios en pixel art, diseñados
+                Nuestra plataforma ofrece animaciones interactivas con música relajante y escenarios en pixel art, diseñados
                 para ayudarte a reducir el estrés y la ansiedad. Brindamos una experiencia inmersiva y calmante, donde puedes
                 personalizar y explorar distintos entornos, todo pensado para ofrecer un escape digital que mejore tu bienestar.
                 </p>

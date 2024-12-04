@@ -1,180 +1,9 @@
-/* Estructura básica del cuerpo para mantener el footer al final */
-body {
-    overflow-y: visible
-    ;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Altura mínima para cubrir toda la ventana */
-    margin: 0;
-}
-
-/* Ajustes del footer para que siempre esté al final */
-footer {
-   
-        margin-top: auto; /* Empuja el footer al final del contenedor flex */
-        padding: 20px; /* Añade un poco de espacio interno */
-        background-color: var(--darkBlue); /* Color del footer */
-        color: white;
-        text-align: center;
-    
-    
-}
-
-/* Logo */
-.header-left img {
-    height: 40px; /* Tamaño del logo */
-}
-
-/* Central Menu */
-.header-center {
-    position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
-    border-radius: 25px; /* Bordes redondeados */
-    padding: 10px 30px; /* Espaciado interno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    display: flex;
-    align-items: center; /* Centrado vertical */
-    margin-left: 130px;
-}
-
-/* Menu List */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; /* Espaciado entre los elementos */
-}
-
-nav ul li {
-    position: relative;
-    padding: 8px 15px; /* Espaciado interno */
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
-}
-
-
-
-nav ul li a {
-    font-size: 16px; /* Tamaño de texto */
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--darkBlue); /* Color del texto */
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: var(--blue); /* Color de texto al hacer hover */
-}
-
-/* Dropdown Arrow */
-.dropdown-arrow {
-    margin-left: 5px;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.dropdown-arrow i {
-    font-size: 12px;
-    color: var(--darkBlue);
-}
-
-nav ul li:hover .dropdown-arrow {
-    transform: rotate(180deg); /* Rotación de la flecha */
-}
-
-/* Dropdown Menu */
-nav ul li .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: calc(100% + 1px); /* Espaciado ajustado debajo del botón */
-    left: 0;
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    padding: 10px 15px; /* Espaciado interno */
-    z-index: 100;
-    min-width: 230px; /* Ancho mínimo */
-}
-
-nav ul li:hover .dropdown-menu {
-    display: block; /* Mostrar el menú al hacer hover */
-}
-
-nav ul li .dropdown-menu li {
-    list-style: none; /* Eliminar viñetas */
-    margin: 5px 0; /* Espaciado entre opciones */
-    border-radius: 45px; /* Bordes redondeados */
-    transition: background-color 0.3s ease;
-}
-
-nav ul li .dropdown-menu li a {
-    display: block;
-    padding: 10px 20px; /* Espaciado interno */
-    color: var(--darkBlue); /* Color del texto */
-    text-decoration: none;
-    font-size: 16px; /* Tamaño de fuente */
-    transition: background-color 0.3s ease;
-}
-
-nav ul li .dropdown-menu li a:hover {
-    background-color: rgba(18, 173, 219, 0.1); /* Fondo azul claro al hacer hover */
-    color: var(--blue);
-}
-
-/* Botones de Registro e Inicio de Sesión */
-.header-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-    padding-right: 20px;
-}
-
-.btn-register, .btn-login {
-    display: inline-block;
-    text-decoration: none; /* Sin subrayado */
-    text-align: center; /* Centrar texto */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de texto */
-    cursor: pointer;
-    border-radius: 25px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-register {
-    background-color: #ffffff; /* Fondo blanco */
-    color: var(--orange); /* Texto naranja */
-    border: 2px solid #FFF;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-.btn-login {
-    background-color: var(--orange); /* Fondo naranja */
-    color: #FFF; /* Texto blanco */
-    border: 2px solid #FFF;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-}
-
-.btn-register:hover {
-    background-color: var(--orange);
-    color: #FFF;
-    transform: scale(0.95);
-}
-
-.btn-login:hover {
-    background-color: #FFF;
-    color: var(--orange);
-    transform: scale(0.95);
-}
 
 /* Estilos para la sección "Sobre Nosotros" */
 /* Sección Sobre Nosotros */
 .about-us {
     padding: 100px 20px;
-    background: linear-gradient(#ed7a00, #f1b97e); /* Fondo original */
+    background: linear-gradient(#21596c, #049dcb); /* Fondo original */
     color: #ffffff; /* Texto blanco */
     display: flex;
     align-items: center; /* Centrar verticalmente */
@@ -232,7 +61,7 @@ nav ul li .dropdown-menu li a:hover {
 /* Sección de Beneficios */
 .benefits {
     padding: 60px 20px;
-    background: linear-gradient(#f1b97e, #fce6d0);
+    background: linear-gradient(#049dcb, #5abed7);
     text-align: center;
     color: #ffffff;
 }
@@ -242,7 +71,7 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 50px;
     margin-bottom: 30px;
     letter-spacing: 7px;
-    color: var(--mediumBlue);
+    color: #fff;
 }
 
 .benefits-container {
@@ -271,7 +100,7 @@ nav ul li .dropdown-menu li a:hover {
 
 .benefit-icon {
     font-size: 50px;
-    color: var(--mediumBlue);
+    color: var(--darkBlue);
     margin-bottom: 15px;
 }
 
@@ -279,19 +108,19 @@ nav ul li .dropdown-menu li a:hover {
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: bold;
-    color: var(--blue);
+    color: #fff;
 }
 
 .benefit-item p {
     font-size: 16px;
     line-height: 1.5;
-    color: var(--mediumBlue);
+    color: var(--darkBlue);
 }
 
 /* Sección Público Dirigido */
 .target-audience {
     padding: 60px 20px;
-    background: linear-gradient(#fce6d0, #ffffff);
+    background: linear-gradient(#5abed7, #fff);
     text-align: center;
     color: #ffffff;
     margin-bottom: 100px;
