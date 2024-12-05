@@ -1,12 +1,12 @@
 :root {
     --background: #21264D;
-    --paletteBackground: #049dcb;
+    --paletteBackground: #21264D;
     --border: #000;
     --iconLight: #CFD8DC;
     --iconLightHover: #ECEFF1;
 
     /* status bar */
-    --statusBarBackground: #049dcb;
+    --statusBarBackground: #21264D;
     --statusBarLabel: #CFD8DC ;
     --statusBarBorder: #FFF;
 }

@@ -1,51 +1,43 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+<?php 
+require_once "php/logFun.php";
+require_once "php/registro.php";
 
-include 'conexiones.php/conexion.php'; // Ajusta la ruta
-session_start();
+$msg='';
 
-$msg = ''; // Mensaje de error o éxito
+error_log("SERVER METHOD: ".$_SERVER['REQUEST_METHOD']);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
-    echo "Paso 1: Datos enviados por el formulario.<br>";
 
-    $usuario = htmlspecialchars($_POST['usuario']);
-    $contraseña = htmlspecialchars($_POST['contraseña']);
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    try {
-        echo "Paso 2: Iniciando consulta a la base de datos.<br>";
+    $username = $_POST['usuario'] ?? null;
+    $password = $_POST['contraseña'] ?? null;
 
-        // Consulta para verificar credenciales
-        $query = "SELECT * FROM usuarios WHERE username = :usuario";
-        $stmt = $conexion->prepare($query); // Asegúrate de que $conexion esté definida
-        $stmt->bindParam(':usuario', $usuario);
-        $stmt->execute();
+    $user = $_POST['username'] ?? null;
+    $name = $_POST['nombre'] ?? null;
+    $lastname1 = $_POST['apellido_paterno'] ?? null;
+    $lastname2 = $_POST['apellido_materno'] ?? null;
+    $email = $_POST['correo'] ?? null;
+    
+    //SE HACE ASI YA QUE SI NO MARCA ERROR, YA QUE LLAMABA A AMBAS FUNCIONES
 
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if ($user) {
-            echo "Paso 3: Usuario encontrado.<br>";
-
-            if (password_verify($contraseña, $user['password'])) {
-                echo "Paso 4: Contraseña correcta.<br>";
-
-                // Credenciales correctas, iniciar sesión
-                $_SESSION['username'] = $user['username'];
-                header('Location: php/galeria.php'); // Redirige al perfil del usuario
-                exit();
-            } else {
-                echo "Paso 4: Contraseña incorrecta.<br>";
-                $msg = 'Contraseña incorrecta.';
-            }
+    if (!empty($username) && !empty($password)) {
+        if (login($username, $password)) {
+            error_log("Login succesfull for ".$_SESSION['num']);
+            header("Location: /Capywaves/php/galeria.php"); //SI NO FUNCIONA AGREGAR ESTO /Capywaves/php/discos.php
+            exit();
         } else {
-            echo "Paso 3: Usuario no encontrado.<br>";
-            $msg = 'Usuario no encontrado.';
+            $msg = 'Username or password incorrect.';
         }
-    } catch (PDOException $e) {
-        echo "Error en la base de datos: " . $e->getMessage();
     }
+    elseif (!empty($user) && !empty($name) && !empty($lastname1) && !empty($email) && !empty($password)) {
+        if(registroUsuario($user,$email,$password,$name,$lastname1,$lastname2)){
+            error_log("Login succesfull for ".$_SESSION['num']);
+            header("Location: /Capywaves/php/galeria.php"); //SI NO FUNCIONA AGREGAR ESTO /Capywaves/php/discos.php
+            exit();
+        }
+    }
+    
+
 }
 ?>
 

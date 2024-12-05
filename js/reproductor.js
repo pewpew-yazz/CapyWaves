@@ -3,42 +3,42 @@ const songs = [
     { 
         title: "Costa de susurros", 
         artist: "CapyWaves", 
-        src: "http://localhost/Capywaves/music/animacion.mp3", 
+        src: "http://localhost/Capywaves/music/ranas8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco1.png", 
         scene: "http://localhost/Capywaves/escenario/escenario1/juego.html"
     },
     { 
         title: "Noche entre Edificios", 
         artist: "CapyWaves", 
-        src: "http://localhost/Capywaves/music/animacion.mp3", 
+        src: "http://localhost/Capywaves/music/desierto8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco2.png", 
         scene: "http://localhost/Capywaves/escenario/escenario2/juego.html"
     },
     { 
         title: "Noche entre Edificios", 
         artist: "CapyWaves", 
-        src: "http://localhost/Capywaves/music/city_audio.mp3", 
+        src: "http://localhost/Capywaves/music/cabaña8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco3.png", 
         scene: "http://localhost/Capywaves/escenario/escenario3/juego.html"
     },
     { 
         title: "Noche entre Edificios", 
         artist: "CapyWaves", 
-        src: "http://localhost/Capywaves/music/city_audio.mp3", 
+        src: "http://localhost/Capywaves/music/cafe8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco4.png", 
         scene: "http://localhost/Capywaves/escenario/escenario4/juego.html"
     },
     { 
         title: "Noche entre Edificios", 
         artist: "CapyWaves", 
-        src: "http://localhost/Capywaves/music/city_audio.mp3", 
+        src: "http://localhost/Capywaves/music/cuervo8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco5.png", 
         scene: "http://localhost/Capywaves/escenario/escenario5/juego.html"
     },
     { 
         title: "Noche entre Edificios", 
         artist: "CapyWaves", 
-        src: "http://localhost/Capywaves/music/city_audio.mp3", 
+        src: "http://localhost/Capywaves/music/city8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco6.png", 
         scene: "http://localhost/Capywaves/escenario/escenario6/juego.html"
     },
