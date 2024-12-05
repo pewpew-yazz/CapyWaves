@@ -191,3 +191,15 @@ let currentSongIndex = 0;
                 prevSong(); // Cambiar a la canción anterior
             }
         });
+        function adjustIframeHeight() {
+            const playerHeight = document.querySelector(".container").offsetHeight; // Altura del reproductor
+            const availableHeight = window.innerHeight - playerHeight; // Altura disponible para el iframe
+            const iframe = document.getElementById("game-iframe");
+        
+            iframe.style.height = `${availableHeight}px`; // Ajusta la altura del iframe
+        }
+        
+        // Ajusta la altura al cargar la página y al cambiar el tamaño de la ventana
+        window.addEventListener("load", adjustIframeHeight);
+        window.addEventListener("resize", adjustIframeHeight);
+        

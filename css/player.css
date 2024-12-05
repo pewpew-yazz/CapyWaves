@@ -178,7 +178,7 @@ body {
 
 .scenario-container {
     width: 100%;
-    height: calc(100vh - 120px); /* Ajusta el tamaño del iframe dejando espacio para el reproductor */
+    height: calc(100vh - 90px); /* Ajusta el tamaño del iframe dejando espacio para el reproductor */
     background: black;
     display: flex;
     justify-content: center;

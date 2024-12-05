@@ -13,10 +13,7 @@
 <body>
     <div class="background"></div>
 
-    <!-- Contenedor del iframe -->
-    <div class="scenario-container">
-        <iframe id="game-iframe" src="" style="width: 100%; height: 900px; border: none;"></iframe>
-    </div>    
+    <!-- Contenedor del reproductor y el iframe del escenario -->
     <div class="container">
         <div class="player-img">
             <img id="music-cover" src="covers/fogata.gif" alt="Music Cover">
@@ -43,9 +40,9 @@
         </div>
     </div>
 
-    <!-- Agrega el iframe para mostrar los escenarios -->
+    <!-- Iframe único para los escenarios -->
     <div class="scenario-container">
-        <iframe id="game-iframe" src="" style="width: 100%; height: 500px; border: none;"></iframe>
+        <iframe id="game-iframe" src="" style="width: 100%; height: calc(120vh - 100px); border: none;"></iframe>
     </div>
 
     <script src="js/reproductor.js"></script>

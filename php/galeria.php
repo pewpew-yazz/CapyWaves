@@ -129,42 +129,42 @@
                     <div class="des">
                         Camina por la orilla de un océano sereno, donde las olas susurran secretos antiguos y la brisa salada acaricia tu piel.
                     </div>
-                    <button class="r" onclick="location.href='../escenario/escenario5/juego.html?song=0'">Reproducir</button>
+                    <button class="r" onclick="location.href='../reproductor.html?song=0'">Reproducir</button>
                 </div>
                 <div class="item">
                     <h1 class="ti">Noche entre Edificios</h1>
                     <div class="des">
                         Explora el pulso tranquilo de la ciudad por la noche, cuando las luces de los edificios parpadean como estrellas urbanas.
                     </div>
-                    <button class="r" onclick="location.href='../escenario/escenario2/juego.html?song=1'">Reproducir</button>
+                    <button class="r" onclick="location.href='../reproductor.html?song=1'">Reproducir</button>
                 </div>
                 <div class="item">
                     <h1 class="ti">Noche de Luna Llena</h1>
                     <div class="des">
                         Bajo la luz plateada de una luna llena, el mundo se baña en un resplandor mágico.
                     </div>
-                    <button class="r" onclick="location.href='../escenario/escenario3/juego.html?song=2'">Reproducir</button>
+                    <button class="r" onclick="location.href='../reproductor.html?song=2'">Reproducir</button>
                 </div>
                 <div class="item">
                     <h1 class="ti">Prado de Calma</h1>
                     <div class="des">
                         Descansa en un amplio prado donde el viento acaricia la hierba y los colores del atardecer pintan el cielo.
                     </div>
-                    <button class="r" onclick="location.href='../escenario/escenario4/juego.html?song=3'">Reproducir</button>
+                    <button class="r" onclick="location.href='../reproductor.html?song=2'">Reproducir</button>
                 </div>
                 <div class="item">
                     <h1 class="ti">Fogata Bajo Estrellas</h1>
                     <div class="des">
                         Reúnete alrededor de una fogata chisporroteante bajo un cielo estrellado infinito.
                     </div>
-                    <button class="r" onclick="location.href='../escenario/escenario6/juego.html?song=4'">Reproducir</button>
+                    <button class="r" onclick="location.href='../reproductor.html?song=2'">Reproducir</button>
                 </div>
                 <div class="item">
                     <h1 class="ti">Bosque de Luciérnagas</h1>
                     <div class="des">
                         Adéntrate en un bosque mágico donde las luciérnagas iluminan la noche con su danza luminosa.
                     </div>
-                    <button class="r" onclick="location.href='../escenario/escenario1/juego.html?song=5'">Reproducir</button>
+                    <button class="r" onclick="location.href='../reproductor.html?song=5'">Reproducir</button>
                 </div>
             </div>
             <!-- Flechas restauradas -->
