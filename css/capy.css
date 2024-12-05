@@ -21,18 +21,18 @@ body {
 
 /* Title Section */
 .title-section {
-    padding: 40px 10px; /* Menos espacio en la parte superior y costados */
+    padding: 40px 10px; 
     padding-top: 100px;
     text-align: center;
-    margin-top: 0; /* Elimina espacio superior */
+    margin-top: 0; 
     color: #fff;
 }
 
 .title-container {
-    max-width: 90%; /* Ocupa más espacio en el ancho */
+    max-width: 90%; 
     margin: 0 auto;
-    padding: 40px 5%; /* Ajuste para menos espacio a los costados */
-    border-radius: 30px; /* Ajustado el border-radius */
+    padding: 40px 5%;
+    border-radius: 30px;
     border: 3px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.3);
@@ -53,11 +53,11 @@ body {
 }
 .story-title {
     grid-column: 1 / -1; /* Ocupa todo el ancho del contenedor */
-    font-size: 60px; /* Tamaño del texto */
-    font-family: 'Jersey 10'; /* Estilo de fuente */
-    color: var(--darkBlue); /* Color del texto */
-    text-align: center; /* Centrado horizontal */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 60px; 
+    font-family: 'Jersey 10'; 
+    color: var(--darkBlue); 
+    text-align: center; 
+    margin-bottom: 20px;
  
 }
 
@@ -67,17 +67,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px 0; /* Reduce espacio superior e inferior */
+    padding: 20px 0; 
 }
 
 .story-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-    gap: 20px; /* Reduce el espacio entre columnas */
-    width: 90%; /* Amplía el ancho del contenedor */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    width: 90%; 
     max-width: 1400px;
-    border-radius: 30px; /* Ajustado el border-radius */
-    padding: 20px; /* Reduce el padding interno */
+    border-radius: 30px; 
+    padding: 20px;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -95,7 +95,7 @@ body {
     width: 100%;
     max-width: 90%;
     height: auto;
-    border-radius: 30px; /* Ajustado el border-radius */
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -106,16 +106,16 @@ body {
     justify-content: center;
     text-align: justify;
     line-height: 1.8;
-    padding: 10px; /* Menos padding interno */
+    padding: 10px;
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 30px; /* Ajustado el border-radius */
+    border-radius: 30px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
 
 .story-text {
-    margin-bottom: 15px; /* Reduce espacio entre párrafos */
+    margin-bottom: 15px;
     font-size: 18px;
     color: #333;
 }
@@ -133,18 +133,18 @@ body {
     max-width: 800px;
 }
 .orange-btn {
-    display: inline-block; /* Se comporta como botón */
-    background: var(--orange); /* Fondo del botón */
-    color: #fff !important; /* Forzar texto blanco */
-    text-decoration: none !important; /* Forzar eliminación del subrayado */
+    display: inline-block; 
+    background: var(--orange); 
+    color: #fff !important; 
+    text-decoration: none !important; 
     border: none; /* Sin bordes */
-    border-radius: 30px; /* Bordes redondeados */
-    padding: 15px 40px; /* Espaciado interno */
-    font-size: 18px; /* Tamaño del texto */
-    font-weight: bold; /* Negritas */
-    text-align: center; /* Alineación centrada */
-    cursor: pointer; /* Cursor de mano */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 30px; 
+    padding: 15px 40px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
     transition: all 0.3s ease; /* Suaviza transiciones */
 }
 

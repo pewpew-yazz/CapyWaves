@@ -83,7 +83,7 @@
                     <li><a href="#">Tienda <span class="dropdown-arrow"><i class="fas fa-chevron-down"></i></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="https://capywaves.rdi.store/products">Productos</a></li>
-                            <li><a href="login.php">Escenarios exclusivos</a></li>
+                            <li><a href="https://capy-wabes-store.ola.click/products?product=entre-edificios-9da4">Escenarios exclusivos</a></li>
                         </ul>
                     </li>
           </ul>
@@ -125,44 +125,44 @@
             </div>
             <div class="content">
                 <div class="item active">
-                    <h1 class="ti">Costa de susurros</h1>
+                    <h1 class="ti">El Coro de la Laguna                    </h1>
                     <div class="des">
-                        Camina por la orilla de un océano sereno, donde las olas susurran secretos antiguos y la brisa salada acaricia tu piel.
+                    Un islote mágico iluminado por un resplandor amarillo, rodeado de hongos púrpura y cañas llenas de luciérnagas. Tres ranas coloridas descansan, listas para entonar melodías en un entorno sereno y encantador.
                     </div>
                     <button class="r" onclick="location.href='../reproductor.html?song=0'">Reproducir</button>
                 </div>
                 <div class="item">
-                    <h1 class="ti">Noche entre Edificios</h1>
+                    <h1 class="ti">Oasis Estelar                    </h1>
                     <div class="des">
-                        Explora el pulso tranquilo de la ciudad por la noche, cuando las luces de los edificios parpadean como estrellas urbanas.
+                        Un vasto desierto bañado por un cielo dorado al atardecer, donde tres imponentes pirámides emergen majestuosas sobre la arena cálida. Un platillo volador flota misteriosamente en el horizonte, añadiendo un toque de ciencia ficción al paisaje antiguo. Pequeños cactus verdes decoran el primer plano, rompiendo la monotonía del árido terreno y aportando un elemento de vida al escenario enigmático. Una fusión perfecta entre lo antiguo y lo futurista
                     </div>
                     <button class="r" onclick="location.href='../reproductor.html?song=1'">Reproducir</button>
                 </div>
                 <div class="item">
-                    <h1 class="ti">Noche de Luna Llena</h1>
+                    <h1 class="ti">Navidad en el Bosque                    </h1>
                     <div class="des">
-                        Bajo la luz plateada de una luna llena, el mundo se baña en un resplandor mágico.
+                    Un escenario invernal lleno de encanto donde un muñeco de nieve grita por su nariz, mientras un reno curioso observa la escena. Luces navideñas de colores decoran los árboles desnudos, iluminando un acogedor refugio de madera al fondo. La nieve cubre todo el paisaje, creando una atmósfera festiva y llena de humor.
                     </div>
                     <button class="r" onclick="location.href='../reproductor.html?song=2'">Reproducir</button>
                 </div>
                 <div class="item">
-                    <h1 class="ti">Prado de Calma</h1>
+                    <h1 class="ti">Java Pixel</h1>
                     <div class="des">
-                        Descansa en un amplio prado donde el viento acaricia la hierba y los colores del atardecer pintan el cielo.
+                    Una acogedora cafetería estilo pixel art donde los personajes interactúan en un ambiente cálido y animado. Las luces colgantes iluminan suavemente el espacio, mientras el barista atiende tras una barra decorada con pasteles y café recién preparado. Las paredes verdes y los detalles minimalistas crean una atmósfera relajada, ideal para una pausa tranquila o una buena conversación entre amigos.
                     </div>
                     <button class="r" onclick="location.href='../reproductor.html?song=2'">Reproducir</button>
                 </div>
                 <div class="item">
-                    <h1 class="ti">Fogata Bajo Estrellas</h1>
+                    <h1 class="ti">La Vigía del Cuervo                    </h1>
                     <div class="des">
-                        Reúnete alrededor de una fogata chisporroteante bajo un cielo estrellado infinito.
+                    Un escenario minimalista donde un cuervo negro descansa en el techo de una estructura moderna con amplias ventanas, destacando bajo un cielo despejado. A los lados, árboles dorados enmarcan la escena, creando un contraste cálido y elegante con el azul vibrante del fondo. Un entorno tranquilo que evoca misterio y observación.
                     </div>
                     <button class="r" onclick="location.href='../reproductor.html?song=2'">Reproducir</button>
                 </div>
                 <div class="item">
-                    <h1 class="ti">Bosque de Luciérnagas</h1>
+                    <h1 class="ti">Entre Edificios                    </h1>
                     <div class="des">
-                        Adéntrate en un bosque mágico donde las luciérnagas iluminan la noche con su danza luminosa.
+                    Un vecindario urbano con altos edificios de tonos cálidos, destacando sus ventanas simétricas y fachadas detalladas. En la cima de uno de los edificios, un gato curioso observa el horizonte mientras un cielo azul y nubes rosadas completan la escena. Un botón rojo añade un toque de travesura a este ambiente citadino.
                     </div>
                     <button class="r" onclick="location.href='../reproductor.html?song=5'">Reproducir</button>
                 </div>

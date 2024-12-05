@@ -1,11 +1,7 @@
 const config = {
     type: Phaser.AUTO,
-    scale: {
-      mode: Phaser.Scale.RESIZE,
-      autoCenter: Phaser.Scale.CENTER_BOTH,
-      width: 1920,
-      height: 1080,
-    },
+    width: window.innerWidth,
+    height: window.innerHeight,
     backgroundColor: '#f4f4f9',
     parent: 'game-container',
     scene: {
@@ -107,12 +103,7 @@ const config = {
   ];
   
   function create() {
-    const background = this.add.image(2300, 700, 'background');
-    const scaleX = this.scale.width / background.width;
-    const scaleY = this.scale.height / background.height;
-    const scale = Math.min(scaleX, scaleY);
-    background.setScale(scale * 1.1);
-    background.setOrigin(1.491, 0.91);
+  
   
     const positions = [
       { x: 160, y: 424 },

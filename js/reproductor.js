@@ -1,21 +1,21 @@
 // Lista de canciones
 const songs = [
     { 
-        title: "Costa de susurros", 
+        title: "El Coro de la Laguna", 
         artist: "CapyWaves", 
         src: "http://localhost/Capywaves/music/ranas8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco1.png", 
         scene: "http://localhost/Capywaves/escenario/escenario1/juego.html"
     },
     { 
-        title: "Noche entre Edificios", 
+        title: "Oasis Estelar", 
         artist: "CapyWaves", 
         src: "http://localhost/Capywaves/music/desierto8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco2.png", 
         scene: "http://localhost/Capywaves/escenario/escenario2/juego.html"
     },
     { 
-        title: "Noche entre Edificios", 
+        title: "Java Pixel", 
         artist: "CapyWaves", 
         src: "http://localhost/Capywaves/music/cabaña8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco3.png", 
@@ -29,14 +29,14 @@ const songs = [
         scene: "http://localhost/Capywaves/escenario/escenario4/juego.html"
     },
     { 
-        title: "Noche entre Edificios", 
+        title: "La Vigía del Cuervo", 
         artist: "CapyWaves", 
         src: "http://localhost/Capywaves/music/cuervo8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco5.png", 
         scene: "http://localhost/Capywaves/escenario/escenario5/juego.html"
     },
     { 
-        title: "Noche entre Edificios", 
+        title: "Entre Edificios", 
         artist: "CapyWaves", 
         src: "http://localhost/Capywaves/music/city8d.mp3", 
         cover: "http://localhost/Capywaves/covers/disco6.png", 
